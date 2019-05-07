@@ -26,20 +26,27 @@
                                 <rect key="frame" x="0.0" y="308" width="414" height="505"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="200" id="O9V-je-ixz">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="museumCell" rowHeight="200" id="O9V-je-ixz" customClass="MuseoTableViewCell" customModule="Empart" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O9V-je-ixz" id="z10-jj-IaH">
                                             <rect key="frame" x="0.0" y="0.0" width="376" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYv-FK-qyS">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capodimonteCopertina.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cYv-FK-qyS">
                                                     <rect key="frame" x="20" y="11" width="343" height="172"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NOME MUSEO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFt-kT-Qff">
-                                                    <rect key="frame" x="39" y="25" width="304" height="21"/>
+                                                    <rect key="frame" x="28" y="11" width="326" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -47,6 +54,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="copertinaMuseoImage" destination="cYv-FK-qyS" id="0v9-wk-hW1"/>
+                                            <outlet property="nomeMuseoLabel" destination="sFt-kT-Qff" id="2JB-aB-Et3"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -58,6 +69,7 @@
                         <barButtonItem key="backBarButtonItem" title="Tours" id="6HJ-AT-q6u"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="museiTableView" destination="WHg-aB-34v" id="gVC-ST-qEd"/>
                         <segue destination="hFH-DS-7VZ" kind="show" identifier="goToDetails" id="9p9-Py-en8"/>
                     </connections>
                 </viewController>
@@ -228,5 +240,6 @@
     </scenes>
     <resources>
         <image name="IMG_0462.jpg" width="281" height="173"/>
+        <image name="capodimonteCopertina.jpg" width="550" height="309"/>
     </resources>
 </document>

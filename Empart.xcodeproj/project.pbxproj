@@ -20,6 +20,8 @@
 		758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */; };
 		75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */; };
 		75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */; };
+		75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */; };
+		75FB9ADB2281CECB00A0881E /* museiCapitoliniCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0462.jpg; sourceTree = "<group>"; };
 		75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capodimonteCopertina.jpg; sourceTree = "<group>"; };
+		75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseoTableViewCell.swift; sourceTree = "<group>"; };
+		75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museiCapitoliniCopertina.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +78,11 @@
 				7585606522816B1E00EDB1AD /* Model */,
 				75856058228081B900EDB1AD /* Storyboards */,
 				758560462280819300EDB1AD /* AppDelegate.swift */,
-				758560482280819300EDB1AD /* ViewController.swift */,
 				7585604D2280819400EDB1AD /* Assets.xcassets */,
 				7585604F2280819400EDB1AD /* LaunchScreen.storyboard */,
 				758560522280819400EDB1AD /* Info.plist */,
+				758560482280819300EDB1AD /* ViewController.swift */,
+				75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */,
 				7585605B2280827E00EDB1AD /* MieiPercorsiViewController.swift */,
 				7585605D2280829400EDB1AD /* CercaViewController.swift */,
 				7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */,
@@ -106,6 +111,7 @@
 		75FB9AD32281BBD000A0881E /* TmpImages */ = {
 			isa = PBXGroup;
 			children = (
+				75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */,
 				75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */,
 				75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */,
 			);
@@ -174,6 +180,7 @@
 				75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */,
 				75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */,
 				7585604E2280819400EDB1AD /* Assets.xcassets in Resources */,
+				75FB9ADB2281CECB00A0881E /* museiCapitoliniCopertina.jpg in Resources */,
 				7585605A228081DE00EDB1AD /* Tutorial.storyboard in Resources */,
 				7585604C2280819300EDB1AD /* Main.storyboard in Resources */,
 			);
@@ -193,6 +200,7 @@
 				75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */,
 				758560622280B5E500EDB1AD /* TutorialViewController.swift in Sources */,
 				7585605C2280827E00EDB1AD /* MieiPercorsiViewController.swift in Sources */,
+				75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
