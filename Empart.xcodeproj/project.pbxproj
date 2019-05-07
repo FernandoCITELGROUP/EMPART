@@ -18,6 +18,8 @@
 		75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */; };
 		758560622280B5E500EDB1AD /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560612280B5E500EDB1AD /* TutorialViewController.swift */; };
 		758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */; };
+		75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */; };
+		75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniViewController.swift; sourceTree = "<group>"; };
 		758560612280B5E500EDB1AD /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0462.jpg; sourceTree = "<group>"; };
+		75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capodimonteCopertina.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		758560452280819300EDB1AD /* Empart */ = {
 			isa = PBXGroup;
 			children = (
+				75FB9AD32281BBD000A0881E /* TmpImages */,
 				7585606522816B1E00EDB1AD /* Model */,
 				75856058228081B900EDB1AD /* Storyboards */,
 				758560462280819300EDB1AD /* AppDelegate.swift */,
@@ -96,6 +101,15 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		75FB9AD32281BBD000A0881E /* TmpImages */ = {
+			isa = PBXGroup;
+			children = (
+				75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */,
+				75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */,
+			);
+			path = TmpImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +171,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				758560512280819400EDB1AD /* LaunchScreen.storyboard in Resources */,
+				75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */,
+				75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */,
 				7585604E2280819400EDB1AD /* Assets.xcassets in Resources */,
 				7585605A228081DE00EDB1AD /* Tutorial.storyboard in Resources */,
 				7585604C2280819300EDB1AD /* Main.storyboard in Resources */,
