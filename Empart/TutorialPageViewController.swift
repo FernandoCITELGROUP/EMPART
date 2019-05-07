@@ -10,6 +10,12 @@ import UIKit
 
 class TutorialPageViewController: UIViewController {
 
+    //Actions
+    @IBAction func btnSalta(_ sender: Any) {
+        present( UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "firstViewController") as UIViewController, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
