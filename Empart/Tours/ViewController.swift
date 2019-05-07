@@ -12,6 +12,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //test data: Collection di musei
     var musei:[Museo]!
+
+    //Attribute
+    var selectedItem:Museo!
     
     //Outlets
     @IBOutlet weak var museiTableView: UITableView!
@@ -31,7 +34,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedItem:Museo = self.musei[indexPath.item]
+        self.selectedItem = self.musei[indexPath.item]
+        self.performSegue(withIdentifier: "goToDetails", sender: self)
     }
     
     //Events
@@ -42,6 +46,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.museiTableView.delegate = self
         self.museiTableView.dataSource = self
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextViewController = segue.destination as! DettaglioMuseoViewController
+        nextViewController.selectedItem = self.selectedItem
     }
     
     //Functions

@@ -39,6 +39,7 @@
 		75FB9AFB228218D900A0881E /* tourOroRosso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AFA228218D900A0881E /* tourOroRosso.jpg */; };
 		75FB9AFD228219AA00A0881E /* tourCaravaggio.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AFC228219AA00A0881E /* tourCaravaggio.png */; };
 		75FB9AFF22821F0A00A0881E /* DettaglioMuseoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */; };
+		75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B012282231D00A0881E /* TourTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		75FB9AFA228218D900A0881E /* tourOroRosso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tourOroRosso.jpg; sourceTree = "<group>"; };
 		75FB9AFC228219AA00A0881E /* tourCaravaggio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tourCaravaggio.png; sourceTree = "<group>"; };
 		75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioMuseoViewController.swift; sourceTree = "<group>"; };
+		75FB9B012282231D00A0881E /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,14 +117,12 @@
 				7585604D2280819400EDB1AD /* Assets.xcassets */,
 				7585604F2280819400EDB1AD /* LaunchScreen.storyboard */,
 				758560522280819400EDB1AD /* Info.plist */,
-				758560482280819300EDB1AD /* ViewController.swift */,
-				75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */,
+				75FB9B002282225900A0881E /* Tours */,
 				7585605B2280827E00EDB1AD /* MieiPercorsiViewController.swift */,
 				7585605D2280829400EDB1AD /* CercaViewController.swift */,
 				7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */,
 				758560612280B5E500EDB1AD /* TutorialViewController.swift */,
 				758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */,
-				75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */,
 			);
 			path = Empart;
 			sourceTree = "<group>";
@@ -181,6 +181,17 @@
 				75FB9AFC228219AA00A0881E /* tourCaravaggio.png */,
 				75FB9AFA228218D900A0881E /* tourOroRosso.jpg */,
 				75FB9AF8228218D000A0881E /* tourStorie.jpg */,
+			);
+			path = Tours;
+			sourceTree = "<group>";
+		};
+		75FB9B002282225900A0881E /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				758560482280819300EDB1AD /* ViewController.swift */,
+				75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */,
+				75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */,
+				75FB9B012282231D00A0881E /* TourTableViewCell.swift */,
 			);
 			path = Tours;
 			sourceTree = "<group>";
@@ -283,6 +294,7 @@
 				75FB9AF12281F72400A0881E /* EsperienzaEmpart.swift in Sources */,
 				75FB9AE32281EF3E00A0881E /* Opera.swift in Sources */,
 				75FB9AE72281EFE200A0881E /* Beacon.swift in Sources */,
+				75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */,
 				7585605C2280827E00EDB1AD /* MieiPercorsiViewController.swift in Sources */,
 				75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */,
 			);
