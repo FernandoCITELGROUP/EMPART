@@ -13,6 +13,7 @@ class MuseoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var copertinaMuseoImage: UIImageView!
     @IBOutlet weak var nomeMuseoLabel: UILabel!
+    @IBOutlet weak var cittaMuseoLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -22,6 +22,23 @@
 		75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */; };
 		75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */; };
 		75FB9ADB2281CECB00A0881E /* museiCapitoliniCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */; };
+		75FB9ADD2281EB8F00A0881E /* Museo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9ADC2281EB8F00A0881E /* Museo.swift */; };
+		75FB9ADF2281EC6700A0881E /* TourEmpart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9ADE2281EC6700A0881E /* TourEmpart.swift */; };
+		75FB9AE12281EE3000A0881E /* Tappa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AE02281EE3000A0881E /* Tappa.swift */; };
+		75FB9AE32281EF3E00A0881E /* Opera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AE22281EF3E00A0881E /* Opera.swift */; };
+		75FB9AE52281EF5000A0881E /* Autore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AE42281EF5000A0881E /* Autore.swift */; };
+		75FB9AE72281EFE200A0881E /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AE62281EFE200A0881E /* Beacon.swift */; };
+		75FB9AE92281F4F300A0881E /* Emozione.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AE82281F4F300A0881E /* Emozione.swift */; };
+		75FB9AEB2281F5A400A0881E /* MioTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AEA2281F5A400A0881E /* MioTour.swift */; };
+		75FB9AED2281F6A500A0881E /* MiaTappa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AEC2281F6A500A0881E /* MiaTappa.swift */; };
+		75FB9AEF2281F70300A0881E /* RicordoEmpart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AEE2281F70300A0881E /* RicordoEmpart.swift */; };
+		75FB9AF12281F72400A0881E /* EsperienzaEmpart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AF02281F72400A0881E /* EsperienzaEmpart.swift */; };
+		75FB9AF3228212AA00A0881E /* museoArcheologicoCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AF2228212AA00A0881E /* museoArcheologicoCopertina.jpg */; };
+		75FB9AF5228212C700A0881E /* palazzoRealeCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AF4228212C700A0881E /* palazzoRealeCopertina.jpg */; };
+		75FB9AF9228218D000A0881E /* tourStorie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AF8228218D000A0881E /* tourStorie.jpg */; };
+		75FB9AFB228218D900A0881E /* tourOroRosso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AFA228218D900A0881E /* tourOroRosso.jpg */; };
+		75FB9AFD228219AA00A0881E /* tourCaravaggio.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AFC228219AA00A0881E /* tourCaravaggio.png */; };
+		75FB9AFF22821F0A00A0881E /* DettaglioMuseoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +59,23 @@
 		75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capodimonteCopertina.jpg; sourceTree = "<group>"; };
 		75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseoTableViewCell.swift; sourceTree = "<group>"; };
 		75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museiCapitoliniCopertina.jpg; sourceTree = "<group>"; };
+		75FB9ADC2281EB8F00A0881E /* Museo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Museo.swift; sourceTree = "<group>"; };
+		75FB9ADE2281EC6700A0881E /* TourEmpart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourEmpart.swift; sourceTree = "<group>"; };
+		75FB9AE02281EE3000A0881E /* Tappa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tappa.swift; sourceTree = "<group>"; };
+		75FB9AE22281EF3E00A0881E /* Opera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Opera.swift; sourceTree = "<group>"; };
+		75FB9AE42281EF5000A0881E /* Autore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autore.swift; sourceTree = "<group>"; };
+		75FB9AE62281EFE200A0881E /* Beacon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
+		75FB9AE82281F4F300A0881E /* Emozione.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emozione.swift; sourceTree = "<group>"; };
+		75FB9AEA2281F5A400A0881E /* MioTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MioTour.swift; sourceTree = "<group>"; };
+		75FB9AEC2281F6A500A0881E /* MiaTappa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiaTappa.swift; sourceTree = "<group>"; };
+		75FB9AEE2281F70300A0881E /* RicordoEmpart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RicordoEmpart.swift; sourceTree = "<group>"; };
+		75FB9AF02281F72400A0881E /* EsperienzaEmpart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsperienzaEmpart.swift; sourceTree = "<group>"; };
+		75FB9AF2228212AA00A0881E /* museoArcheologicoCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museoArcheologicoCopertina.jpg; sourceTree = "<group>"; };
+		75FB9AF4228212C700A0881E /* palazzoRealeCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = palazzoRealeCopertina.jpg; sourceTree = "<group>"; };
+		75FB9AF8228218D000A0881E /* tourStorie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tourStorie.jpg; sourceTree = "<group>"; };
+		75FB9AFA228218D900A0881E /* tourOroRosso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tourOroRosso.jpg; sourceTree = "<group>"; };
+		75FB9AFC228219AA00A0881E /* tourCaravaggio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tourCaravaggio.png; sourceTree = "<group>"; };
+		75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioMuseoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +122,7 @@
 				7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */,
 				758560612280B5E500EDB1AD /* TutorialViewController.swift */,
 				758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */,
+				75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */,
 			);
 			path = Empart;
 			sourceTree = "<group>";
@@ -104,6 +139,17 @@
 		7585606522816B1E00EDB1AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				75FB9ADC2281EB8F00A0881E /* Museo.swift */,
+				75FB9ADE2281EC6700A0881E /* TourEmpart.swift */,
+				75FB9AE02281EE3000A0881E /* Tappa.swift */,
+				75FB9AE22281EF3E00A0881E /* Opera.swift */,
+				75FB9AE42281EF5000A0881E /* Autore.swift */,
+				75FB9AE62281EFE200A0881E /* Beacon.swift */,
+				75FB9AE82281F4F300A0881E /* Emozione.swift */,
+				75FB9AEA2281F5A400A0881E /* MioTour.swift */,
+				75FB9AEC2281F6A500A0881E /* MiaTappa.swift */,
+				75FB9AEE2281F70300A0881E /* RicordoEmpart.swift */,
+				75FB9AF02281F72400A0881E /* EsperienzaEmpart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,11 +157,32 @@
 		75FB9AD32281BBD000A0881E /* TmpImages */ = {
 			isa = PBXGroup;
 			children = (
-				75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */,
-				75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */,
+				75FB9AF72282175400A0881E /* Tours */,
+				75FB9AF62282173F00A0881E /* Musei */,
 				75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */,
 			);
 			path = TmpImages;
+			sourceTree = "<group>";
+		};
+		75FB9AF62282173F00A0881E /* Musei */ = {
+			isa = PBXGroup;
+			children = (
+				75FB9AF4228212C700A0881E /* palazzoRealeCopertina.jpg */,
+				75FB9AF2228212AA00A0881E /* museoArcheologicoCopertina.jpg */,
+				75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */,
+				75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */,
+			);
+			path = Musei;
+			sourceTree = "<group>";
+		};
+		75FB9AF72282175400A0881E /* Tours */ = {
+			isa = PBXGroup;
+			children = (
+				75FB9AFC228219AA00A0881E /* tourCaravaggio.png */,
+				75FB9AFA228218D900A0881E /* tourOroRosso.jpg */,
+				75FB9AF8228218D000A0881E /* tourStorie.jpg */,
+			);
+			path = Tours;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,13 +243,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FB9AF5228212C700A0881E /* palazzoRealeCopertina.jpg in Resources */,
+				75FB9AFB228218D900A0881E /* tourOroRosso.jpg in Resources */,
+				75FB9AF9228218D000A0881E /* tourStorie.jpg in Resources */,
 				758560512280819400EDB1AD /* LaunchScreen.storyboard in Resources */,
 				75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */,
+				75FB9AF3228212AA00A0881E /* museoArcheologicoCopertina.jpg in Resources */,
 				75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */,
 				7585604E2280819400EDB1AD /* Assets.xcassets in Resources */,
 				75FB9ADB2281CECB00A0881E /* museiCapitoliniCopertina.jpg in Resources */,
 				7585605A228081DE00EDB1AD /* Tutorial.storyboard in Resources */,
 				7585604C2280819300EDB1AD /* Main.storyboard in Resources */,
+				75FB9AFD228219AA00A0881E /* tourCaravaggio.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,12 +265,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FB9ADF2281EC6700A0881E /* TourEmpart.swift in Sources */,
 				758560492280819300EDB1AD /* ViewController.swift in Sources */,
 				7585605E2280829400EDB1AD /* CercaViewController.swift in Sources */,
 				758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */,
+				75FB9AED2281F6A500A0881E /* MiaTappa.swift in Sources */,
 				758560472280819300EDB1AD /* AppDelegate.swift in Sources */,
+				75FB9AFF22821F0A00A0881E /* DettaglioMuseoViewController.swift in Sources */,
+				75FB9AE52281EF5000A0881E /* Autore.swift in Sources */,
 				75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */,
+				75FB9AEB2281F5A400A0881E /* MioTour.swift in Sources */,
+				75FB9ADD2281EB8F00A0881E /* Museo.swift in Sources */,
+				75FB9AE12281EE3000A0881E /* Tappa.swift in Sources */,
 				758560622280B5E500EDB1AD /* TutorialViewController.swift in Sources */,
+				75FB9AE92281F4F300A0881E /* Emozione.swift in Sources */,
+				75FB9AEF2281F70300A0881E /* RicordoEmpart.swift in Sources */,
+				75FB9AF12281F72400A0881E /* EsperienzaEmpart.swift in Sources */,
+				75FB9AE32281EF3E00A0881E /* Opera.swift in Sources */,
+				75FB9AE72281EFE200A0881E /* Beacon.swift in Sources */,
 				7585605C2280827E00EDB1AD /* MieiPercorsiViewController.swift in Sources */,
 				75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */,
 			);
