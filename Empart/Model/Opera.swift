@@ -24,4 +24,13 @@ class Opera {
         self.anno = 0
         self.tecnica = ""
     }
+    
+    init(titolo:String, descrizione:String, imagine:String, autore:Autore, anno:Int, tecnica:String) {
+        self.titolo = titolo
+        self.descrizione = descrizione
+        self.imagine = imagine
+        self.autore = autore
+        self.anno = anno
+        self.tecnica = tecnica
+    }
 }

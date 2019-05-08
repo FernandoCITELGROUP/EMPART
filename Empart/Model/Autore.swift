@@ -20,4 +20,11 @@ class Autore{
         self.nomeDarte = ""
         self.imagine = ""
     }
+    
+    init(nome:String, cognome:String, nomeDarte:String, immagine:String) {
+        self.nome = nome
+        self.cognome = cognome
+        self.nomeDarte = nomeDarte
+        self.imagine = immagine
+    }
 }

@@ -23,6 +23,7 @@ class Tappa{
     var tipoLocalizzazione:TipoLocalizzazione
     var beacon:Beacon
     var posizione:Dictionary<String,String>
+    var copertina:String
     
     init() {
         self.opera = Opera()
@@ -31,14 +32,16 @@ class Tappa{
         self.tipoLocalizzazione = TipoLocalizzazione.Indefinito
         self.beacon = Beacon()
         self.posizione = Dictionary<String,String>()
+        self.copertina = ""
     }
     
-    init(opera:Opera,status:StatoTappa,ordine:Int,tipoLocalizzazione:TipoLocalizzazione,beacon:Beacon,posizione:Dictionary<String,String>) {
+    init(opera:Opera,status:StatoTappa,ordine:Int,tipoLocalizzazione:TipoLocalizzazione,beacon:Beacon,posizione:Dictionary<String,String>, copertina:String) {
         self.opera = opera
         self.status = status
         self.ordine = ordine
         self.tipoLocalizzazione = tipoLocalizzazione
         self.beacon = beacon
         self.posizione = posizione
+        self.copertina = copertina
     }
 }
