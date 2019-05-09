@@ -56,6 +56,10 @@ class CercaViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        let musei:[Museo] = DataManager.shared().musei
+        
+        
         searchInfo = tableViewData.filter({$0.prefix(searchText.count) == searchText})
         searching = true
         tableViewOne.reloadData()
