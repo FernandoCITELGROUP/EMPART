@@ -496,6 +496,7 @@
             <objects>
                 <tabBarController storyboardIdentifier="firstViewController" automaticallyAdjustsScrollViewInsets="NO" id="qeE-Oc-mQC" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="15b-OX-U3e"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="meL-ai-mQT">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -515,6 +516,7 @@
         <!--Tours-->
         <scene sceneID="NDz-FU-qbH">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uR-oS-hmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="phB-Oy-O06" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tours" id="Wtw-qS-PGf"/>
                     <toolbarItems/>
@@ -528,7 +530,6 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UmT-hu-dSe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4uR-oS-hmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="666.66666666666674" y="1281.6964285714284"/>
         </scene>
@@ -573,6 +574,7 @@
         <!--Settings-->
         <scene sceneID="nrD-IW-vlo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqH-iT-pEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ts-2W-LnP" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" id="2WF-0x-eWj"/>
                     <toolbarItems/>
@@ -585,7 +587,6 @@
                         <segue destination="Rao-4e-SaB" kind="relationship" relationship="rootViewController" id="lRA-eC-BgZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gqH-iT-pEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2776.811594202899" y="-756.02678571428567"/>
         </scene>
