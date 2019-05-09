@@ -40,6 +40,7 @@ class DettaglioMuseoViewController: UIViewController, UITableViewDelegate, UITab
         self.performSegue(withIdentifier: "goToTourDetails", sender: self)
     }
     
+    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "goToTourDetails")
         {

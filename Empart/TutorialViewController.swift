@@ -12,9 +12,34 @@ class TutorialViewController: UIPageViewController, UIPageViewControllerDelegate
 {
     // Attributes
     lazy var orderedViewControllers:[UIViewController] = {
-        return [self.newVc(viewController:"tutorialPage1"),self.newVc(viewController:"tutorialPage2"),self.newVc(viewController:"tutorialPage3")]
+        return self.createArrayOfViewController()
     }()
     
+    func createArrayOfViewController() -> [TutorialPageViewController]
+    {
+        var array:[TutorialPageViewController] = [TutorialPageViewController]()
+        
+        let viviViewController = storyboard?.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
+//        let viviViewController:TutorialPageViewController = TutorialPageViewController()
+        viviViewController.mainText = "VIVI"
+        viviViewController.titleOfButton = "SKIP"
+        viviViewController.imageName = ""
+        array.append(viviViewController)
+        
+        let conservaViewController:TutorialPageViewController = storyboard?.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
+        conservaViewController.mainText = "CONSERVA"
+        conservaViewController.titleOfButton = "SKIP"
+        viviViewController.imageName = ""
+        array.append(conservaViewController)
+        
+        let riviviViewController:TutorialPageViewController = storyboard?.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
+        riviviViewController.mainText = "RIVIVI"
+        riviviViewController.titleOfButton = "SKIP"
+        viviViewController.imageName = ""
+        array.append(riviviViewController)
+        
+        return array
+    }
     
     // UIPageViewControllerDataSource
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -64,11 +89,12 @@ class TutorialViewController: UIPageViewController, UIPageViewControllerDelegate
         super.viewDidLoad()
         self.dataSource = self
         if let firstViewController = orderedViewControllers.first{
-            setViewControllers([firstViewController], direction: .forward, animated: true, completion: nil)
+            setViewControllers([firstViewController as! TutorialPageViewController], direction: .forward, animated: true, completion: nil)
         }
         
         let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [UIPageViewController.self])
         appearance.pageIndicatorTintColor = UIColor.gray
         appearance.currentPageIndicatorTintColor = UIColor.black
+        
     }
 }

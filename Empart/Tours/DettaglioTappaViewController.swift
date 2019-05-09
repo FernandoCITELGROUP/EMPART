@@ -9,14 +9,23 @@
 import UIKit
 
 class DettaglioTappaViewController: UIViewController {
+    
+    // Attributes
+    var selectedItem:Tappa!
+    
+    // Outlets
+    @IBOutlet weak var previewImage: UIImageView!
+    
+    // Actions
     @IBAction func chiudiButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    // Events
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.previewImage.image = UIImage(named:self.selectedItem.opera.imagine)
     }
     
 

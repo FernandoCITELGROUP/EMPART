@@ -9,28 +9,22 @@
 import UIKit
 
 class TutorialPageViewController: UIViewController {
-
-    //Actions
-    @IBAction func btnSalta(_ sender: Any) {
+    
+    var mainText:String = ""
+    var titleOfButton:String = ""
+    var imageName:String = ""
+    
+    @IBOutlet weak var mainLabel: UILabel!
+    @IBOutlet weak var backgroundImage: UIImageView!
+    @IBOutlet weak var skipButton: UIButton!
+    
+    @IBAction func skipAction(_ sender: Any) {
         present( UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "firstViewController") as UIViewController, animated: true, completion: nil)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.mainLabel.text = mainText
+        self.skipButton.setTitle(self.titleOfButton, for: .normal)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
