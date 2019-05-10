@@ -17,6 +17,9 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
     //Outlets
     @IBOutlet weak var tappeTableView: UITableView!
     
+    @IBAction func iniziaTourAction(_ sender: Any) {
+       self.performSegue(withIdentifier: "goToVivi", sender: self)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.selectedItem.tappe.count
@@ -54,6 +57,11 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
         {
             let nextViewController = segue.destination as! DettaglioTappaViewController
             nextViewController.selectedItem = self.selectedTappa
+        }
+        if(segue.identifier == "goToVivi")
+        {
+            let nextViewController = segue.destination as! ViviViewController
+            nextViewController.liveTour = self.selectedItem
         }
     }
     

@@ -57,9 +57,9 @@
 		75FB9B212283099B00A0881E /* DettaglioTourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B202283099B00A0881E /* DettaglioTourViewController.swift */; };
 		75FB9B2322830AC500A0881E /* TappaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2222830AC500A0881E /* TappaTableViewCell.swift */; };
 		75FB9B2522831CD200A0881E /* DettaglioTappaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2422831CD200A0881E /* DettaglioTappaViewController.swift */; };
-		75FB9B2722841B0100A0881E /* Vivi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B2622841B0100A0881E /* Vivi.storyboard */; };
 		75FB9B2C228423E300A0881E /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2B228423E300A0881E /* Pulsing.swift */; };
 		75FB9B2E228465DF00A0881E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2D228465DF00A0881E /* DataManager.swift */; };
+		75FB9B3022848A7700A0881E /* ViviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2F22848A7700A0881E /* ViviViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,9 +115,9 @@
 		75FB9B202283099B00A0881E /* DettaglioTourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioTourViewController.swift; sourceTree = "<group>"; };
 		75FB9B2222830AC500A0881E /* TappaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappaTableViewCell.swift; sourceTree = "<group>"; };
 		75FB9B2422831CD200A0881E /* DettaglioTappaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioTappaViewController.swift; sourceTree = "<group>"; };
-		75FB9B2622841B0100A0881E /* Vivi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vivi.storyboard; sourceTree = "<group>"; };
 		75FB9B2B228423E300A0881E /* Pulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		75FB9B2D228465DF00A0881E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		75FB9B2F22848A7700A0881E /* ViviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViviViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +158,7 @@
 				7585604F2280819400EDB1AD /* LaunchScreen.storyboard */,
 				758560522280819400EDB1AD /* Info.plist */,
 				75FB9B002282225900A0881E /* Tours */,
+				75FB9B312285602B00A0881E /* Vivi */,
 				7585605B2280827E00EDB1AD /* MieiPercorsiViewController.swift */,
 				7585605D2280829400EDB1AD /* CercaViewController.swift */,
 				7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */,
@@ -173,7 +174,6 @@
 			children = (
 				7585604A2280819300EDB1AD /* Main.storyboard */,
 				75856059228081DE00EDB1AD /* Tutorial.storyboard */,
-				75FB9B2622841B0100A0881E /* Vivi.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -264,6 +264,14 @@
 			path = Opere;
 			sourceTree = "<group>";
 		};
+		75FB9B312285602B00A0881E /* Vivi */ = {
+			isa = PBXGroup;
+			children = (
+				75FB9B2F22848A7700A0881E /* ViviViewController.swift */,
+			);
+			path = Vivi;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,7 +334,6 @@
 				75FB9B1C2282EC9B00A0881E /* gio1th.png in Resources */,
 				75FB9B132282EB0700A0881E /* sal2.png in Resources */,
 				75FB9B122282EB0700A0881E /* mart1.png in Resources */,
-				75FB9B2722841B0100A0881E /* Vivi.storyboard in Resources */,
 				75FB9B1E2282EC9B00A0881E /* sal1th.png in Resources */,
 				75FB9B1B2282EC9B00A0881E /* mart1th.png in Resources */,
 				75FB9B042282B48800A0881E /* testScan.png in Resources */,
@@ -380,6 +387,7 @@
 				75FB9AE92281F4F300A0881E /* Emozione.swift in Sources */,
 				75FB9AEF2281F70300A0881E /* RicordoEmpart.swift in Sources */,
 				75FB9AF12281F72400A0881E /* EsperienzaEmpart.swift in Sources */,
+				75FB9B3022848A7700A0881E /* ViviViewController.swift in Sources */,
 				75FB9AE32281EF3E00A0881E /* Opera.swift in Sources */,
 				75FB9AE72281EFE200A0881E /* Beacon.swift in Sources */,
 				75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */,
