@@ -297,7 +297,7 @@
                                         </state>
                                         <connections>
                                             <action selector="iniziaTourAction:" destination="1hl-i2-yO6" eventType="touchDown" id="Xpg-k2-SWF"/>
-                                            <segue destination="r89-VS-N4d" kind="show" identifier="goToVivi" id="gWy-6b-AoD"/>
+                                            <segue destination="r89-VS-N4d" kind="show" identifier="goToTourScan" id="gWy-6b-AoD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -620,10 +620,10 @@
             </objects>
             <point key="canvasLocation" x="2776.811594202899" y="-756.02678571428567"/>
         </scene>
-        <!--Vivi View Controller-->
+        <!--Tour Scan View Controller-->
         <scene sceneID="YRT-Vd-roo">
             <objects>
-                <viewController id="r89-VS-N4d" customClass="ViviViewController" customModule="Empart" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="r89-VS-N4d" customClass="TourScanViewController" customModule="Empart" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KaU-ve-xm1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -672,11 +672,98 @@
                         <outlet property="backButton" destination="Kia-8R-ZhL" id="Irl-5u-CO2"/>
                         <outlet property="tourMapButton" destination="HB6-6g-DEE" id="dsd-d8-Ekc"/>
                         <outlet property="viviPulseView" destination="scO-Lc-mxh" id="hQQ-Mx-IIL"/>
+                        <segue destination="5nA-2U-03i" kind="show" id="1xw-yJ-BpV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gBQ-aF-vZk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3147.826086956522" y="2027.6785714285713"/>
+        </scene>
+        <!--Vivi View Controller-->
+        <scene sceneID="vK8-GK-7tG">
+            <objects>
+                <viewController storyboardIdentifier="ViviViewController" id="5nA-2U-03i" customClass="ViviViewController" customModule="Empart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cQV-Jw-eZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HNk-Do-DXZ">
+                                <rect key="frame" x="0.0" y="81" width="414" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wyo-Nt-ffz">
+                                        <rect key="frame" x="107" y="74" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="100"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXp-Bw-WnO">
+                                <rect key="frame" x="0.0" y="437" width="414" height="369"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kia-4y-mDz">
+                                        <rect key="frame" x="152" y="284" width="113" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="SALTA">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssA-cI-Lnb">
+                                        <rect key="frame" x="8" y="17" width="398" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titolo Opera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KLF-j9-VTi">
+                                        <rect key="frame" x="8" y="41" width="398" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anno, Tecnica" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKd-cF-sqb">
+                                        <rect key="frame" x="8" y="75" width="398" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPF-8N-q4l">
+                                        <rect key="frame" x="85" y="195" width="245" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <state key="normal" title="VIVI">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="qOU-ag-eFe"/>
+                    </view>
+                    <connections>
+                        <outlet property="annoTecnicaLabel" destination="PKd-cF-sqb" id="tDv-YU-bCO"/>
+                        <outlet property="autoreLabel" destination="ssA-cI-Lnb" id="EdM-Yo-nDe"/>
+                        <outlet property="copertinaImage" destination="Wyo-Nt-ffz" id="hXx-vD-SQ1"/>
+                        <outlet property="titoloOperaLabel" destination="KLF-j9-VTi" id="Ift-V7-a1y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8c-kT-lxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3869.5652173913045" y="2025"/>
         </scene>
     </scenes>
     <resources>

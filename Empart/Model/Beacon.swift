@@ -18,4 +18,10 @@ class Beacon{
         self.major = 0
         self.minor = 0
     }
+    
+    init(id:String, major:Int, minor:Int) {
+        self.id = id
+        self.major = major
+        self.minor = minor
+    }
 }

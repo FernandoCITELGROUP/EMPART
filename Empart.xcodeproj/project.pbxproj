@@ -59,7 +59,8 @@
 		75FB9B2522831CD200A0881E /* DettaglioTappaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2422831CD200A0881E /* DettaglioTappaViewController.swift */; };
 		75FB9B2C228423E300A0881E /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2B228423E300A0881E /* Pulsing.swift */; };
 		75FB9B2E228465DF00A0881E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2D228465DF00A0881E /* DataManager.swift */; };
-		75FB9B3022848A7700A0881E /* ViviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2F22848A7700A0881E /* ViviViewController.swift */; };
+		75FB9B3022848A7700A0881E /* TourScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2F22848A7700A0881E /* TourScanViewController.swift */; };
+		75FB9B3322858EA000A0881E /* ViviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B3222858EA000A0881E /* ViviViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,7 +118,8 @@
 		75FB9B2422831CD200A0881E /* DettaglioTappaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioTappaViewController.swift; sourceTree = "<group>"; };
 		75FB9B2B228423E300A0881E /* Pulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		75FB9B2D228465DF00A0881E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		75FB9B2F22848A7700A0881E /* ViviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViviViewController.swift; sourceTree = "<group>"; };
+		75FB9B2F22848A7700A0881E /* TourScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourScanViewController.swift; sourceTree = "<group>"; };
+		75FB9B3222858EA000A0881E /* ViviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViviViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,7 +269,8 @@
 		75FB9B312285602B00A0881E /* Vivi */ = {
 			isa = PBXGroup;
 			children = (
-				75FB9B2F22848A7700A0881E /* ViviViewController.swift */,
+				75FB9B2F22848A7700A0881E /* TourScanViewController.swift */,
+				75FB9B3222858EA000A0881E /* ViviViewController.swift */,
 			);
 			path = Vivi;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */,
 				75FB9B212283099B00A0881E /* DettaglioTourViewController.swift in Sources */,
 				75FB9AED2281F6A500A0881E /* MiaTappa.swift in Sources */,
+				75FB9B3322858EA000A0881E /* ViviViewController.swift in Sources */,
 				75FB9B2322830AC500A0881E /* TappaTableViewCell.swift in Sources */,
 				758560472280819300EDB1AD /* AppDelegate.swift in Sources */,
 				75FB9AFF22821F0A00A0881E /* DettaglioMuseoViewController.swift in Sources */,
@@ -387,7 +391,7 @@
 				75FB9AE92281F4F300A0881E /* Emozione.swift in Sources */,
 				75FB9AEF2281F70300A0881E /* RicordoEmpart.swift in Sources */,
 				75FB9AF12281F72400A0881E /* EsperienzaEmpart.swift in Sources */,
-				75FB9B3022848A7700A0881E /* ViviViewController.swift in Sources */,
+				75FB9B3022848A7700A0881E /* TourScanViewController.swift in Sources */,
 				75FB9AE32281EF3E00A0881E /* Opera.swift in Sources */,
 				75FB9AE72281EFE200A0881E /* Beacon.swift in Sources */,
 				75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */,

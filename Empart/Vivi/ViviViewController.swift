@@ -2,7 +2,7 @@
 //  ViviViewController.swift
 //  Empart
 //
-//  Created by fernando rosa on 09/05/2019.
+//  Created by fernando rosa on 10/05/2019.
 //  Copyright © 2019 fernando rosa. All rights reserved.
 //
 
@@ -10,29 +10,22 @@ import UIKit
 
 class ViviViewController: UIViewController {
 
-    // Outlets
-    @IBOutlet weak var viviPulseView: UIView!
-    @IBOutlet weak var backButton: UIButton!
-    @IBOutlet weak var tourMapButton: UIButton!
+    //Attribute
+    var selectedItem:Tappa!
+    
+    @IBOutlet weak var autoreLabel: UILabel!
+    @IBOutlet weak var titoloOperaLabel: UILabel!
+    @IBOutlet weak var annoTecnicaLabel: UILabel!
+    @IBOutlet weak var copertinaImage: UIImageView!
     
     
-    // Attributes for animation
-    var pulse : Pulsing!
-    var pulse2 : Pulsing!
-    var timer = Timer()
-   
-    // Attribute
-    var liveTour:TourEmpart!
-  
-    // Events
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viviPulseView.backgroundColor = UIColor.purple
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        self.addPulse()
-        self.scheduledTimerWithTimeInterval()
+
+        self.autoreLabel.text = self.selectedItem.opera.autore.nomeDarte
+        self.titoloOperaLabel.text = self.selectedItem.opera.titolo
+        self.annoTecnicaLabel.text = "\(self.selectedItem.opera.anno), \(self.selectedItem.opera.tecnica)"
+        self.copertinaImage.image = UIImage(named: self.selectedItem.opera.imagine)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,48 +33,15 @@ class ViviViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.tabBarController?.tabBar.isHidden = true
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        self.timer.invalidate()
-        super.viewWillDisappear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-        self.tabBarController?.tabBar.isHidden = false
-    }
 
-    // Functions
-    
-    func scheduledTimerWithTimeInterval(){
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.pulseFunction), userInfo: nil, repeats: true)
-    }
-    
-    @objc func pulseFunction(){
-        self.addPulse()
-    }
+    /*
+    // MARK: - Navigation
 
-    func addPulse()
-    {
-        if(self.pulse != nil && self.pulse2 != nil){
-            self.pulse.removeFromSuperlayer()
-            self.pulse2.removeFromSuperlayer()
-        }
-        
-        self.pulse = Pulsing(numberOfPulses: 1, radius: 300, position: self.viviPulseView.center)
-        self.pulse.animationDuration = 0.8
-        self.pulse.backgroundColor = UIColor.purple.cgColor
-        self.pulse2 = Pulsing(numberOfPulses: 1, radius: 600, position: self.viviPulseView.center)
-        self.pulse2.animationDuration = 0.8
-        self.pulse2.backgroundColor = UIColor.purple.cgColor
-        
-        self.view.layer.insertSublayer(self.pulse, below: viviPulseView.layer)
-        self.view.layer.insertSublayer(self.pulse2, below: viviPulseView.layer)
-        
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    
-    // Actions
-    @IBAction func backButtonAction(_ sender: Any) {
-        
-        self.pulse.removeFromSuperlayer()
-        self.pulse2.removeFromSuperlayer()
-        self.navigationController?.popViewController(animated: true)
-    }
+    */
+
 }
