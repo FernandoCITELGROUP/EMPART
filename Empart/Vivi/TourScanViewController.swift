@@ -57,7 +57,6 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
     }
 
     // Functions
-    
     func scheduledTimerWithTimeInterval(){
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.pulseFunction), userInfo: nil, repeats: true)
     }
@@ -103,7 +102,7 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
     
     func startScanning() {
         
-        // test data
+        // test data - Carico i dati del beacon per il quale mettermi in ascolto
         let tappa = self.liveTour.tappe[0]
         let beaconToFind = tappa.beacon
         
@@ -145,12 +144,13 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
     
     func goToViviViewController()
     {
+        // Ho trovato il beacon, sospendo il monitoring e passo alla view successiva mer caricare i dati del'opera da vivere
         self.myLocationManager.stopMonitoring(for: self.beaconRegion)
         self.myLocationManager.stopRangingBeacons(in: self.beaconRegion)
        
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViviViewController")
-        (nextViewController as! ViviViewController).selectedItem = self.liveTour.tappe[0]
+        (nextViewController as! ViviViewController).tappaSelezionata = self.liveTour.tappe[0]
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     

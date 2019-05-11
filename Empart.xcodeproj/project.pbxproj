@@ -61,6 +61,15 @@
 		75FB9B2E228465DF00A0881E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2D228465DF00A0881E /* DataManager.swift */; };
 		75FB9B3022848A7700A0881E /* TourScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2F22848A7700A0881E /* TourScanViewController.swift */; };
 		75FB9B3322858EA000A0881E /* ViviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B3222858EA000A0881E /* ViviViewController.swift */; };
+		75FB9B352285C3F900A0881E /* Pause-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B342285C3F900A0881E /* Pause-512.png */; };
+		75FB9B372285C47400A0881E /* 16052.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B362285C47400A0881E /* 16052.png */; };
+		75FB9B392285C4B800A0881E /* stop-squared-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B382285C4B800A0881E /* stop-squared-filled.png */; };
+		75FB9B462286097900A0881E /* Music50.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B422286097800A0881E /* Music50.png */; };
+		75FB9B472286097900A0881E /* Microphone50.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B432286097800A0881E /* Microphone50.png */; };
+		75FB9B482286097900A0881E /* camera50.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B442286097800A0881E /* camera50.png */; };
+		75FB9B492286097900A0881E /* heart50.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B452286097900A0881E /* heart50.png */; };
+		75FB9B4D22860A4A00A0881E /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B4C22860A4A00A0881E /* microphone.png */; };
+		75FB9B50228618DB00A0881E /* YXWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B4F228618DB00A0881E /* YXWaveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -120,6 +129,15 @@
 		75FB9B2D228465DF00A0881E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		75FB9B2F22848A7700A0881E /* TourScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourScanViewController.swift; sourceTree = "<group>"; };
 		75FB9B3222858EA000A0881E /* ViviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViviViewController.swift; sourceTree = "<group>"; };
+		75FB9B342285C3F900A0881E /* Pause-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause-512.png"; sourceTree = "<group>"; };
+		75FB9B362285C47400A0881E /* 16052.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16052.png; sourceTree = "<group>"; };
+		75FB9B382285C4B800A0881E /* stop-squared-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop-squared-filled.png"; sourceTree = "<group>"; };
+		75FB9B422286097800A0881E /* Music50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Music50.png; sourceTree = "<group>"; };
+		75FB9B432286097800A0881E /* Microphone50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Microphone50.png; sourceTree = "<group>"; };
+		75FB9B442286097800A0881E /* camera50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera50.png; sourceTree = "<group>"; };
+		75FB9B452286097900A0881E /* heart50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart50.png; sourceTree = "<group>"; };
+		75FB9B4C22860A4A00A0881E /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
+		75FB9B4F228618DB00A0881E /* YXWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXWaveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +170,7 @@
 		758560452280819300EDB1AD /* Empart */ = {
 			isa = PBXGroup;
 			children = (
+				75FB9B4E228618AD00A0881E /* Wave */,
 				75FB9AD32281BBD000A0881E /* TmpImages */,
 				7585606522816B1E00EDB1AD /* Model */,
 				75856058228081B900EDB1AD /* Storyboards */,
@@ -202,6 +221,14 @@
 		75FB9AD32281BBD000A0881E /* TmpImages */ = {
 			isa = PBXGroup;
 			children = (
+				75FB9B4C22860A4A00A0881E /* microphone.png */,
+				75FB9B442286097800A0881E /* camera50.png */,
+				75FB9B452286097900A0881E /* heart50.png */,
+				75FB9B432286097800A0881E /* Microphone50.png */,
+				75FB9B422286097800A0881E /* Music50.png */,
+				75FB9B382285C4B800A0881E /* stop-squared-filled.png */,
+				75FB9B362285C47400A0881E /* 16052.png */,
+				75FB9B342285C3F900A0881E /* Pause-512.png */,
 				75FB9B052282B7BF00A0881E /* qrcode.png */,
 				75FB9B032282B48800A0881E /* testScan.png */,
 				75FB9AF72282175400A0881E /* Tours */,
@@ -275,6 +302,14 @@
 			path = Vivi;
 			sourceTree = "<group>";
 		};
+		75FB9B4E228618AD00A0881E /* Wave */ = {
+			isa = PBXGroup;
+			children = (
+				75FB9B4F228618DB00A0881E /* YXWaveView.swift */,
+			);
+			path = Wave;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -335,13 +370,21 @@
 			files = (
 				75FB9AF5228212C700A0881E /* palazzoRealeCopertina.jpg in Resources */,
 				75FB9B1C2282EC9B00A0881E /* gio1th.png in Resources */,
+				75FB9B372285C47400A0881E /* 16052.png in Resources */,
 				75FB9B132282EB0700A0881E /* sal2.png in Resources */,
+				75FB9B352285C3F900A0881E /* Pause-512.png in Resources */,
 				75FB9B122282EB0700A0881E /* mart1.png in Resources */,
 				75FB9B1E2282EC9B00A0881E /* sal1th.png in Resources */,
+				75FB9B472286097900A0881E /* Microphone50.png in Resources */,
 				75FB9B1B2282EC9B00A0881E /* mart1th.png in Resources */,
+				75FB9B4D22860A4A00A0881E /* microphone.png in Resources */,
+				75FB9B462286097900A0881E /* Music50.png in Resources */,
 				75FB9B042282B48800A0881E /* testScan.png in Resources */,
 				75FB9AFB228218D900A0881E /* tourOroRosso.jpg in Resources */,
 				75FB9B112282EB0700A0881E /* flag1.png in Resources */,
+				75FB9B482286097900A0881E /* camera50.png in Resources */,
+				75FB9B392285C4B800A0881E /* stop-squared-filled.png in Resources */,
+				75FB9B492286097900A0881E /* heart50.png in Resources */,
 				75FB9B102282EB0700A0881E /* gio1.png in Resources */,
 				75FB9AF9228218D000A0881E /* tourStorie.jpg in Resources */,
 				75FB9B1A2282EC9B00A0881E /* flag2th.png in Resources */,
@@ -373,6 +416,7 @@
 				758560492280819300EDB1AD /* ViewController.swift in Sources */,
 				75FB9B2C228423E300A0881E /* Pulsing.swift in Sources */,
 				7585605E2280829400EDB1AD /* CercaViewController.swift in Sources */,
+				75FB9B50228618DB00A0881E /* YXWaveView.swift in Sources */,
 				75FB9B2522831CD200A0881E /* DettaglioTappaViewController.swift in Sources */,
 				758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */,
 				75FB9B212283099B00A0881E /* DettaglioTourViewController.swift in Sources */,
