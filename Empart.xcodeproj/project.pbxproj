@@ -70,6 +70,9 @@
 		75FB9B492286097900A0881E /* heart50.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B452286097900A0881E /* heart50.png */; };
 		75FB9B4D22860A4A00A0881E /* microphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B4C22860A4A00A0881E /* microphone.png */; };
 		75FB9B50228618DB00A0881E /* YXWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B4F228618DB00A0881E /* YXWaveView.swift */; };
+		75FB9B5222870E4300A0881E /* EmozioniTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B5122870E4300A0881E /* EmozioniTableViewController.swift */; };
+		75FB9B5422870E5D00A0881E /* EmozioneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B5322870E5D00A0881E /* EmozioneTableViewCell.swift */; };
+		75FB9B56228723E000A0881E /* prove loghi-15.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B55228723E000A0881E /* prove loghi-15.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +141,9 @@
 		75FB9B452286097900A0881E /* heart50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart50.png; sourceTree = "<group>"; };
 		75FB9B4C22860A4A00A0881E /* microphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone.png; sourceTree = "<group>"; };
 		75FB9B4F228618DB00A0881E /* YXWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXWaveView.swift; sourceTree = "<group>"; };
+		75FB9B5122870E4300A0881E /* EmozioniTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmozioniTableViewController.swift; sourceTree = "<group>"; };
+		75FB9B5322870E5D00A0881E /* EmozioneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmozioneTableViewCell.swift; sourceTree = "<group>"; };
+		75FB9B55228723E000A0881E /* prove loghi-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prove loghi-15.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 				75FB9AF72282175400A0881E /* Tours */,
 				75FB9AF62282173F00A0881E /* Musei */,
 				75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */,
+				75FB9B55228723E000A0881E /* prove loghi-15.png */,
 			);
 			path = TmpImages;
 			sourceTree = "<group>";
@@ -298,6 +305,8 @@
 			children = (
 				75FB9B2F22848A7700A0881E /* TourScanViewController.swift */,
 				75FB9B3222858EA000A0881E /* ViviViewController.swift */,
+				75FB9B5122870E4300A0881E /* EmozioniTableViewController.swift */,
+				75FB9B5322870E5D00A0881E /* EmozioneTableViewCell.swift */,
 			);
 			path = Vivi;
 			sourceTree = "<group>";
@@ -386,6 +395,7 @@
 				75FB9B392285C4B800A0881E /* stop-squared-filled.png in Resources */,
 				75FB9B492286097900A0881E /* heart50.png in Resources */,
 				75FB9B102282EB0700A0881E /* gio1.png in Resources */,
+				75FB9B56228723E000A0881E /* prove loghi-15.png in Resources */,
 				75FB9AF9228218D000A0881E /* tourStorie.jpg in Resources */,
 				75FB9B1A2282EC9B00A0881E /* flag2th.png in Resources */,
 				758560512280819400EDB1AD /* LaunchScreen.storyboard in Resources */,
@@ -412,11 +422,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FB9B5422870E5D00A0881E /* EmozioneTableViewCell.swift in Sources */,
 				75FB9ADF2281EC6700A0881E /* TourEmpart.swift in Sources */,
 				758560492280819300EDB1AD /* ViewController.swift in Sources */,
 				75FB9B2C228423E300A0881E /* Pulsing.swift in Sources */,
 				7585605E2280829400EDB1AD /* CercaViewController.swift in Sources */,
 				75FB9B50228618DB00A0881E /* YXWaveView.swift in Sources */,
+				75FB9B5222870E4300A0881E /* EmozioniTableViewController.swift in Sources */,
 				75FB9B2522831CD200A0881E /* DettaglioTappaViewController.swift in Sources */,
 				758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */,
 				75FB9B212283099B00A0881E /* DettaglioTourViewController.swift in Sources */,

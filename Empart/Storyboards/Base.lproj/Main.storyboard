@@ -932,11 +932,66 @@
                         <outlet property="startView" destination="EXp-Bw-WnO" id="4F1-hF-JLv"/>
                         <outlet property="stopButton" destination="4UE-W3-kqL" id="cpg-e3-ZKE"/>
                         <outlet property="titoloOperaLabel" destination="KLF-j9-VTi" id="Ift-V7-a1y"/>
+                        <segue destination="1ic-Cl-qwy" kind="showDetail" identifier="goToEmotion" id="z6F-uG-neT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8c-kT-lxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3869.5652173913045" y="2025"/>
+        </scene>
+        <!--Emozioni Table View Controller-->
+        <scene sceneID="K3t-Mk-rJQ">
+            <objects>
+                <tableViewController id="1ic-Cl-qwy" customClass="EmozioniTableViewController" customModule="Empart" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="gOb-9a-bKU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="emozioneCell" rowHeight="100" id="1pU-40-7UK" customClass="EmozioneTableViewCell" customModule="Empart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1pU-40-7UK" id="LdS-ho-Lxd">
+                                    <rect key="frame" x="0.0" y="0.0" width="370" height="99.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H4p-Xx-AVC">
+                                            <rect key="frame" x="20" y="19" width="60" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0061537960487633107" green="0.60090815355329952" blue="0.042731858391470867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="30"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emozione" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4D9-mc-2HS">
+                                            <rect key="frame" x="96" y="39" width="266" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="tintColor" red="0.03948373445531915" green="0.49603426395939088" blue="0.047681992480958856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="colorView" destination="H4p-Xx-AVC" id="7ch-5W-Gfh"/>
+                                    <outlet property="emozioneLabel" destination="4D9-mc-2HS" id="TnE-DU-WQF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1ic-Cl-qwy" id="HuA-Yq-4kz"/>
+                            <outlet property="delegate" destination="1ic-Cl-qwy" id="CV1-gZ-zoU"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AzL-jN-WLQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4617.391304347826" y="2029.6875"/>
         </scene>
     </scenes>
     <resources>
