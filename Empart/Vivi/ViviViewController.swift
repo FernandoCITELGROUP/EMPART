@@ -7,21 +7,27 @@
 //
 
 import UIKit
+import AVFoundation
 
 // Enum per la gestinde degli stati della view
 enum ViewStatus:Int{
     case Start = 0, Registrazione, Pause, Stop
 }
 
-class ViviViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class ViviViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, AVAudioRecorderDelegate{
 
     // Emotional wave
     fileprivate var waterView: YXWaveView?
     @IBOutlet weak var emotionView: UIView!
   
+    // Audio
+    var recordingSession: AVAudioSession!
+    var whistleRecorder: AVAudioRecorder!
+    
     //Attribute
     var tappaSelezionata:Tappa!
     var immaginiScattate:[UIImage] = [UIImage]()
+    var esperienza:EsperienzaEmpart = EsperienzaEmpart()
     var viewStatus:ViewStatus = ViewStatus.Start
     
     // Outlets
@@ -49,12 +55,11 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.buttonStatus(status: ViewStatus.Start)
         
         self.loadData()
-        //self.miaTappa = MiaTappa()
         
         let frame = CGRect(x: 0, y: 0, width: self.emotionView.bounds.size.width, height: self.emotionView.bounds.size.height)
         self.waterView = YXWaveView(frame: frame, color: UIColor.white)
         
-        self.waterView!.backgroundColor = UIColor.purple
+        self.waterView!.backgroundColor = UIColor(red: CGFloat(self.esperienza.emozione.colore["R"]!/255), green: CGFloat(DataManager.shared().esperienza.emozione.colore["G"]!/255), blue: CGFloat(self.esperienza.emozione.colore["B"]!/255), alpha: 1.0)
         self.waterView!.waveSpeed = 1
         self.waterView!.waveHeight = 15
         
@@ -71,6 +76,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.tabBarController?.tabBar.isHidden = true
+        self.waterView!.backgroundColor = UIColor(red: CGFloat(DataManager.shared().esperienza.emozione.colore["R"]!/255), green: CGFloat(DataManager.shared().esperienza.emozione.colore["G"]!/255), blue: CGFloat(DataManager.shared().esperienza.emozione.colore["B"]!/255), alpha: 1.0)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -129,9 +135,13 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     //Functions
     func loadData(){
         self.copertinaImage.image = UIImage(named:self.tappaSelezionata.opera.imagine)
+        self.copertinaImage.layer.borderColor = UIColor.white.cgColor
+        self.copertinaImage.layer.borderWidth = 3.0
         self.titoloOperaLabel.text = self.tappaSelezionata.opera.titolo
         self.autoreLabel.text = self.tappaSelezionata.opera.autore.nomeDarte
         self.annoTecnicaLabel.text = "\(self.tappaSelezionata.opera.anno), \(self.tappaSelezionata.opera.tecnica)"
+        
+        DataManager.shared().esperienza.emozione = DataManager.shared().emozioni[0]
     }
     
     func setupButtons(){
@@ -143,7 +153,16 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.microfonoButton.layer.borderColor = UIColor.purple.cgColor
         self.cameraButton.layer.borderColor = UIColor.purple.cgColor
         self.musicButton.layer.borderColor = UIColor.purple.cgColor
+        
+        let tapEmotion:UITapGestureRecognizer  = UITapGestureRecognizer(target: self, action: #selector(self.changeEmotionManually(_:)))
+        self.emotionView.addGestureRecognizer(tapEmotion)
+        self.emotionView.isUserInteractionEnabled = true
     }
+    
+    @objc func changeEmotionManually( _ sender: UITapGestureRecognizer){
+        performSegue(withIdentifier: "goToEmotion", sender: self)
+    }
+    
     
     func buttonStatus(status:ViewStatus){
         switch status {

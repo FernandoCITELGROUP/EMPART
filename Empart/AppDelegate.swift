@@ -54,6 +54,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         musei.append(museo4)
         
         DataManager.shared().musei = musei
+        
+        let gioia:Emozione = Emozione(nome: "GIOIA", descrizione: "", coloreR: 216.0, coloreG: 202.0, coloreB: 10.0, immagineIcona: "")
+        let tristezza:Emozione = Emozione(nome: "TRISTEZZA", descrizione: "", coloreR: 0.0, coloreG: 7.0, coloreB: 254.0, immagineIcona: "")
+        let rabbia:Emozione = Emozione(nome: "RABBIA", descrizione: "", coloreR: 166.0, coloreG: 7.0, coloreB: 11.0, immagineIcona: "")
+        let paura:Emozione = Emozione(nome: "PAURA", descrizione: "", coloreR: 111.0, coloreG: 9.0, coloreB: 135.0, immagineIcona: "")
+        let disgusto:Emozione = Emozione(nome: "DISGUSTO", descrizione: "", coloreR: 2.0, coloreG: 153.0, coloreB: 11.0, immagineIcona: "")
+        
+        var emozioni:[Emozione] = [Emozione]()
+        emozioni.append(gioia)
+        emozioni.append(tristezza)
+        emozioni.append(rabbia)
+        emozioni.append(paura)
+        emozioni.append(disgusto)
+        
+        DataManager.shared().emozioni = emozioni
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
