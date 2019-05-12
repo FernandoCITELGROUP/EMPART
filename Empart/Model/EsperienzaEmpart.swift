@@ -10,21 +10,23 @@ import Foundation
 import UIKit
 
 class EsperienzaEmpart {
-    var data:Date
+    var data:String
     var emozione:Emozione
     var foto:[UIImage]
     var frequenzaBattito:Int
     var audioAttivo:Bool
     var rilevazioneBattitoAttiva:Bool
     var musicaAttiva:Bool
+    var fileAudio:[URL]
     
     init() {
-        self.data = Date()
+        self.data = ""
         self.emozione = Emozione()
         self.foto = [UIImage]()
         self.frequenzaBattito = 0
         self.audioAttivo = false
         self.rilevazioneBattitoAttiva = false
         self.musicaAttiva = false
+        self.fileAudio = [URL]()
     }
 }

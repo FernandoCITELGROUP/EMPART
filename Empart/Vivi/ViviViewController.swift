@@ -23,10 +23,11 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     // Audio
     var recordingSession: AVAudioSession!
     var whistleRecorder: AVAudioRecorder!
+    var registrazioneAudioInCorso:Bool = false
+    var counterFile:Int = 0
     
     //Attribute
     var tappaSelezionata:Tappa!
-    var immaginiScattate:[UIImage] = [UIImage]()
     var esperienza:EsperienzaEmpart = EsperienzaEmpart()
     var viewStatus:ViewStatus = ViewStatus.Start
     
@@ -48,28 +49,19 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     var imagePicker: UIImagePickerController!
     
+    
+    @IBOutlet weak var scartaButton: UIButton!
+    @IBOutlet weak var salvaButton: UIButton!
+    @IBOutlet weak var viviButton: UIButton!
+    @IBOutlet weak var saltaButton: UIButton!
+    
     // Events
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupButtons()
         self.buttonStatus(status: ViewStatus.Start)
-        
         self.loadData()
-        
-        let frame = CGRect(x: 0, y: 0, width: self.emotionView.bounds.size.width, height: self.emotionView.bounds.size.height)
-        self.waterView = YXWaveView(frame: frame, color: UIColor.white)
-        
-        self.waterView!.backgroundColor = UIColor(red: CGFloat(self.esperienza.emozione.colore["R"]!/255), green: CGFloat(DataManager.shared().esperienza.emozione.colore["G"]!/255), blue: CGFloat(self.esperienza.emozione.colore["B"]!/255), alpha: 1.0)
-        self.waterView!.waveSpeed = 1
-        self.waterView!.waveHeight = 15
-        
-        // Add WaveView
-        self.emotionView.addSubview(waterView!)
-        self.emotionView.bringSubviewToFront(self.copertinaImage)
-        self.emotionView.bringSubviewToFront(self.playButton)
-        self.emotionView.bringSubviewToFront(self.stopButton)
-        self.emotionView.bringSubviewToFront(self.pauseButton)
-        
+        self.setupWaveAndEmotion()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -82,9 +74,15 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imagePicker.dismiss(animated: true, completion: nil)
         let image = info[.originalImage] as? UIImage
-        self.immaginiScattate.append(image!)
+        DataManager.shared().esperienza.foto.append(image!)
     }
 
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if !flag {
+            finishRecording(success: false)
+        }
+    }
+    
     // Actions
     
     @IBAction func viviAction(_ sender: Any) {
@@ -114,6 +112,22 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBAction func stopAction(_ sender: Any) {
         self.buttonStatus(status: ViewStatus.Stop)
         self.waterView!.stop()
+        
+        self.viviButton.isHidden = true
+        self.saltaButton.isHidden = true
+        self.scartaButton.isHidden = false
+        self.salvaButton.isHidden = false
+        
+        UIView.animate(withDuration: 0.4, delay: 0, options: .curveEaseOut, animations: {
+            
+            var startViewBottomFrame = self.startView.frame
+            startViewBottomFrame.origin.y -= startViewBottomFrame.size.height
+            
+            self.startView.frame = startViewBottomFrame
+        }, completion: { finished in
+             self.performSegue(withIdentifier: "goToEsperienzaDetails", sender: self)
+        })
+       
     }
     
     @IBAction func buttonAction(_ sender: UIButton) {
@@ -121,18 +135,42 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         pulse.animationDuration = 0.5
         pulse.backgroundColor = UIColor.purple.cgColor
         self.view.layer.insertSublayer(pulse, below: sender.layer)
-    }
-    
-    
-    @IBAction func cameraAction(_ sender: Any) {
-        self.imagePicker =  UIImagePickerController()
-        self.imagePicker.delegate = self
-        self.imagePicker.sourceType = .camera
         
-        present(self.imagePicker, animated: true, completion: nil)
+        switch sender.tag {
+        case 1001:
+            self.imagePicker =  UIImagePickerController()
+            self.imagePicker.delegate = self
+            self.imagePicker.sourceType = .camera
+            present(self.imagePicker, animated: true, completion: nil)
+            break
+        case 1002:
+            if(self.registrazioneAudioInCorso){
+                self.finishRecording(success: true)
+            }else{
+                self.startRecording()
+            }
+            break
+        default:
+            print("")
+        }
     }
     
     //Functions
+    func setupWaveAndEmotion(){
+        let frame = CGRect(x: 0, y: 0, width: self.emotionView.bounds.size.width, height: self.emotionView.bounds.size.height)
+        self.waterView = YXWaveView(frame: frame, color: UIColor.white)
+        self.waterView!.backgroundColor = UIColor(red: CGFloat(self.esperienza.emozione.colore["R"]!/255), green: CGFloat(DataManager.shared().esperienza.emozione.colore["G"]!/255), blue: CGFloat(self.esperienza.emozione.colore["B"]!/255), alpha: 1.0)
+        self.waterView!.waveSpeed = 1
+        self.waterView!.waveHeight = 15
+        
+        // Add WaveView
+        self.emotionView.addSubview(waterView!)
+        self.emotionView.bringSubviewToFront(self.copertinaImage)
+        self.emotionView.bringSubviewToFront(self.playButton)
+        self.emotionView.bringSubviewToFront(self.stopButton)
+        self.emotionView.bringSubviewToFront(self.pauseButton)
+    }
+    
     func loadData(){
         self.copertinaImage.image = UIImage(named:self.tappaSelezionata.opera.imagine)
         self.copertinaImage.layer.borderColor = UIColor.white.cgColor
@@ -193,6 +231,67 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
                 self.playButton.alpha = 0.0
                 self.pauseButton.alpha = 0.0
             })
+        }
+    }
+    
+    //Audio recording
+    class func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    class func getWhistleURL(counter:Int) -> URL {
+        return getDocumentsDirectory().appendingPathComponent("file\(counter).m4a")
+    }
+    
+    func startRecording() {
+        let audioURL = ViviViewController.getWhistleURL(counter: self.counterFile)
+        print(audioURL.absoluteString)
+        DataManager.shared().esperienza.fileAudio.append(audioURL)
+        let settings = [
+            AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
+            AVSampleRateKey: 12000,
+            AVNumberOfChannelsKey: 1,
+            AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
+        ]
+        
+        do {
+            whistleRecorder = try AVAudioRecorder(url: audioURL, settings: settings)
+            whistleRecorder.delegate = self
+            whistleRecorder.record()
+            self.registrazioneAudioInCorso = true
+        } catch {
+            finishRecording(success: false)
+        }
+    }
+    
+    func finishRecording(success: Bool) {
+        whistleRecorder.stop()
+        whistleRecorder = nil
+        self.registrazioneAudioInCorso = false
+        self.counterFile += 1
+        if success {
+            print("Record ok")
+            //navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextTapped))
+        } else {
+            print("Record failed")
+           // let ac = UIAlertController(title: "Record failed", message: "There was a problem recording your whistle; please try again.", preferredStyle: .alert)
+            //ac.addAction(UIAlertAction(title: "OK", style: .default))
+            //present(ac, animated: true)
+        }
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goToEmotion")
+        {
+           //let nextViewController = segue.destination as! EmozioniTableViewController
+        }
+        if(segue.identifier == "goToEsperienzaDetails")
+        {
+            let nextViewController = segue.destination as! EsperienzaDetailsViewController
+            nextViewController.esperienza = DataManager.shared().esperienza
         }
     }
 }

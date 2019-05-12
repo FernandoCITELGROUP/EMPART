@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750CDA9B22873DBA004D0FEB /* EsperienzaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */; };
+		750CDA9D22873DDB004D0FEB /* FotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */; };
+		750CDA9F22873DEC004D0FEB /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */; };
 		758560472280819300EDB1AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560462280819300EDB1AD /* AppDelegate.swift */; };
 		758560492280819300EDB1AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560482280819300EDB1AD /* ViewController.swift */; };
 		7585604C2280819300EDB1AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7585604A2280819300EDB1AD /* Main.storyboard */; };
@@ -76,6 +79,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsperienzaDetailsViewController.swift; sourceTree = "<group>"; };
+		750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoTableViewCell.swift; sourceTree = "<group>"; };
+		750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
 		758560432280819300EDB1AD /* Empart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Empart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758560462280819300EDB1AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		758560482280819300EDB1AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -176,14 +182,14 @@
 		758560452280819300EDB1AD /* Empart */ = {
 			isa = PBXGroup;
 			children = (
-				75FB9B4E228618AD00A0881E /* Wave */,
 				75FB9AD32281BBD000A0881E /* TmpImages */,
 				7585606522816B1E00EDB1AD /* Model */,
 				75856058228081B900EDB1AD /* Storyboards */,
-				758560462280819300EDB1AD /* AppDelegate.swift */,
 				7585604D2280819400EDB1AD /* Assets.xcassets */,
 				7585604F2280819400EDB1AD /* LaunchScreen.storyboard */,
 				758560522280819400EDB1AD /* Info.plist */,
+				758560462280819300EDB1AD /* AppDelegate.swift */,
+				75FB9B4E228618AD00A0881E /* Wave */,
 				75FB9B002282225900A0881E /* Tours */,
 				75FB9B312285602B00A0881E /* Vivi */,
 				7585605B2280827E00EDB1AD /* MieiPercorsiViewController.swift */,
@@ -307,6 +313,9 @@
 				75FB9B3222858EA000A0881E /* ViviViewController.swift */,
 				75FB9B5122870E4300A0881E /* EmozioniTableViewController.swift */,
 				75FB9B5322870E5D00A0881E /* EmozioneTableViewCell.swift */,
+				750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */,
+				750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */,
+				750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */,
 			);
 			path = Vivi;
 			sourceTree = "<group>";
@@ -436,12 +445,14 @@
 				75FB9B3322858EA000A0881E /* ViviViewController.swift in Sources */,
 				75FB9B2322830AC500A0881E /* TappaTableViewCell.swift in Sources */,
 				758560472280819300EDB1AD /* AppDelegate.swift in Sources */,
+				750CDA9F22873DEC004D0FEB /* AudioTableViewCell.swift in Sources */,
 				75FB9AFF22821F0A00A0881E /* DettaglioMuseoViewController.swift in Sources */,
 				75FB9B2E228465DF00A0881E /* DataManager.swift in Sources */,
 				75FB9AE52281EF5000A0881E /* Autore.swift in Sources */,
 				75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */,
 				75FB9AEB2281F5A400A0881E /* MioTour.swift in Sources */,
 				75FB9ADD2281EB8F00A0881E /* Museo.swift in Sources */,
+				750CDA9D22873DDB004D0FEB /* FotoTableViewCell.swift in Sources */,
 				75FB9AE12281EE3000A0881E /* Tappa.swift in Sources */,
 				758560622280B5E500EDB1AD /* TutorialViewController.swift in Sources */,
 				75FB9AE92281F4F300A0881E /* Emozione.swift in Sources */,
@@ -449,6 +460,7 @@
 				75FB9AF12281F72400A0881E /* EsperienzaEmpart.swift in Sources */,
 				75FB9B3022848A7700A0881E /* TourScanViewController.swift in Sources */,
 				75FB9AE32281EF3E00A0881E /* Opera.swift in Sources */,
+				750CDA9B22873DBA004D0FEB /* EsperienzaDetailsViewController.swift in Sources */,
 				75FB9AE72281EFE200A0881E /* Beacon.swift in Sources */,
 				75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */,
 				7585605C2280827E00EDB1AD /* MieiPercorsiViewController.swift in Sources */,
