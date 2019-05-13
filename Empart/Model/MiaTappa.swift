@@ -16,4 +16,9 @@ class MiaTappa{
         self.tappa = Tappa()
         self.ricordo = RicordoEmpart()
     }
+    
+    init(tappa:Tappa, ricordo:RicordoEmpart) {
+        self.tappa = tappa
+        self.ricordo = ricordo
+    }
 }

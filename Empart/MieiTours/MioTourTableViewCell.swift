@@ -10,6 +10,12 @@ import UIKit
 
 class MioTourTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var nomeMuseoLabel: UILabel!
+    @IBOutlet weak var dataTourLabel: UILabel!
+    @IBOutlet weak var nomeTourLabel: UILabel!
+    @IBOutlet weak var copertinaImageView: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

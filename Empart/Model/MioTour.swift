@@ -9,12 +9,16 @@
 import Foundation
 
 class MioTour: TourEmpart{
-    var data:Date
+    var data:String
     var tappeVissute:[MiaTappa]
+    var nomeMuseo: String
+    var citta:String
     
     override init() {
-        self.data = Date()
+        self.data = ""
         self.tappeVissute = [MiaTappa]()
+        self.nomeMuseo = ""
+        self.citta = ""
         super.init()
     }
 }

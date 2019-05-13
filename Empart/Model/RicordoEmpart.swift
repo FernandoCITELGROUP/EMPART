@@ -10,12 +10,12 @@ import Foundation
 
 class RicordoEmpart{
     var tappa:Tappa
-    var ricordo:RicordoEmpart
+    var ricordo:String
     var esperienza:EsperienzaEmpart
     
     init() {
         self.tappa = Tappa()
-        self.ricordo = RicordoEmpart()
+        self.ricordo = ""
         self.esperienza = EsperienzaEmpart()
     }
 }
