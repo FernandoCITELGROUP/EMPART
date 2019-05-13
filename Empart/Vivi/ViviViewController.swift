@@ -189,10 +189,10 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.playButton.alpha = 0.0
         self.pauseButton.alpha = 0.0
         
-        self.heartButton.layer.borderColor = UIColor.purple.cgColor
-        self.microfonoButton.layer.borderColor = UIColor.purple.cgColor
-        self.cameraButton.layer.borderColor = UIColor.purple.cgColor
-        self.musicButton.layer.borderColor = UIColor.purple.cgColor
+        self.heartButton.layer.borderColor =  UIColor(red: CGFloat(70.0/255), green: CGFloat(71.0/255), blue: CGFloat(149.0/255), alpha: 1.0).cgColor
+        self.microfonoButton.layer.borderColor = UIColor(red: CGFloat(70.0/255), green: CGFloat(71.0/255), blue: CGFloat(149.0/255), alpha: 1.0).cgColor
+        self.cameraButton.layer.borderColor = UIColor(red: CGFloat(70.0/255), green: CGFloat(71.0/255), blue: CGFloat(149.0/255), alpha: 1.0).cgColor
+        self.musicButton.layer.borderColor = UIColor(red: CGFloat(70.0/255), green: CGFloat(71.0/255), blue: CGFloat(149.0/255), alpha: 1.0).cgColor
         
         let tapEmotion:UITapGestureRecognizer  = UITapGestureRecognizer(target: self, action: #selector(self.changeEmotionManually(_:)))
         self.emotionView.addGestureRecognizer(tapEmotion)

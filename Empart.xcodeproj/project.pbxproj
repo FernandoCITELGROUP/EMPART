@@ -26,6 +26,9 @@
 		750CDAC5228A08CA004D0FEB /* riviviAudio.png in Resources */ = {isa = PBXBuildFile; fileRef = 750CDAC1228A08C9004D0FEB /* riviviAudio.png */; };
 		750CDAC6228A08CA004D0FEB /* riviviCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 750CDAC2228A08C9004D0FEB /* riviviCamera.png */; };
 		750CDAC8228A0A15004D0FEB /* riviviPlayVideo.png in Resources */ = {isa = PBXBuildFile; fileRef = 750CDAC7228A0A15004D0FEB /* riviviPlayVideo.png */; };
+		750CDAD2228A128F004D0FEB /* viviPause.png in Resources */ = {isa = PBXBuildFile; fileRef = 750CDACF228A128E004D0FEB /* viviPause.png */; };
+		750CDAD3228A128F004D0FEB /* viviPlayRec.png in Resources */ = {isa = PBXBuildFile; fileRef = 750CDAD0228A128F004D0FEB /* viviPlayRec.png */; };
+		750CDAD4228A128F004D0FEB /* viviStop.png in Resources */ = {isa = PBXBuildFile; fileRef = 750CDAD1228A128F004D0FEB /* viviStop.png */; };
 		758560472280819300EDB1AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560462280819300EDB1AD /* AppDelegate.swift */; };
 		758560492280819300EDB1AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560482280819300EDB1AD /* ViewController.swift */; };
 		7585604C2280819300EDB1AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7585604A2280819300EDB1AD /* Main.storyboard */; };
@@ -109,6 +112,9 @@
 		750CDAC1228A08C9004D0FEB /* riviviAudio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riviviAudio.png; sourceTree = "<group>"; };
 		750CDAC2228A08C9004D0FEB /* riviviCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riviviCamera.png; sourceTree = "<group>"; };
 		750CDAC7228A0A15004D0FEB /* riviviPlayVideo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = riviviPlayVideo.png; sourceTree = "<group>"; };
+		750CDACF228A128E004D0FEB /* viviPause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viviPause.png; sourceTree = "<group>"; };
+		750CDAD0228A128F004D0FEB /* viviPlayRec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viviPlayRec.png; sourceTree = "<group>"; };
+		750CDAD1228A128F004D0FEB /* viviStop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viviStop.png; sourceTree = "<group>"; };
 		758560432280819300EDB1AD /* Empart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Empart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		758560462280819300EDB1AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		758560482280819300EDB1AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -268,6 +274,9 @@
 		75FB9AD32281BBD000A0881E /* TmpImages */ = {
 			isa = PBXGroup;
 			children = (
+				750CDACF228A128E004D0FEB /* viviPause.png */,
+				750CDAD0228A128F004D0FEB /* viviPlayRec.png */,
+				750CDAD1228A128F004D0FEB /* viviStop.png */,
 				750CDAC7228A0A15004D0FEB /* riviviPlayVideo.png */,
 				750CDAC1228A08C9004D0FEB /* riviviAudio.png */,
 				750CDAC2228A08C9004D0FEB /* riviviCamera.png */,
@@ -451,10 +460,12 @@
 				750CDAC8228A0A15004D0FEB /* riviviPlayVideo.png in Resources */,
 				750CDAC3228A08CA004D0FEB /* riviviMusica.png in Resources */,
 				758560512280819400EDB1AD /* LaunchScreen.storyboard in Resources */,
+				750CDAD2228A128F004D0FEB /* viviPause.png in Resources */,
 				75FB9B1F2282EC9B00A0881E /* sal2th.png in Resources */,
 				75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */,
 				75FB9AF3228212AA00A0881E /* museoArcheologicoCopertina.jpg in Resources */,
 				750CDAB82289F3F1004D0FEB /* riviviPlay.png in Resources */,
+				750CDAD3228A128F004D0FEB /* viviPlayRec.png in Resources */,
 				75FB9B062282B7BF00A0881E /* qrcode.png in Resources */,
 				750CDAC4228A08CA004D0FEB /* riviviCuore.png in Resources */,
 				750CDAB32289A9EA004D0FEB /* musica1.png in Resources */,
@@ -468,6 +479,7 @@
 				75FB9B1D2282EC9B00A0881E /* flag1th.png in Resources */,
 				7585604C2280819300EDB1AD /* Main.storyboard in Resources */,
 				75FB9AFD228219AA00A0881E /* tourCaravaggio.png in Resources */,
+				750CDAD4228A128F004D0FEB /* viviStop.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
