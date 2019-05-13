@@ -69,6 +69,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.tabBarController?.tabBar.isHidden = true
         self.waterView!.backgroundColor = UIColor(red: CGFloat(DataManager.shared().esperienza.emozione.colore["R"]!/255), green: CGFloat(DataManager.shared().esperienza.emozione.colore["G"]!/255), blue: CGFloat(DataManager.shared().esperienza.emozione.colore["B"]!/255), alpha: 1.0)
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -125,7 +126,8 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
             
             self.startView.frame = startViewBottomFrame
         }, completion: { finished in
-             self.performSegue(withIdentifier: "goToEsperienzaDetails", sender: self)
+            self.emotionView.isUserInteractionEnabled = false
+            self.performSegue(withIdentifier: "goToEsperienzaDetails", sender: self)
         })
        
     }
@@ -158,8 +160,8 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     //Functions
     func setupWaveAndEmotion(){
         let frame = CGRect(x: 0, y: 0, width: self.emotionView.bounds.size.width, height: self.emotionView.bounds.size.height)
-        self.waterView = YXWaveView(frame: frame, color: UIColor.white)
-        self.waterView!.backgroundColor = UIColor(red: CGFloat(self.esperienza.emozione.colore["R"]!/255), green: CGFloat(DataManager.shared().esperienza.emozione.colore["G"]!/255), blue: CGFloat(self.esperienza.emozione.colore["B"]!/255), alpha: 1.0)
+        self.waterView = YXWaveView(frame: frame, color: UIColor(red: CGFloat(243.0/255), green: CGFloat(241.0/255), blue: CGFloat(226.0/255), alpha: 1.0))
+        self.waterView!.backgroundColor = UIColor(red: CGFloat(244.0/255), green: CGFloat(188.0/255), blue: CGFloat(71.0/255), alpha: 1.0)
         self.waterView!.waveSpeed = 1
         self.waterView!.waveHeight = 15
         
@@ -173,7 +175,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     
     func loadData(){
         self.copertinaImage.image = UIImage(named:self.tappaSelezionata.opera.imagine)
-        self.copertinaImage.layer.borderColor = UIColor.white.cgColor
+        self.copertinaImage.layer.borderColor = UIColor(red: 105.0/255, green: 61.0/255, blue: 208.0/255, alpha: 1.0).cgColor
         self.copertinaImage.layer.borderWidth = 3.0
         self.titoloOperaLabel.text = self.tappaSelezionata.opera.titolo
         self.autoreLabel.text = self.tappaSelezionata.opera.autore.nomeDarte

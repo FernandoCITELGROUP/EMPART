@@ -35,6 +35,14 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         self.pulseColor = UIColor.purple
         self.viviPulseView.backgroundColor = self.pulseColor
+        
+        let layer = CAGradientLayer()
+        layer.frame = self.view.bounds
+        layer.colors = [UIColor(red: CGFloat(244.0/255), green: CGFloat(138.0/255), blue: CGFloat(7.0/255), alpha: 1.0), UIColor(red: CGFloat(244.0/255), green: CGFloat(188.0/255), blue: CGFloat(71.0/255), alpha: 1.0)]
+        layer.startPoint = CGPoint(x: 0,y: 0)
+        layer.endPoint = CGPoint(x: 0,y: 1)
+        self.view.layer.addSublayer(layer)
+        
         self.setupLocationManager()
     }
     
@@ -125,19 +133,19 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
         print(distance.hashValue)
         switch distance {
             case .immediate:
-                self.pulseColor = UIColor.green
+                self.pulseColor = UIColor.init(red: 70.0/255, green: 71.0/255, blue: 149.0/255, alpha: 1.0)
                 self.goToViviViewController()
             case .unknown:
-                self.pulseColor = UIColor.purple
+                self.pulseColor = UIColor.init(red: 105.0/255, green: 61.0/255, blue: 208.0/255, alpha: 1.0)
             
             case .far:
-                self.pulseColor = UIColor.blue
+                self.pulseColor = UIColor.init(red: 157.0/255, green: 157.0/255, blue: 201.0/255, alpha: 1.0)
             
             case .near:
-                self.pulseColor = UIColor.green
+                self.pulseColor = UIColor.init(red: 157.0/255, green: 157.0/255, blue: 201.0/255, alpha: 1.0)
             
             default:
-                self.pulseColor = UIColor.purple
+                self.pulseColor = UIColor.init(red: 105.0/255, green: 61.0/255, blue: 208.0/255, alpha: 1.0)
         }
         self.viviPulseView.backgroundColor = self.pulseColor
     }

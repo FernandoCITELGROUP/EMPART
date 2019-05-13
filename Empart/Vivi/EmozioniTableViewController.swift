@@ -13,11 +13,9 @@ class EmozioniTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
+        
     }
 
     // MARK: - Table view data source
@@ -37,19 +35,21 @@ class EmozioniTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "emozioneCell", for: indexPath) as! EmozioneTableViewCell
 
         cell.colorView.backgroundColor =  UIColor(red: CGFloat(DataManager.shared().emozioni[indexPath.row].colore["R"]!)/255.0, green: CGFloat(DataManager.shared().emozioni[indexPath.row].colore["G"]!)/255.0, blue: CGFloat(DataManager.shared().emozioni[indexPath.row].colore["B"]!)/255.0, alpha: 1.0)
-        cell.emozioneLabel.text = DataManager.shared().emozioni[indexPath.row].nome.uppercased()
+        cell.emozioneLabel.text = DataManager.shared().emozioni[indexPath.row].nome
         
         if(DataManager.shared().emozioni[indexPath.row].nome == DataManager.shared().esperienza.emozione.nome) {
-            cell.accessoryType = .checkmark
+            cell.containerView.layer.borderColor = UIColor(red: CGFloat(DataManager.shared().emozioni[indexPath.row].colore["R"]!)/255.0, green: CGFloat(DataManager.shared().emozioni[indexPath.row].colore["G"]!)/255.0, blue: CGFloat(DataManager.shared().emozioni[indexPath.row].colore["B"]!)/255.0, alpha: 1.0).cgColor
+            cell.containerView.layer.borderWidth = 2.0
         }else{
             cell.accessoryType = .none
+            cell.containerView.layer.borderWidth = 0.0
         }
         return cell
     }
  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
          DataManager.shared().esperienza.emozione = DataManager.shared().emozioni[indexPath.row]
-         self.dismiss(animated: true, completion: nil)
+         self.navigationController?.popViewController(animated: true)
     }
 
     /*

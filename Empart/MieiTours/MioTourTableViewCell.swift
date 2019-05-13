@@ -1,20 +1,15 @@
 //
-//  EmozioneTableViewCTableViewCell.swift
+//  MioTourTableViewCell.swift
 //  Empart
 //
-//  Created by fernando rosa on 11/05/2019.
+//  Created by fernando rosa on 13/05/2019.
 //  Copyright © 2019 fernando rosa. All rights reserved.
 //
 
 import UIKit
 
-class EmozioneTableViewCell: UITableViewCell {
+class MioTourTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var colorView: UIView!
-    @IBOutlet weak var emozioneLabel: UILabel!
-    @IBOutlet weak var containerView: UIView!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

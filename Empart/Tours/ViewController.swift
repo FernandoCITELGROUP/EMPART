@@ -44,6 +44,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.musei = DataManager.shared().musei
         self.museiTableView.delegate = self
         self.museiTableView.dataSource = self
+        
+        self.customizeNavAndTab()
     }
     
     // MARK: - Navigation

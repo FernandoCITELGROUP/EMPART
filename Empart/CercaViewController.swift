@@ -86,7 +86,7 @@ class CercaViewController: UIViewController, UITableViewDelegate, UITableViewDat
         self.searchBarOne.delegate = self
         self.searchBarOne.placeholder = "Città, Museo, Tour, Autore"
         
-        // Do any additional setup after loading the view.
+        self.customizeNavAndTab()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
