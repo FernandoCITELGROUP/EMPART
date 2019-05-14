@@ -8,6 +8,12 @@
 
 import UIKit
 import AVFoundation
+import SwiftVideoGenerator
+
+
+// solo per test
+import AVKit
+import MobileCoreServices
 
 // Enum per la gestinde degli stati della view
 enum ViewStatus:Int{
@@ -62,6 +68,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.buttonStatus(status: ViewStatus.Start)
         self.loadData()
         self.setupWaveAndEmotion()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -284,6 +291,14 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         }
     }
     
+    @IBAction func salvaAction(_ sender: Any) {
+        
+        self.esperienza.foto = DataManager.shared().esperienza.foto
+        self.esperienza.fileAudio = DataManager.shared().esperienza.fileAudio
+        self.createVideo(audio1: "bensound-creativeminds", fileExtension: "mp3")
+    }
+    
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "goToEmotion")
@@ -294,6 +309,35 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         {
             let nextViewController = segue.destination as! EsperienzaDetailsViewController
             nextViewController.esperienza = DataManager.shared().esperienza
+        }
+    }
+    
+    
+    
+    // MARK: - Video Generator
+    func createVideo(audio1: String, fileExtension:String){
+        if let audioURL1 = Bundle.main.url(forResource: audio1, withExtension: fileExtension) {
+            
+            VideoGenerator.current.fileName = "test"
+            VideoGenerator.current.shouldOptimiseImageForVideo = true
+            VideoGenerator.current.generate(withImages:self.esperienza.foto, andAudios: [audioURL1], andType: .singleAudioMultipleImage, { (progress) in
+                print(progress)
+            }, success: { (url) in
+                print(url)
+                // salvo il file
+                let player = AVPlayer(url: url)
+                let vcPlayer = AVPlayerViewController()
+                vcPlayer.player = player
+                self.present(vcPlayer, animated: true, completion: {
+                    vcPlayer.player?.play()
+                })
+                
+            }, failure: { (error) in
+                print(error)
+                
+            })
+        } else {
+            
         }
     }
 }

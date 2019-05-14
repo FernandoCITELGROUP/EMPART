@@ -42,6 +42,7 @@
 		75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */; };
 		758560622280B5E500EDB1AD /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560612280B5E500EDB1AD /* TutorialViewController.swift */; };
 		758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */; };
+		75BFDC85228AF1750060DBFC /* bensound-creativeminds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75BFDC84228AF1750060DBFC /* bensound-creativeminds.mp3 */; };
 		75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */; };
 		75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */; };
 		75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */; };
@@ -92,9 +93,13 @@
 		75FB9B5222870E4300A0881E /* EmozioniTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B5122870E4300A0881E /* EmozioniTableViewController.swift */; };
 		75FB9B5422870E5D00A0881E /* EmozioneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B5322870E5D00A0881E /* EmozioneTableViewCell.swift */; };
 		75FB9B56228723E000A0881E /* prove loghi-15.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B55228723E000A0881E /* prove loghi-15.png */; };
+		FB6ECEDAA9917359331161F0 /* Pods_Empart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7E2074F4F6B82CC2348DB7 /* Pods_Empart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DD416D62EC7E4701537CEC7 /* Pods-Empart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empart.release.xcconfig"; path = "Target Support Files/Pods-Empart/Pods-Empart.release.xcconfig"; sourceTree = "<group>"; };
+		3BE341FD7A770FB09304426B /* Pods-Empart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empart.debug.xcconfig"; path = "Target Support Files/Pods-Empart/Pods-Empart.debug.xcconfig"; sourceTree = "<group>"; };
+		3D7E2074F4F6B82CC2348DB7 /* Pods_Empart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsperienzaDetailsViewController.swift; sourceTree = "<group>"; };
 		750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoTableViewCell.swift; sourceTree = "<group>"; };
 		750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
@@ -132,6 +137,7 @@
 		7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniViewController.swift; sourceTree = "<group>"; };
 		758560612280B5E500EDB1AD /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		75BFDC84228AF1750060DBFC /* bensound-creativeminds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-creativeminds.mp3"; sourceTree = "<group>"; };
 		75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0462.jpg; sourceTree = "<group>"; };
 		75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capodimonteCopertina.jpg; sourceTree = "<group>"; };
 		75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseoTableViewCell.swift; sourceTree = "<group>"; };
@@ -189,12 +195,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB6ECEDAA9917359331161F0 /* Pods_Empart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71AEFD3DD339AEF61284CA74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BE341FD7A770FB09304426B /* Pods-Empart.debug.xcconfig */,
+				0DD416D62EC7E4701537CEC7 /* Pods-Empart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		750CDAA022896240004D0FEB /* MieiTours */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +233,7 @@
 		750CDAD8228AC057004D0FEB /* TmpVideos */ = {
 			isa = PBXGroup;
 			children = (
+				75BFDC84228AF1750060DBFC /* bensound-creativeminds.mp3 */,
 				750CDAE5228ADF1A004D0FEB /* video.mov */,
 			);
 			path = TmpVideos;
@@ -234,6 +251,8 @@
 			children = (
 				758560452280819300EDB1AD /* Empart */,
 				758560442280819300EDB1AD /* Products */,
+				71AEFD3DD339AEF61284CA74 /* Pods */,
+				8E9044353708417768664451 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -408,6 +427,14 @@
 			path = Wave;
 			sourceTree = "<group>";
 		};
+		8E9044353708417768664451 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D7E2074F4F6B82CC2348DB7 /* Pods_Empart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -415,9 +442,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 758560552280819400EDB1AD /* Build configuration list for PBXNativeTarget "Empart" */;
 			buildPhases = (
+				D0712C758E094B8A996F03F8 /* [CP] Check Pods Manifest.lock */,
 				7585603F2280819300EDB1AD /* Sources */,
 				758560402280819300EDB1AD /* Frameworks */,
 				758560412280819300EDB1AD /* Resources */,
+				FB1222D4948486AB7E2339EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -479,6 +508,7 @@
 				750CDAB12289A9EA004D0FEB /* audio1.png in Resources */,
 				75FB9B112282EB0700A0881E /* flag1.png in Resources */,
 				750CDAB22289A9EA004D0FEB /* cuore1.png in Resources */,
+				75BFDC85228AF1750060DBFC /* bensound-creativeminds.mp3 in Resources */,
 				750CDAE6228ADF1A004D0FEB /* video.mov in Resources */,
 				750CDAC6228A08CA004D0FEB /* riviviCamera.png in Resources */,
 				75FB9B392285C4B800A0881E /* stop-squared-filled.png in Resources */,
@@ -515,6 +545,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D0712C758E094B8A996F03F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Empart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB1222D4948486AB7E2339EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Empart/Pods-Empart-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftVideoGenerator/SwiftVideoGenerator.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftVideoGenerator.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Empart/Pods-Empart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7585603F2280819300EDB1AD /* Sources */ = {
@@ -704,6 +783,7 @@
 		};
 		758560562280819400EDB1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE341FD7A770FB09304426B /* Pods-Empart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -724,6 +804,7 @@
 		};
 		758560572280819400EDB1AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD416D62EC7E4701537CEC7 /* Pods-Empart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

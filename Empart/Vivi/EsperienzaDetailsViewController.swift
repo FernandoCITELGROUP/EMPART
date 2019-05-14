@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 
+
 class EsperienzaDetailsViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
     
     var esperienza:EsperienzaEmpart!
