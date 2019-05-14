@@ -1384,11 +1384,10 @@
                                 <rect key="frame" x="0.0" y="135" width="414" height="259"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-w2-TfX">
-                                        <rect key="frame" x="182" y="104" width="50" height="50"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capodimonteCopertina.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gD2-cQ-bsh">
+                                        <rect key="frame" x="7" y="8" width="400" height="243"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="riviviPlayVideo.png"/>
-                                    </button>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.73725490199999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
@@ -1422,11 +1421,21 @@
                                 <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-w2-TfX">
+                                <rect key="frame" x="182" y="235" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="riviviPlayVideo.png"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="UDH-7V-OQE" eventType="touchUpInside" id="F8t-5E-dfN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Uu7-Km-yft"/>
                     </view>
                     <connections>
+                        <outlet property="playButton" destination="hBw-w2-TfX" id="Xpd-eT-yJT"/>
+                        <outlet property="previewVideo" destination="gD2-cQ-bsh" id="FB7-vJ-FdG"/>
                         <outlet property="titoloLabel" destination="75g-AY-5Fu" id="3Qq-AE-zOL"/>
                     </connections>
                 </viewController>

@@ -79,13 +79,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         mioTour.tappe.append(Tappa(opera: Opera(titolo: "San Giovanni Battista", descrizione: "", imagine: "gio1.png", autore: Autore(), anno: 1610, tecnica: "Olio su tela"), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Beacon, beacon: Beacon(), posizione: Dictionary<String,String>(), copertina: "gio1th.png"))
         
         
-        mioTour.tappeVissute.append(MiaTappa(tappa: Tappa(opera: Opera(titolo: "Flagellazione", descrizione: "", imagine: "flag1.png", autore: Autore(nome: "Michelangelo", cognome: "Merisi", nomeDarte: "CARAVAGGIO", immagine: ""), anno: 1607, tecnica: "Olio su tela"), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Beacon, beacon: Beacon(id: "5A4BCFCE-174E-4BAC-A814-092E77F6B7E5", major: 123, minor: 456), posizione: Dictionary<String,String>(), copertina: "flag1th.png"), ricordo: RicordoEmpart()))
+       
+        
+        mioTour.tappeVissute.append(MiaTappa(tappa: Tappa(opera: Opera(titolo: "Flagellazione", descrizione: "", imagine: "flag1.png", autore: Autore(nome: "Michelangelo", cognome: "Merisi", nomeDarte: "CARAVAGGIO", immagine: ""), anno: 1607, tecnica: "Olio su tela"), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Beacon, beacon: Beacon(id: "5A4BCFCE-174E-4BAC-A814-092E77F6B7E5", major: 123, minor: 456), posizione: Dictionary<String,String>(), copertina: "flag1th.png"), ricordo: RicordoEmpart(esperienza: EsperienzaEmpart(), urlVideoGenerato: self.copyFileToDocumentsFolder(nameForFile: "video", extForFile: "mp4"))))
+        
+       
         mioTour.tappeVissute.append(MiaTappa(tappa: Tappa(opera: Opera(titolo: "Salomè con la testa del Battista", descrizione: "", imagine: "sal1.png", autore: Autore(), anno: 1609, tecnica: "Olio su tela"), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Beacon, beacon: Beacon(), posizione: Dictionary<String,String>(), copertina: "sal1th.png"), ricordo: RicordoEmpart()))
         mioTour.tappeVissute.append(MiaTappa(tappa: Tappa(opera: Opera(titolo: "Martirio di sant’Orsola", descrizione: "", imagine: "mart1.png", autore: Autore(), anno: 1610, tecnica: "Olio su tela"), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Beacon, beacon: Beacon(), posizione: Dictionary<String,String>(), copertina: "mart1th.png"), ricordo: RicordoEmpart()))
         mioTour.tappeVissute.append(MiaTappa(tappa: Tappa(opera: Opera(titolo: "San Giovanni Battista", descrizione: "", imagine: "gio1.png", autore: Autore(), anno: 1610, tecnica: "Olio su tela"), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Beacon, beacon: Beacon(), posizione: Dictionary<String,String>(), copertina: "gio1th.png"), ricordo: RicordoEmpart()))
         
         DataManager.shared().mieiTour.append(mioTour)
         
+    }
+    
+    func copyFileToDocumentsFolder(nameForFile: String, extForFile: String) -> URL{
+        
+        let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+        let destURL = documentsURL!.appendingPathComponent(nameForFile).appendingPathExtension(extForFile)
+        guard let sourceURL = Bundle.main.url(forResource: nameForFile, withExtension: extForFile)
+            else {
+                print("Source File not found.")
+                return URL(fileURLWithPath: "")
+        }
+        let fileManager = FileManager.default
+        do {
+            print(destURL)
+            try fileManager.copyItem(at: sourceURL, to: destURL)
+        } catch {
+            print("Unable to copy file")
+            return destURL
+        }
+        return destURL
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

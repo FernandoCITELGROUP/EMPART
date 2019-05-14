@@ -9,13 +9,31 @@
 import Foundation
 
 class RicordoEmpart{
-    var tappa:Tappa
-    var ricordo:String
+    var videoGenerato:URL
     var esperienza:EsperienzaEmpart
     
     init() {
-        self.tappa = Tappa()
-        self.ricordo = ""
+        self.videoGenerato = URL(fileURLWithPath: "")
         self.esperienza = EsperienzaEmpart()
+    }
+    
+    init(esperienza:EsperienzaEmpart, nomeVideoGenerato:String) {
+        self.videoGenerato =  RicordoEmpart.getWhistleURL(nomeFile: nomeVideoGenerato)
+        self.esperienza = esperienza
+    }
+    
+    init(esperienza:EsperienzaEmpart, urlVideoGenerato:URL) {
+        self.videoGenerato =  urlVideoGenerato
+        self.esperienza = esperienza
+    }
+    
+    class func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    class func getWhistleURL(nomeFile:String) -> URL {
+        return getDocumentsDirectory().appendingPathComponent("\(nomeFile)")
     }
 }
