@@ -22,6 +22,7 @@ class RiviviViewController: UIViewController {
         self.titoloLabel.text = self.selectedItem.tappa.opera.titolo
         self.previewVideo.image = self.generateThumbnail(path: self.selectedItem!.ricordo.videoGenerato)
         self.view.bringSubviewToFront(self.playButton)
+        
     }
     
     @IBAction func playVideo(_ sender: Any) {

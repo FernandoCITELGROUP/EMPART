@@ -14,7 +14,6 @@ class TutorialPageViewController: UIViewController {
     var titleOfButton:String = ""
     var imageName:String = ""
     
-    @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var skipButton: UIButton!
     
@@ -24,7 +23,11 @@ class TutorialPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.mainLabel.text = mainText
         self.skipButton.setTitle(self.titleOfButton, for: .normal)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let tutorialGif = UIImage.gifImageWithName(self.imageName)
+        self.backgroundImage.image = tutorialGif
     }
 }
