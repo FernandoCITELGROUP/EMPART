@@ -295,7 +295,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         
         self.esperienza.foto = DataManager.shared().esperienza.foto
         self.esperienza.fileAudio = DataManager.shared().esperienza.fileAudio
-        self.createVideo(audio1: "bensound-creativeminds", fileExtension: "mp3")
+        self.createVideo(audio1: self.esperienza.fileAudio[1])
     }
     
     
@@ -339,5 +339,25 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         } else {
             
         }
+    }
+    
+    func createVideo(audio1:URL){
+        VideoGenerator.current.fileName = "test"
+        VideoGenerator.current.shouldOptimiseImageForVideo = true
+        VideoGenerator.current.generate(withImages:self.esperienza.foto, andAudios: [audio1], andType: .singleAudioMultipleImage, { (progress) in
+            print(progress)
+        }, success: { (url) in
+            print(url)
+            let player = AVPlayer(url: url)
+            let vcPlayer = AVPlayerViewController()
+            vcPlayer.player = player
+            self.present(vcPlayer, animated: true, completion: {
+                vcPlayer.player?.play()
+            })
+            
+        }, failure: { (error) in
+            print(error)
+            
+        })
     }
 }

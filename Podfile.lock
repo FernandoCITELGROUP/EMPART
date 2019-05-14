@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.0.0-beta.6)
+  - SwiftVideoGenerator (1.2.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0.beta.1)
+  - SwiftVideoGenerator
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - SwiftVideoGenerator
+
+SPEC CHECKSUMS:
+  Alamofire: cd08a4402bd12cacd0c66f23fb12fec8d6b965e4
+  SwiftVideoGenerator: 461ef57a52d1258160ba9d58ed90813c89b192b9
+
+PODFILE CHECKSUM: 91980be7c25b41443bc945b97cde235a10b3b9e3
+
+COCOAPODS: 1.6.1
