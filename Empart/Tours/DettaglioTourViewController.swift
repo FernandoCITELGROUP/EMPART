@@ -16,6 +16,7 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
     
     //Outlets
     @IBOutlet weak var tappeTableView: UITableView!
+    @IBOutlet weak var copertinaTourImageView: UIImageView!
     
     @IBAction func iniziaTourAction(_ sender: Any) {
        self.performSegue(withIdentifier: "goToTourScan", sender: self)
@@ -32,6 +33,19 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
         cell.pathDownView.isHidden = indexPath.item == (self.selectedItem.tappe.count - 1) ? true : false
         cell.titoloTappaLabel.text = item.opera.titolo
         cell.previewImage.image = UIImage(named: item.copertina)
+        if(item.tipoLocalizzazione == TipoLocalizzazione.Beacon)
+        {
+            cell.geolocal.isHidden = true
+            cell.imageTrack.isHidden = false
+            cell.ibeacon.isHidden = false
+        }
+        if(item.tipoLocalizzazione == TipoLocalizzazione.Posizione)
+        {
+            cell.geolocal.isHidden = false
+            cell.imageTrack.isHidden = true
+            cell.ibeacon.isHidden = true
+        }
+        
         return cell
     }
     
@@ -46,6 +60,7 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
         self.tappeTableView.delegate = self
         self.tappeTableView.dataSource = self
         self.navigationItem.title = self.selectedItem.titolo
+        self.copertinaTourImageView.image = UIImage(named: self.selectedItem.copertina)
     }
     
 

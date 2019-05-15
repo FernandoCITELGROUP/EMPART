@@ -16,6 +16,10 @@ class TappaTableViewCell: UITableViewCell {
     @IBOutlet weak var pathUpView: UIView!
     @IBOutlet weak var tappaStatusIndicatorView: UIView!
     
+    @IBOutlet weak var imageTrack: UIImageView!
+    @IBOutlet weak var geolocal: UIImageView!
+    @IBOutlet weak var ibeacon: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -13,6 +13,18 @@
 		750A393A228C483C007ED02A /* MusicaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A3939228C483C007ED02A /* MusicaTableViewController.swift */; };
 		750A393C228C4952007ED02A /* MusicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A393B228C4952007ED02A /* MusicaTableViewCell.swift */; };
 		750A393E228C9626007ED02A /* ImageTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A393D228C9626007ED02A /* ImageTrackingViewController.swift */; };
+		750A3940228CA9A5007ED02A /* pozzuoli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A393F228CA9A5007ED02A /* pozzuoli.jpg */; };
+		750A3948228CAB30007ED02A /* sibilla.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3944228CAB30007ED02A /* sibilla.jpg */; };
+		750A3949228CAB30007ED02A /* anfiteatroFlavio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3945228CAB30007ED02A /* anfiteatroFlavio.jpg */; };
+		750A394A228CAB30007ED02A /* serapide.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3946228CAB30007ED02A /* serapide.jpg */; };
+		750A394B228CAB30007ED02A /* rioneterra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3947228CAB30007ED02A /* rioneterra.jpg */; };
+		750A3950228CAC5E007ED02A /* anfiteatroFlavioth.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A394C228CAC5E007ED02A /* anfiteatroFlavioth.png */; };
+		750A3951228CAC5E007ED02A /* serapideth.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A394D228CAC5E007ED02A /* serapideth.png */; };
+		750A3952228CAC5E007ED02A /* sibillath.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A394E228CAC5E007ED02A /* sibillath.png */; };
+		750A3953228CAC5E007ED02A /* rioneterrath.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A394F228CAC5E007ED02A /* rioneterrath.png */; };
+		750A3955228CAE08007ED02A /* tourPozzuoli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3954228CAE07007ED02A /* tourPozzuoli.jpg */; };
+		750A3957228CB630007ED02A /* accademia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3956228CB630007ED02A /* accademia.jpg */; };
+		750A3959228CB638007ED02A /* accademiath.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A3958228CB638007ED02A /* accademiath.png */; };
 		750CDA9B22873DBA004D0FEB /* EsperienzaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */; };
 		750CDA9D22873DDB004D0FEB /* FotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */; };
 		750CDA9F22873DEC004D0FEB /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */; };
@@ -113,6 +125,18 @@
 		750A3939228C483C007ED02A /* MusicaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaTableViewController.swift; sourceTree = "<group>"; };
 		750A393B228C4952007ED02A /* MusicaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaTableViewCell.swift; sourceTree = "<group>"; };
 		750A393D228C9626007ED02A /* ImageTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTrackingViewController.swift; sourceTree = "<group>"; };
+		750A393F228CA9A5007ED02A /* pozzuoli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pozzuoli.jpg; sourceTree = "<group>"; };
+		750A3944228CAB30007ED02A /* sibilla.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sibilla.jpg; sourceTree = "<group>"; };
+		750A3945228CAB30007ED02A /* anfiteatroFlavio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = anfiteatroFlavio.jpg; sourceTree = "<group>"; };
+		750A3946228CAB30007ED02A /* serapide.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = serapide.jpg; sourceTree = "<group>"; };
+		750A3947228CAB30007ED02A /* rioneterra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rioneterra.jpg; sourceTree = "<group>"; };
+		750A394C228CAC5E007ED02A /* anfiteatroFlavioth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anfiteatroFlavioth.png; sourceTree = "<group>"; };
+		750A394D228CAC5E007ED02A /* serapideth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = serapideth.png; sourceTree = "<group>"; };
+		750A394E228CAC5E007ED02A /* sibillath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sibillath.png; sourceTree = "<group>"; };
+		750A394F228CAC5E007ED02A /* rioneterrath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rioneterrath.png; sourceTree = "<group>"; };
+		750A3954228CAE07007ED02A /* tourPozzuoli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tourPozzuoli.jpg; sourceTree = "<group>"; };
+		750A3956228CB630007ED02A /* accademia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accademia.jpg; sourceTree = "<group>"; };
+		750A3958228CB638007ED02A /* accademiath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accademiath.png; sourceTree = "<group>"; };
 		750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsperienzaDetailsViewController.swift; sourceTree = "<group>"; };
 		750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoTableViewCell.swift; sourceTree = "<group>"; };
 		750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
@@ -223,6 +247,23 @@
 				0DD416D62EC7E4701537CEC7 /* Pods-Empart.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		750A3943228CAA0A007ED02A /* luoghi */ = {
+			isa = PBXGroup;
+			children = (
+				750A3958228CB638007ED02A /* accademiath.png */,
+				750A3956228CB630007ED02A /* accademia.jpg */,
+				750A394C228CAC5E007ED02A /* anfiteatroFlavioth.png */,
+				750A394F228CAC5E007ED02A /* rioneterrath.png */,
+				750A394D228CAC5E007ED02A /* serapideth.png */,
+				750A394E228CAC5E007ED02A /* sibillath.png */,
+				750A3945228CAB30007ED02A /* anfiteatroFlavio.jpg */,
+				750A3947228CAB30007ED02A /* rioneterra.jpg */,
+				750A3946228CAB30007ED02A /* serapide.jpg */,
+				750A3944228CAB30007ED02A /* sibilla.jpg */,
+			);
+			path = luoghi;
 			sourceTree = "<group>";
 		};
 		750CDAA022896240004D0FEB /* MieiTours */ = {
@@ -379,6 +420,7 @@
 		75FB9AF62282173F00A0881E /* Musei */ = {
 			isa = PBXGroup;
 			children = (
+				750A393F228CA9A5007ED02A /* pozzuoli.jpg */,
 				75FB9AF4228212C700A0881E /* palazzoRealeCopertina.jpg */,
 				75FB9AF2228212AA00A0881E /* museoArcheologicoCopertina.jpg */,
 				75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */,
@@ -390,10 +432,12 @@
 		75FB9AF72282175400A0881E /* Tours */ = {
 			isa = PBXGroup;
 			children = (
+				750A3943228CAA0A007ED02A /* luoghi */,
 				75FB9B072282EAF200A0881E /* Opere */,
 				75FB9AFC228219AA00A0881E /* tourCaravaggio.png */,
 				75FB9AFA228218D900A0881E /* tourOroRosso.jpg */,
 				75FB9AF8228218D000A0881E /* tourStorie.jpg */,
+				750A3954228CAE07007ED02A /* tourPozzuoli.jpg */,
 			);
 			path = Tours;
 			sourceTree = "<group>";
@@ -526,6 +570,7 @@
 			files = (
 				75FB9AF5228212C700A0881E /* palazzoRealeCopertina.jpg in Resources */,
 				75FB9B1C2282EC9B00A0881E /* gio1th.png in Resources */,
+				750A3959228CB638007ED02A /* accademiath.png in Resources */,
 				75FB9B372285C47400A0881E /* 16052.png in Resources */,
 				75FB9B132282EB0700A0881E /* sal2.png in Resources */,
 				75FB9B352285C3F900A0881E /* Pause-512.png in Resources */,
@@ -533,22 +578,28 @@
 				75FB9B1E2282EC9B00A0881E /* sal1th.png in Resources */,
 				75FB9B1B2282EC9B00A0881E /* mart1th.png in Resources */,
 				75FB9B042282B48800A0881E /* testScan.png in Resources */,
+				750A3949228CAB30007ED02A /* anfiteatroFlavio.jpg in Resources */,
 				75FB9AFB228218D900A0881E /* tourOroRosso.jpg in Resources */,
 				750CDAB12289A9EA004D0FEB /* audio1.png in Resources */,
 				75FB9B112282EB0700A0881E /* flag1.png in Resources */,
 				750CDAB22289A9EA004D0FEB /* cuore1.png in Resources */,
 				75BFDC85228AF1750060DBFC /* bensound-creativeminds.mp3 in Resources */,
+				750A3948228CAB30007ED02A /* sibilla.jpg in Resources */,
 				750CDAE6228ADF1A004D0FEB /* video.mov in Resources */,
 				750CDAC6228A08CA004D0FEB /* riviviCamera.png in Resources */,
 				75FB9B392285C4B800A0881E /* stop-squared-filled.png in Resources */,
+				750A3951228CAC5E007ED02A /* serapideth.png in Resources */,
 				75FB9B102282EB0700A0881E /* gio1.png in Resources */,
 				75FB9B56228723E000A0881E /* prove loghi-15.png in Resources */,
+				750A394B228CAB30007ED02A /* rioneterra.jpg in Resources */,
+				750A3940228CA9A5007ED02A /* pozzuoli.jpg in Resources */,
 				750CDAB62289B445004D0FEB /* logoVivi.png in Resources */,
 				750A3938228C319C007ED02A /* icon-beacon.png in Resources */,
 				75FB9AF9228218D000A0881E /* tourStorie.jpg in Resources */,
 				750CDAB42289A9EA004D0FEB /* foto1.png in Resources */,
 				75FB9B1A2282EC9B00A0881E /* flag2th.png in Resources */,
 				750CDAC8228A0A15004D0FEB /* riviviPlayVideo.png in Resources */,
+				750A3952228CAC5E007ED02A /* sibillath.png in Resources */,
 				750CDAC3228A08CA004D0FEB /* riviviMusica.png in Resources */,
 				758560512280819400EDB1AD /* LaunchScreen.storyboard in Resources */,
 				750CDAD2228A128F004D0FEB /* viviPause.png in Resources */,
@@ -556,7 +607,9 @@
 				75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */,
 				75FB9AF3228212AA00A0881E /* museoArcheologicoCopertina.jpg in Resources */,
 				750CDAB82289F3F1004D0FEB /* riviviPlay.png in Resources */,
+				750A3955228CAE08007ED02A /* tourPozzuoli.jpg in Resources */,
 				750CDAD3228A128F004D0FEB /* viviPlayRec.png in Resources */,
+				750A394A228CAB30007ED02A /* serapide.jpg in Resources */,
 				75FB9B062282B7BF00A0881E /* qrcode.png in Resources */,
 				750CDAC4228A08CA004D0FEB /* riviviCuore.png in Resources */,
 				750CDAB32289A9EA004D0FEB /* musica1.png in Resources */,
@@ -564,11 +617,14 @@
 				75FB9B0F2282EB0700A0881E /* flag2.png in Resources */,
 				75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */,
 				7585604E2280819400EDB1AD /* Assets.xcassets in Resources */,
+				750A3957228CB630007ED02A /* accademia.jpg in Resources */,
+				750A3953228CAC5E007ED02A /* rioneterrath.png in Resources */,
 				75FB9ADB2281CECB00A0881E /* museiCapitoliniCopertina.jpg in Resources */,
 				75FB9B0E2282EB0700A0881E /* sal1.png in Resources */,
 				750CDAC5228A08CA004D0FEB /* riviviAudio.png in Resources */,
 				7585605A228081DE00EDB1AD /* Tutorial.storyboard in Resources */,
 				75FB9B1D2282EC9B00A0881E /* flag1th.png in Resources */,
+				750A3950228CAC5E007ED02A /* anfiteatroFlavioth.png in Resources */,
 				7585604C2280819300EDB1AD /* Main.storyboard in Resources */,
 				750A3936228C319C007ED02A /* 25723.png in Resources */,
 				75FB9AFD228219AA00A0881E /* tourCaravaggio.png in Resources */,

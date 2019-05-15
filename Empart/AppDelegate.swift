@@ -61,9 +61,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         posizione3["longitudine"] = 14.2482524
         let museo3:Museo = Museo(nome: "Palazzo reale", info: "", copertina: "palazzoRealeCopertina.jpg", toursDisponibili: [TourEmpart](), città: "Napoli", indirizzo: "Piazza del Plebiscito, 1", posizione: posizione3)
         
+        
+        var posizione4:Dictionary<String,Double> = Dictionary<String,Double>()
+        posizione4["latitudine"] = 40.8229316
+        posizione4["longitudine"] = 14.1175454
+        let museo4:Museo = Museo(nome: "Comune di Pozzuoli", info: "", copertina: "pozzuoli.jpg", toursDisponibili: [TourEmpart](), città: "Pozzuoli", indirizzo: "Comune", posizione: posizione4)
+        museo4.toursDisponibili.append(TourEmpart(titolo: "I love Pozzuoli", descrizione: "", copertina: "tourPozzuoli.jpg", tappe: [Tappa](), dataInizio:"01/01/2019", dataFine:"31/12/2019"))
+        
+        museo4.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Anfiteatro Flavio", descrizione: "", imagine: "anfiteatroFlavio.jpg", autore: Autore(), anno: 305, tecnica: ""), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Posizione, beacon: Beacon(), posizione: Dictionary<String,Double>(), copertina: "anfiteatroFlavioth.png", imageToTrack: ""))
+        museo4.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Tempio di Serapide", descrizione: "", imagine: "serapide.jpg", autore: Autore(), anno: 305, tecnica: ""), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Posizione, beacon: Beacon(), posizione: Dictionary<String,Double>(), copertina: "serapideth.png", imageToTrack: ""))
+        museo4.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Le grotte della Sibilla", descrizione: "", imagine: "sibilla.jpg", autore: Autore(), anno: 305, tecnica: ""), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Posizione, beacon: Beacon(), posizione: Dictionary<String,Double>(), copertina: "sibillath.png", imageToTrack: ""))
+        museo4.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Rione Terra", descrizione: "", imagine: "rioneterra.jpg", autore: Autore(), anno: 305, tecnica: ""), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Posizione, beacon: Beacon(), posizione: Dictionary<String,Double>(), copertina: "rioneterrath.png", imageToTrack: ""))
+        museo4.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Accademia Aeronautica", descrizione: "", imagine: "accademia.jpg", autore: Autore(), anno: 305, tecnica: ""), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Posizione, beacon: Beacon(), posizione: Dictionary<String,Double>(), copertina: "accademiath.png", imageToTrack: ""))
+        
+      
+        
         musei.append(museo1)
         musei.append(museo2)
         musei.append(museo3)
+        musei.append(museo4)
         
         DataManager.shared().musei = musei
         
