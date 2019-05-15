@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750A3936228C319C007ED02A /* 25723.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A3933228C319B007ED02A /* 25723.png */; };
+		750A3937228C319C007ED02A /* localization-png-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A3934228C319B007ED02A /* localization-png-2.png */; };
+		750A3938228C319C007ED02A /* icon-beacon.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A3935228C319C007ED02A /* icon-beacon.png */; };
+		750A393A228C483C007ED02A /* MusicaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A3939228C483C007ED02A /* MusicaTableViewController.swift */; };
+		750A393C228C4952007ED02A /* MusicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A393B228C4952007ED02A /* MusicaTableViewCell.swift */; };
+		750A393E228C9626007ED02A /* ImageTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A393D228C9626007ED02A /* ImageTrackingViewController.swift */; };
 		750CDA9B22873DBA004D0FEB /* EsperienzaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */; };
 		750CDA9D22873DDB004D0FEB /* FotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */; };
 		750CDA9F22873DEC004D0FEB /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */; };
@@ -43,6 +49,7 @@
 		758560622280B5E500EDB1AD /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560612280B5E500EDB1AD /* TutorialViewController.swift */; };
 		758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */; };
 		75BFDC85228AF1750060DBFC /* bensound-creativeminds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75BFDC84228AF1750060DBFC /* bensound-creativeminds.mp3 */; };
+		75BFDC88228B01CD0060DBFC /* GlobalMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BFDC87228B01CD0060DBFC /* GlobalMethod.swift */; };
 		75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */; };
 		75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */; };
 		75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */; };
@@ -100,6 +107,12 @@
 		0DD416D62EC7E4701537CEC7 /* Pods-Empart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empart.release.xcconfig"; path = "Target Support Files/Pods-Empart/Pods-Empart.release.xcconfig"; sourceTree = "<group>"; };
 		3BE341FD7A770FB09304426B /* Pods-Empart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empart.debug.xcconfig"; path = "Target Support Files/Pods-Empart/Pods-Empart.debug.xcconfig"; sourceTree = "<group>"; };
 		3D7E2074F4F6B82CC2348DB7 /* Pods_Empart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		750A3933228C319B007ED02A /* 25723.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25723.png; sourceTree = "<group>"; };
+		750A3934228C319B007ED02A /* localization-png-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "localization-png-2.png"; sourceTree = "<group>"; };
+		750A3935228C319C007ED02A /* icon-beacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-beacon.png"; sourceTree = "<group>"; };
+		750A3939228C483C007ED02A /* MusicaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaTableViewController.swift; sourceTree = "<group>"; };
+		750A393B228C4952007ED02A /* MusicaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaTableViewCell.swift; sourceTree = "<group>"; };
+		750A393D228C9626007ED02A /* ImageTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTrackingViewController.swift; sourceTree = "<group>"; };
 		750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsperienzaDetailsViewController.swift; sourceTree = "<group>"; };
 		750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoTableViewCell.swift; sourceTree = "<group>"; };
 		750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
@@ -138,6 +151,7 @@
 		758560612280B5E500EDB1AD /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
 		75BFDC84228AF1750060DBFC /* bensound-creativeminds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-creativeminds.mp3"; sourceTree = "<group>"; };
+		75BFDC87228B01CD0060DBFC /* GlobalMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMethod.swift; sourceTree = "<group>"; };
 		75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0462.jpg; sourceTree = "<group>"; };
 		75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capodimonteCopertina.jpg; sourceTree = "<group>"; };
 		75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseoTableViewCell.swift; sourceTree = "<group>"; };
@@ -267,6 +281,10 @@
 		758560452280819300EDB1AD /* Empart */ = {
 			isa = PBXGroup;
 			children = (
+				750A3933228C319B007ED02A /* 25723.png */,
+				750A3935228C319C007ED02A /* icon-beacon.png */,
+				750A3934228C319B007ED02A /* localization-png-2.png */,
+				75BFDC86228B01AF0060DBFC /* Empath */,
 				750CDADC228AD139004D0FEB /* TutorialGif */,
 				750CDAD8228AC057004D0FEB /* TmpVideos */,
 				75FB9AD32281BBD000A0881E /* TmpImages */,
@@ -318,6 +336,14 @@
 				75FB9B2D228465DF00A0881E /* DataManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		75BFDC86228B01AF0060DBFC /* Empath */ = {
+			isa = PBXGroup;
+			children = (
+				75BFDC87228B01CD0060DBFC /* GlobalMethod.swift */,
+			);
+			path = Empath;
 			sourceTree = "<group>";
 		};
 		75FB9AD32281BBD000A0881E /* TmpImages */ = {
@@ -415,6 +441,9 @@
 				750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */,
 				750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */,
 				750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */,
+				750A3939228C483C007ED02A /* MusicaTableViewController.swift */,
+				750A393B228C4952007ED02A /* MusicaTableViewCell.swift */,
+				750A393D228C9626007ED02A /* ImageTrackingViewController.swift */,
 			);
 			path = Vivi;
 			sourceTree = "<group>";
@@ -515,6 +544,7 @@
 				75FB9B102282EB0700A0881E /* gio1.png in Resources */,
 				75FB9B56228723E000A0881E /* prove loghi-15.png in Resources */,
 				750CDAB62289B445004D0FEB /* logoVivi.png in Resources */,
+				750A3938228C319C007ED02A /* icon-beacon.png in Resources */,
 				75FB9AF9228218D000A0881E /* tourStorie.jpg in Resources */,
 				750CDAB42289A9EA004D0FEB /* foto1.png in Resources */,
 				75FB9B1A2282EC9B00A0881E /* flag2th.png in Resources */,
@@ -530,6 +560,7 @@
 				75FB9B062282B7BF00A0881E /* qrcode.png in Resources */,
 				750CDAC4228A08CA004D0FEB /* riviviCuore.png in Resources */,
 				750CDAB32289A9EA004D0FEB /* musica1.png in Resources */,
+				750A3937228C319C007ED02A /* localization-png-2.png in Resources */,
 				75FB9B0F2282EB0700A0881E /* flag2.png in Resources */,
 				75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */,
 				7585604E2280819400EDB1AD /* Assets.xcassets in Resources */,
@@ -539,6 +570,7 @@
 				7585605A228081DE00EDB1AD /* Tutorial.storyboard in Resources */,
 				75FB9B1D2282EC9B00A0881E /* flag1th.png in Resources */,
 				7585604C2280819300EDB1AD /* Main.storyboard in Resources */,
+				750A3936228C319C007ED02A /* 25723.png in Resources */,
 				75FB9AFD228219AA00A0881E /* tourCaravaggio.png in Resources */,
 				750CDAD4228A128F004D0FEB /* viviStop.png in Resources */,
 			);
@@ -613,15 +645,18 @@
 				758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */,
 				75FB9B212283099B00A0881E /* DettaglioTourViewController.swift in Sources */,
 				75FB9AED2281F6A500A0881E /* MiaTappa.swift in Sources */,
+				750A393A228C483C007ED02A /* MusicaTableViewController.swift in Sources */,
 				75FB9B3322858EA000A0881E /* ViviViewController.swift in Sources */,
 				75FB9B2322830AC500A0881E /* TappaTableViewCell.swift in Sources */,
 				758560472280819300EDB1AD /* AppDelegate.swift in Sources */,
 				750CDA9F22873DEC004D0FEB /* AudioTableViewCell.swift in Sources */,
 				75FB9AFF22821F0A00A0881E /* DettaglioMuseoViewController.swift in Sources */,
+				750A393E228C9626007ED02A /* ImageTrackingViewController.swift in Sources */,
 				750CDAA422896F31004D0FEB /* NavigationExtension.swift in Sources */,
 				75FB9B2E228465DF00A0881E /* DataManager.swift in Sources */,
 				75FB9AE52281EF5000A0881E /* Autore.swift in Sources */,
 				75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */,
+				750A393C228C4952007ED02A /* MusicaTableViewCell.swift in Sources */,
 				75FB9AEB2281F5A400A0881E /* MioTour.swift in Sources */,
 				75FB9ADD2281EB8F00A0881E /* Museo.swift in Sources */,
 				750CDA9D22873DDB004D0FEB /* FotoTableViewCell.swift in Sources */,
@@ -640,6 +675,7 @@
 				75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */,
 				7585605C2280827E00EDB1AD /* MieiPercorsiViewController.swift in Sources */,
 				75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */,
+				75BFDC88228B01CD0060DBFC /* GlobalMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,6 +826,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MXY5225227;
 				INFOPLIST_FILE = Empart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -798,7 +835,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -811,6 +848,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MXY5225227;
 				INFOPLIST_FILE = Empart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -819,7 +857,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

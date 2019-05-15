@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreLocation
+import MapKit
 
 class DettaglioMuseoViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -32,6 +34,12 @@ class DettaglioMuseoViewController: UIViewController, UITableViewDelegate, UITab
         cell.nomeTourLabel.text = item.titolo
         cell.copertinaTourImageView.image = UIImage(named: item.copertina)
         cell.dateLabel.text = "Dal \(item.dataInizio) al \(item.dataFine)"
+        
+        cell.mainView.layer.shadowColor = UIColor.black.cgColor
+        cell.mainView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        cell.mainView.layer.shadowOpacity = 0.2
+        cell.mainView.layer.shadowRadius = 4.0
+        
         return cell
     }
     
@@ -59,4 +67,17 @@ class DettaglioMuseoViewController: UIViewController, UITableViewDelegate, UITab
         self.museoImageView.image = UIImage(named: self.selectedItem.copertina)
         self.navigationItem.title = self.selectedItem.nome
     }
+    
+    //Functions
+    @IBAction func openMaps(_ sender: Any) {
+       
+        let latDouble = self.selectedItem.posizione["latitudine"]
+        let lat:CLLocationDegrees =  CLLocationDegrees(latDouble!)
+        let lngDouble = self.selectedItem.posizione["longitudine"]
+        let lng:CLLocationDegrees =  CLLocationDegrees(lngDouble!)
+        let source = MKMapItem(placemark: MKPlacemark(coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lng)))
+        source.name = self.selectedItem.nome.uppercased()
+        MKMapItem.openMaps(with: [source], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving])
+    }
+    
 }

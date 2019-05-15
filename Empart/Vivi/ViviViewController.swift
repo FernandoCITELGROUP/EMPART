@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import SwiftVideoGenerator
+import Alamofire
 
 
 // solo per test
@@ -64,6 +65,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     // Events
     override func viewDidLoad() {
         super.viewDidLoad()
+        DataManager.shared().trackedImage = ""
         self.setupButtons()
         self.buttonStatus(status: ViewStatus.Start)
         self.loadData()
@@ -76,7 +78,6 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.tabBarController?.tabBar.isHidden = true
         self.waterView!.backgroundColor = UIColor(red: CGFloat(DataManager.shared().esperienza.emozione.colore["R"]!/255), green: CGFloat(DataManager.shared().esperienza.emozione.colore["G"]!/255), blue: CGFloat(DataManager.shared().esperienza.emozione.colore["B"]!/255), alpha: 1.0)
-        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -158,6 +159,12 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
             }else{
                 self.startRecording()
             }
+            break
+        case 1003:
+             performSegue(withIdentifier: "goToMusicOption", sender: self)
+            break
+        case 1004:
+            //performSegue(withIdentifier: "goToMusicOption", sender: self)
             break
         default:
             print("")
@@ -298,12 +305,19 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.createVideo(audio1: self.esperienza.fileAudio[1])
     }
     
+    @IBAction func saltaAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if(segue.identifier == "goToEmotion")
+        if(segue.identifier == "goToMusicOption")
         {
            //let nextViewController = segue.destination as! EmozioniTableViewController
+        }
+        if(segue.identifier == "goToEmotion")
+        {
+            //let nextViewController = segue.destination as! EmozioniTableViewController
         }
         if(segue.identifier == "goToEsperienzaDetails")
         {
@@ -311,8 +325,6 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
             nextViewController.esperienza = DataManager.shared().esperienza
         }
     }
-    
-    
     
     // MARK: - Video Generator
     func createVideo(audio1: String, fileExtension:String){

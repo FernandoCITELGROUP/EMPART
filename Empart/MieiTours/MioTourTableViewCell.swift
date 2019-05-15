@@ -14,6 +14,7 @@ class MioTourTableViewCell: UITableViewCell {
     @IBOutlet weak var dataTourLabel: UILabel!
     @IBOutlet weak var nomeTourLabel: UILabel!
     @IBOutlet weak var copertinaImageView: UIImageView!
+    @IBOutlet weak var mainView: UIView!
     
     
     override func awakeFromNib() {

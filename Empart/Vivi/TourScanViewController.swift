@@ -15,6 +15,7 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var viviPulseView: UIView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var tourMapButton: UIButton!
+    @IBOutlet weak var scanCamera: UIButton!
     
     
     // Attributes for animation
@@ -43,6 +44,8 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
         layer.endPoint = CGPoint(x: 0,y: 1)
         self.view.layer.addSublayer(layer)
         
+        self.scanCamera.layer.borderColor = UIColor.init(red: 70.0/255, green: 71.0/255, blue: 149.0/255, alpha: 1.0).cgColor
+        
         self.setupLocationManager()
     }
     
@@ -55,6 +58,16 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.tabBarController?.tabBar.isHidden = true
+        if(DataManager.shared().trackedImage != "")
+        {
+            self.myLocationManager.stopMonitoring(for: self.beaconRegion)
+            self.myLocationManager.stopRangingBeacons(in: self.beaconRegion)
+            
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ViviViewController")
+            (nextViewController as! ViviViewController).tappaSelezionata = self.liveTour.tappe.first{$0.imageToTrack.lowercased().contains(DataManager.shared().trackedImage.lowercased())}
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

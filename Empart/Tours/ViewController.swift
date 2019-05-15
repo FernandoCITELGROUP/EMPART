@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var museoView: UIView!
     
     //test data: Collection di musei
     var musei:[Museo]!
@@ -30,6 +31,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.nomeMuseoLabel.text = item.nome
         cell.copertinaMuseoImage.image = UIImage(named: item.copertina)
         cell.cittaMuseoLabel.text = item.città
+        
+        cell.mainView.layer.shadowColor = UIColor.black.cgColor
+        cell.mainView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        cell.mainView.layer.shadowOpacity = 0.2
+        cell.mainView.layer.shadowRadius = 4.0
+
         return cell
     }
     

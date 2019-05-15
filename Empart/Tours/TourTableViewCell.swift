@@ -10,6 +10,7 @@ import UIKit
 
 class TourTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var mainView: UIView!
     @IBOutlet weak var copertinaTourImageView: UIImageView!
     @IBOutlet weak var nomeTourLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!

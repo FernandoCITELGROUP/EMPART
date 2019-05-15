@@ -32,7 +32,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YK7-gk-WE7">
-                                                    <rect key="frame" x="20" y="45" width="374" height="252"/>
+                                                    <rect key="frame" x="20" y="24" width="374" height="252"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capodimonteCopertina.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cYv-FK-qyS">
@@ -73,6 +73,18 @@
                                                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                             <integer key="value" value="10"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.shadowColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                            <size key="value" width="3" height="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -81,6 +93,7 @@
                                         <connections>
                                             <outlet property="cittaMuseoLabel" destination="I7P-vo-OwI" id="cZY-gd-KFl"/>
                                             <outlet property="copertinaMuseoImage" destination="cYv-FK-qyS" id="0v9-wk-hW1"/>
+                                            <outlet property="mainView" destination="YK7-gk-WE7" id="CMO-vC-JXd"/>
                                             <outlet property="nomeMuseoLabel" destination="sFt-kT-Qff" id="2JB-aB-Et3"/>
                                         </connections>
                                     </tableViewCell>
@@ -130,6 +143,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="MAPS"/>
+                                        <connections>
+                                            <action selector="openMaps:" destination="hFH-DS-7VZ" eventType="touchUpInside" id="XTD-h0-Xtk"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Città" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efa-6L-qHE">
                                         <rect key="frame" x="16" y="13" width="326" height="21"/>
@@ -204,6 +220,7 @@
                                         <connections>
                                             <outlet property="copertinaTourImageView" destination="KSF-wQ-349" id="AkG-0R-7yq"/>
                                             <outlet property="dateLabel" destination="ros-ok-rLy" id="2lc-Xh-01u"/>
+                                            <outlet property="mainView" destination="BS8-2f-Ama" id="7H8-6t-Ac6"/>
                                             <outlet property="nomeTourLabel" destination="jT0-6N-880" id="c6D-E7-IB4"/>
                                         </connections>
                                     </tableViewCell>
@@ -304,6 +321,18 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.95686274510000002" green="0.73725490199999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="25723.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mp0-Yl-PFt">
+                                                    <rect key="frame" x="364" y="17" width="30" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="localization-png-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mtd-ON-msk">
+                                                    <rect key="frame" x="312" y="22" width="20" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon-beacon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ArF-Nj-YG3">
+                                                    <rect key="frame" x="336" y="19" width="25" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -489,6 +518,7 @@
                                         <connections>
                                             <outlet property="copertinaImageView" destination="VTJ-6a-k2k" id="Cnt-kS-fyX"/>
                                             <outlet property="dataTourLabel" destination="b8D-te-4hw" id="frY-GM-Gn7"/>
+                                            <outlet property="mainView" destination="lsc-Ub-QVD" id="nsf-Uf-lE6"/>
                                             <outlet property="nomeMuseoLabel" destination="G8j-mv-ajj" id="laX-iS-dKl"/>
                                             <outlet property="nomeTourLabel" destination="lQj-By-xYU" id="FE8-lw-zPH"/>
                                         </connections>
@@ -729,14 +759,14 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="in ascolto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cl7-wM-AM8">
-                                <rect key="frame" x="158" y="773" width="79" height="21"/>
+                                <rect key="frame" x="168" y="561" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="scO-Lc-mxh">
-                                <rect key="frame" x="147" y="414" width="100" height="100"/>
+                                <rect key="frame" x="157" y="410" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logoVivi.png" translatesAutoresizingMaskIntoConstraints="NO" id="X2l-0S-Z3F">
@@ -752,6 +782,33 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" tag="1001" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cck-EW-pMQ">
+                                <rect key="frame" x="182" y="734" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.71051922410000001" green="0.44795657100000003" blue="0.11027894570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="foto1.png"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAction:" destination="5nA-2U-03i" eventType="touchDown" id="0yu-SR-5wA"/>
+                                    <segue destination="TBo-77-eHF" kind="showDetail" id="y8U-ke-YkH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="oppure usa la scansione" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOn-y6-KDA">
+                                <rect key="frame" x="108" y="787" width="198" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274510000002" green="0.73725490199999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="fIS-jw-CPi"/>
@@ -759,6 +816,7 @@
                     <navigationItem key="navigationItem" id="Ic4-5d-CUp"/>
                     <connections>
                         <outlet property="backButton" destination="Kia-8R-ZhL" id="Irl-5u-CO2"/>
+                        <outlet property="scanCamera" destination="cck-EW-pMQ" id="CEy-E3-ZqZ"/>
                         <outlet property="tourMapButton" destination="HB6-6g-DEE" id="dsd-d8-Ekc"/>
                         <outlet property="viviPulseView" destination="scO-Lc-mxh" id="hQQ-Mx-IIL"/>
                         <segue destination="5nA-2U-03i" kind="show" id="1xw-yJ-BpV"/>
@@ -836,7 +894,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.95686274510000002" green="0.73725490199999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOe-9i-LfX">
+                            <button opaque="NO" tag="1004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOe-9i-LfX">
                                 <rect key="frame" x="71" y="495" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.71051922410000001" green="0.44795657100000003" blue="0.11027894570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -872,7 +930,7 @@
                                     <action selector="buttonAction:" destination="5nA-2U-03i" eventType="touchDown" id="Ykr-uC-uOb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3M-We-PLL">
+                            <button opaque="NO" tag="1003" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3M-We-PLL">
                                 <rect key="frame" x="71" y="633" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.71051922410000001" green="0.44795657100000003" blue="0.11027894570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -912,6 +970,11 @@
                                 <rect key="frame" x="0.0" y="425" width="414" height="470"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jPn-Kd-FrS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="3"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.41176470590000003" green="0.23921568630000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kia-4y-mDz">
                                         <rect key="frame" x="152" y="284" width="113" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -919,6 +982,9 @@
                                         <state key="normal" title="salta">
                                             <color key="titleColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saltaAction:" destination="5nA-2U-03i" eventType="touchUpInside" id="cTe-FU-NhT"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssA-cI-Lnb">
                                         <rect key="frame" x="8" y="17" width="398" height="21"/>
@@ -1012,11 +1078,55 @@
                         <outlet property="viviButton" destination="gPF-8N-q4l" id="jVQ-1c-BO4"/>
                         <segue destination="1ic-Cl-qwy" kind="show" identifier="goToEmotion" id="z6F-uG-neT"/>
                         <segue destination="Cfx-uq-nqU" kind="showDetail" identifier="goToEsperienzaDetails" id="z1Y-r2-4G1"/>
+                        <segue destination="2tS-MN-N8w" kind="show" identifier="goToMusicOption" id="GWz-ip-jQZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8c-kT-lxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3957.971014492754" y="2027.6785714285713"/>
+        </scene>
+        <!--Image Scanner-->
+        <scene sceneID="xnO-ta-S0z">
+            <objects>
+                <viewController title="Image Scanner" id="TBo-77-eHF" customClass="ImageTrackingViewController" customModule="Empart" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ltQ-R2-Xpw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhk-es-Tt0">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="787"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyS-Ts-LPm">
+                                <rect key="frame" x="142" y="811" width="131" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="chiudi">
+                                    <color key="titleColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="chiudiAction:" destination="TBo-77-eHF" eventType="touchUpInside" id="M38-31-NzS"/>
+                                    <action selector="chiudiButton:" destination="QvR-qk-ni0" eventType="touchUpInside" id="CDt-h3-lmD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Cri-2T-VKO"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="fhk-es-Tt0" id="UD5-0H-8P3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14m-iu-Jmh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3147.826086956522" y="2756.9196428571427"/>
         </scene>
         <!--Esperienza Details View Controller-->
         <scene sceneID="UQf-W2-XKF">
@@ -1214,6 +1324,73 @@
             </objects>
             <point key="canvasLocation" x="4760.8695652173919" y="2027.6785714285713"/>
         </scene>
+        <!--Voglio ascoltare ...-->
+        <scene sceneID="MRd-0d-oXm">
+            <objects>
+                <tableViewController title="Voglio ascoltare ..." id="2tS-MN-N8w" customClass="MusicaTableViewController" customModule="Empart" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="rNp-Jk-y0q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicaCell" rowHeight="100" id="xyx-Vv-Iis" customClass="MusicaTableViewCell" customModule="Empart" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xyx-Vv-Iis" id="xh9-ig-sSi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQa-XF-XvA">
+                                            <rect key="frame" x="20" y="13" width="374" height="74"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Opzione Musica" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6du-2b-pOZ">
+                                                    <rect key="frame" x="76" y="23" width="290" height="28"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r2P-bC-6Si">
+                                                    <rect key="frame" x="18" y="17" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="20"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="35"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="colorView" destination="r2P-bC-6Si" id="2D6-kA-Czk"/>
+                                    <outlet property="containerView" destination="TQa-XF-XvA" id="VVr-GY-KYH"/>
+                                    <outlet property="musicaLabel" destination="6du-2b-pOZ" id="m0M-7n-FPw"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="2tS-MN-N8w" id="Okq-bY-HaJ"/>
+                            <outlet property="delegate" destination="2tS-MN-N8w" id="B0A-HA-tQG"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uoN-bb-pXw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4805.7971014492759" y="2756.9196428571427"/>
+        </scene>
         <!--Dettagli Mio Tour View Controller-->
         <scene sceneID="NA4-kX-8pO">
             <objects>
@@ -1356,89 +1533,129 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="48O-5h-z7p">
-                                <rect key="frame" x="0.0" y="407" width="414" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJF-fh-2t1">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdG-Wj-8ER">
-                                        <rect key="frame" x="66" y="6" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="riviviCuore.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujl-v0-9n5">
-                                        <rect key="frame" x="145" y="6" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="riviviCamera.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Js-Oq-1XQ">
-                                        <rect key="frame" x="222" y="6" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="riviviMusica.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZH-UY-Icd">
-                                        <rect key="frame" x="299" y="6" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="riviviAudio.png"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJY-lR-cC2">
-                                <rect key="frame" x="0.0" y="135" width="414" height="259"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capodimonteCopertina.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gD2-cQ-bsh">
-                                        <rect key="frame" x="7" y="8" width="400" height="243"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.95686274510000002" green="0.73725490199999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-eX-Lkb">
-                                <rect key="frame" x="0.0" y="514" width="414" height="278"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGq-oj-6UA">
-                                        <rect key="frame" x="20" y="8" width="85" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48O-5h-z7p">
+                                        <rect key="frame" x="0.0" y="331" width="414" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdG-Wj-8ER">
+                                                <rect key="frame" x="66" y="6" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="riviviCuore.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujl-v0-9n5">
+                                                <rect key="frame" x="145" y="6" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="riviviCamera.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Js-Oq-1XQ">
+                                                <rect key="frame" x="222" y="6" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="riviviMusica.png"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZH-UY-Icd">
+                                                <rect key="frame" x="299" y="6" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="riviviAudio.png"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="hWD-JY-G3o"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJY-lR-cC2">
+                                        <rect key="frame" x="0.0" y="40" width="414" height="259"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capodimonteCopertina.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="gD2-cQ-bsh">
+                                                <rect key="frame" x="7" y="8" width="400" height="243"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95686274510000002" green="0.73725490199999999" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkm-eX-Lkb">
+                                        <rect key="frame" x="0.0" y="436" width="414" height="278"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGq-oj-6UA">
+                                                <rect key="frame" x="20" y="8" width="85" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="HG7-zs-TFH">
+                                                <rect key="frame" x="20" y="37" width="370" height="233"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+                                                <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="278" id="jbW-ih-hlt"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titolo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75g-AY-5Fu">
+                                        <rect key="frame" x="20" y="6" width="374" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="lz2-6Y-dyx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                         <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="HG7-zs-TFH">
-                                        <rect key="frame" x="20" y="37" width="370" height="233"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
-                                        <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-w2-TfX">
+                                        <rect key="frame" x="182" y="150" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Bau-T4-orB"/>
+                                            <constraint firstAttribute="height" constant="50" id="io7-ti-hFc"/>
+                                        </constraints>
+                                        <state key="normal" image="riviviPlayVideo.png"/>
+                                        <connections>
+                                            <action selector="playVideo:" destination="UDH-7V-OQE" eventType="touchUpInside" id="F8t-5E-dfN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titolo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75g-AY-5Fu">
-                                <rect key="frame" x="20" y="98" width="374" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                                <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBw-w2-TfX">
-                                <rect key="frame" x="182" y="235" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="riviviPlayVideo.png"/>
-                                <connections>
-                                    <action selector="playVideo:" destination="UDH-7V-OQE" eventType="touchUpInside" id="F8t-5E-dfN"/>
-                                </connections>
-                            </button>
+                                <constraints>
+                                    <constraint firstItem="48O-5h-z7p" firstAttribute="top" secondItem="MJY-lR-cC2" secondAttribute="bottom" constant="32" id="53e-ba-57s"/>
+                                    <constraint firstItem="75g-AY-5Fu" firstAttribute="centerX" secondItem="pJF-fh-2t1" secondAttribute="centerX" id="7wc-Wb-Fg8"/>
+                                    <constraint firstItem="48O-5h-z7p" firstAttribute="leading" secondItem="gkm-eX-Lkb" secondAttribute="leading" id="9ja-iv-ucD"/>
+                                    <constraint firstItem="MJY-lR-cC2" firstAttribute="trailing" secondItem="48O-5h-z7p" secondAttribute="trailing" id="INW-Ua-TmO"/>
+                                    <constraint firstItem="MJY-lR-cC2" firstAttribute="top" secondItem="75g-AY-5Fu" secondAttribute="bottom" constant="5" id="KZj-v9-Yi0"/>
+                                    <constraint firstAttribute="bottom" secondItem="gkm-eX-Lkb" secondAttribute="bottom" constant="11" id="OVJ-fa-J43"/>
+                                    <constraint firstItem="gkm-eX-Lkb" firstAttribute="top" secondItem="48O-5h-z7p" secondAttribute="bottom" constant="42" id="Zt1-tZ-vH3"/>
+                                    <constraint firstItem="48O-5h-z7p" firstAttribute="trailing" secondItem="gkm-eX-Lkb" secondAttribute="trailing" id="eVV-WW-L7c"/>
+                                    <constraint firstItem="MJY-lR-cC2" firstAttribute="leading" secondItem="48O-5h-z7p" secondAttribute="leading" id="fEl-os-dqU"/>
+                                    <constraint firstItem="hBw-w2-TfX" firstAttribute="top" secondItem="pJF-fh-2t1" secondAttribute="top" constant="150" id="klJ-go-hRm"/>
+                                    <constraint firstItem="75g-AY-5Fu" firstAttribute="top" secondItem="pJF-fh-2t1" secondAttribute="top" constant="6" id="koP-SA-E7I"/>
+                                    <constraint firstItem="75g-AY-5Fu" firstAttribute="centerX" secondItem="hBw-w2-TfX" secondAttribute="centerX" id="luL-P3-f09"/>
+                                    <constraint firstItem="48O-5h-z7p" firstAttribute="centerY" secondItem="pJF-fh-2t1" secondAttribute="centerY" id="mmo-mL-bea"/>
+                                    <constraint firstItem="MJY-lR-cC2" firstAttribute="leading" secondItem="pJF-fh-2t1" secondAttribute="leading" id="mn7-T6-caD"/>
+                                    <constraint firstItem="hBw-w2-TfX" firstAttribute="centerX" secondItem="48O-5h-z7p" secondAttribute="centerX" id="x5s-We-Y6w"/>
+                                    <constraint firstAttribute="trailing" secondItem="MJY-lR-cC2" secondAttribute="trailing" id="xuY-iw-TER"/>
+                                    <constraint firstItem="75g-AY-5Fu" firstAttribute="leading" secondItem="pJF-fh-2t1" secondAttribute="leading" constant="20" id="y0G-ie-xoj"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pJF-fh-2t1" secondAttribute="trailing" id="Ax1-z3-d2S"/>
+                            <constraint firstItem="pJF-fh-2t1" firstAttribute="top" secondItem="Uu7-Km-yft" secondAttribute="top" id="K3H-3Z-JS8"/>
+                            <constraint firstItem="pJF-fh-2t1" firstAttribute="bottom" secondItem="Uu7-Km-yft" secondAttribute="bottom" id="sek-gf-IdW"/>
+                            <constraint firstItem="pJF-fh-2t1" firstAttribute="leading" secondItem="pAQ-Z6-0sP" secondAttribute="leading" id="weS-p4-ur9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Uu7-Km-yft"/>
                     </view>
                     <connections>
                         <outlet property="playButton" destination="hBw-w2-TfX" id="Xpd-eT-yJT"/>
                         <outlet property="previewVideo" destination="gD2-cQ-bsh" id="FB7-vJ-FdG"/>
+                        <outlet property="scrollView" destination="pJF-fh-2t1" id="71R-CX-xIl"/>
+                        <outlet property="textView" destination="HG7-zs-TFH" id="42d-bz-cZv"/>
                         <outlet property="titoloLabel" destination="75g-AY-5Fu" id="3Qq-AE-zOL"/>
                     </connections>
                 </viewController>
@@ -1448,12 +1665,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="25723.png" width="148.64515686035156" height="148.64515686035156"/>
         <image name="audio1.png" width="438" height="438"/>
         <image name="capodimonteCopertina.jpg" width="550" height="309"/>
         <image name="cuore1.png" width="436" height="436"/>
         <image name="flag1.png" width="322" height="440"/>
         <image name="flag1th.png" width="60" height="60"/>
         <image name="foto1.png" width="437" height="439"/>
+        <image name="icon-beacon.png" width="288" height="288"/>
+        <image name="localization-png-2.png" width="392.17022705078125" height="392.17022705078125"/>
         <image name="logoVivi.png" width="958" height="958"/>
         <image name="musica1.png" width="440" height="441"/>
         <image name="riviviAudio.png" width="367" height="367"/>

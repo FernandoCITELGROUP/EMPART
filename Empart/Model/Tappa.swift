@@ -22,8 +22,9 @@ class Tappa{
     var ordine:Int
     var tipoLocalizzazione:TipoLocalizzazione
     var beacon:Beacon
-    var posizione:Dictionary<String,String>
+    var posizione:Dictionary<String,Double>
     var copertina:String
+    var imageToTrack:String
     
     init() {
         self.opera = Opera()
@@ -31,11 +32,12 @@ class Tappa{
         self.ordine = -1
         self.tipoLocalizzazione = TipoLocalizzazione.Indefinito
         self.beacon = Beacon()
-        self.posizione = Dictionary<String,String>()
+        self.posizione = Dictionary<String,Double>()
         self.copertina = ""
+        self.imageToTrack = ""
     }
     
-    init(opera:Opera,status:StatoTappa,ordine:Int,tipoLocalizzazione:TipoLocalizzazione,beacon:Beacon,posizione:Dictionary<String,String>, copertina:String) {
+    init(opera:Opera,status:StatoTappa,ordine:Int,tipoLocalizzazione:TipoLocalizzazione,beacon:Beacon,posizione:Dictionary<String,Double>, copertina:String, imageToTrack:String) {
         self.opera = opera
         self.status = status
         self.ordine = ordine
@@ -43,5 +45,6 @@ class Tappa{
         self.beacon = beacon
         self.posizione = posizione
         self.copertina = copertina
+        self.imageToTrack = imageToTrack
     }
 }

@@ -23,6 +23,10 @@ class MieiPercorsiViewController: UIViewController, UITableViewDelegate, UITable
         cell.nomeMuseoLabel.text = DataManager.shared().mieiTour[indexPath.row].nomeMuseo
         cell.dataTourLabel.text = DataManager.shared().mieiTour[indexPath.row].data
         cell.copertinaImageView.image = UIImage(named: DataManager.shared().mieiTour[indexPath.row].copertina)
+        cell.mainView.layer.shadowColor = UIColor.black.cgColor
+        cell.mainView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        cell.mainView.layer.shadowOpacity = 0.2
+        cell.mainView.layer.shadowRadius = 4.0
         return cell
     }
     

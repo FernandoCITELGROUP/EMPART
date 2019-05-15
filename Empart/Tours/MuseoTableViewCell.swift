@@ -10,6 +10,7 @@ import UIKit
 
 class MuseoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var mainView: UIView!
     
     @IBOutlet weak var copertinaMuseoImage: UIImageView!
     @IBOutlet weak var nomeMuseoLabel: UILabel!

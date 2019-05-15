@@ -17,7 +17,7 @@ class Museo{
     var toursDisponibili:[TourEmpart]
     var città:String
     var indirizzo:String
-    var posizione:Dictionary<String,String>
+    var posizione:Dictionary<String,Double>
     
     init() {
         self.nome = ""
@@ -25,11 +25,11 @@ class Museo{
         self.copertina = ""
         self.toursDisponibili = [TourEmpart]()
         self.città = ""
-        self.posizione = Dictionary<String,String>()
+        self.posizione = Dictionary<String,Double>()
         self.indirizzo = ""
     }
     
-    init(nome:String, info:String, copertina:String, toursDisponibili:[TourEmpart], città:String, indirizzo:String, posizione:Dictionary<String,String>) {
+    init(nome:String, info:String, copertina:String, toursDisponibili:[TourEmpart], città:String, indirizzo:String, posizione:Dictionary<String,Double>) {
         self.nome = nome
         self.info = info
         self.copertina = copertina

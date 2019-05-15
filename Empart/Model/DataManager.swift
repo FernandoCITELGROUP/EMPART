@@ -13,6 +13,8 @@ class DataManager{
     var emozioni:[Emozione]
     var esperienza:EsperienzaEmpart
     var mieiTour:[MioTour]
+    var opzioneMusicaScelta:Int
+    var trackedImage:String
     
     private static var sharedDataManager: DataManager = {
         let dataManager = DataManager(musei: [Museo](), emozioni: [Emozione](), mieiTour:[MioTour]())
@@ -24,6 +26,8 @@ class DataManager{
         self.emozioni = emozioni
         self.esperienza = EsperienzaEmpart()
         self.mieiTour = mieiTour
+        self.opzioneMusicaScelta = 2
+        self.trackedImage = ""
     }
     
     class func shared() -> DataManager {

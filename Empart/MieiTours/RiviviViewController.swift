@@ -10,12 +10,17 @@ import UIKit
 import AVKit
 import MobileCoreServices
 
-class RiviviViewController: UIViewController {
+class RiviviViewController: UIViewController, UITextViewDelegate {
 
+    // Attributes
     var selectedItem:MiaTappa!
+    
+    // Outlets
     @IBOutlet weak var titoloLabel: UILabel!
     @IBOutlet weak var previewVideo: UIImageView!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,37 @@ class RiviviViewController: UIViewController {
         self.previewVideo.image = self.generateThumbnail(path: self.selectedItem!.ricordo.videoGenerato)
         self.view.bringSubviewToFront(self.playButton)
         
+        // setup keyboard event
+        NotificationCenter.default.addObserver(self, selector: #selector(RiviviViewController.keyboardWillShow), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(RiviviViewController.keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+        self.textView.delegate = self
+        // add done button
+        let bar = UIToolbar()
+        let reset = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(doneText))
+        bar.items = [reset]
+        bar.sizeToFit()
+        textView.inputAccessoryView = bar
+        
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        self.textView.endEditing(true)
+    }
+    
+    @objc func doneText(){
+        self.textView.endEditing(true)
+    }
+    
+    @objc func keyboardWillShow(notification:NSNotification) {
+        guard let keyboardFrameValue = notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue else {
+            return
+        }
+        let keyboardFrame = view.convert(keyboardFrameValue.cgRectValue, from: nil)
+        scrollView.contentOffset = CGPoint(x:0, y:keyboardFrame.size.height)
+    }
+    
+    @objc func keyboardWillHide(notification:NSNotification) {
+        scrollView.contentOffset = .zero
     }
     
     @IBAction func playVideo(_ sender: Any) {
@@ -47,15 +83,5 @@ class RiviviViewController: UIViewController {
             return nil
         }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
