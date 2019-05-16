@@ -37,6 +37,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     var tappaSelezionata:Tappa!
     var esperienza:EsperienzaEmpart = EsperienzaEmpart()
     var viewStatus:ViewStatus = ViewStatus.Start
+    var videoCreato: Bool = false
     
     // Outlets
     @IBOutlet weak var autoreLabel: UILabel!
@@ -78,6 +79,10 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.tabBarController?.tabBar.isHidden = true
         self.waterView!.backgroundColor = UIColor(red: CGFloat(DataManager.shared().esperienza.emozione.colore["R"]!/255), green: CGFloat(DataManager.shared().esperienza.emozione.colore["G"]!/255), blue: CGFloat(DataManager.shared().esperienza.emozione.colore["B"]!/255), alpha: 1.0)
+        if(videoCreato)
+        {
+            self.navigationController?.popViewController(animated: true)
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -361,14 +366,19 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     // MARK: - Video Generator
     func createVideo(audio1: String, fileExtension:String){
         if let audioURL1 = Bundle.main.url(forResource: audio1, withExtension: fileExtension) {
-            
+            self.showSpinner(onView: self.view)
             VideoGenerator.current.fileName = "test"
             VideoGenerator.current.shouldOptimiseImageForVideo = true
             VideoGenerator.current.generate(withImages:self.esperienza.foto, andAudios: [audioURL1], andType: .singleAudioMultipleImage, { (progress) in
                 print(progress)
+                self.removeSpinner()
             }, success: { (url) in
                 print(url)
+                self.removeSpinner()
                 DataManager.shared().mieiTour[0].tappeVissute[0].ricordo.videoGenerato = url
+                self.videoCreato = true
+                self.salvaButton.isHidden = true
+                self.scartaButton.isHidden = true
                 // salvo il file
                 let player = AVPlayer(url: url)
                 let vcPlayer = AVPlayerViewController()
@@ -379,6 +389,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
                 
             }, failure: { (error) in
                 print(error)
+                self.removeSpinner()
                 
             })
         } else {
