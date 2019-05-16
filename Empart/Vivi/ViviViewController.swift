@@ -135,7 +135,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
             self.startView.frame = startViewBottomFrame
         }, completion: { finished in
             self.emotionView.isUserInteractionEnabled = false
-            self.performSegue(withIdentifier: "goToEsperienzaDetails", sender: self)
+            //self.performSegue(withIdentifier: "goToEsperienzaDetails", sender: self)
         })
        
     }
@@ -164,7 +164,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
              performSegue(withIdentifier: "goToMusicOption", sender: self)
             break
         case 1004:
-            //performSegue(withIdentifier: "goToMusicOption", sender: self)
+            performSegue(withIdentifier: "goToHeartBit", sender: self)
             break
         default:
             print("")
@@ -301,11 +301,39 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBAction func salvaAction(_ sender: Any) {
         
         self.esperienza.foto = DataManager.shared().esperienza.foto
-        self.esperienza.fileAudio = DataManager.shared().esperienza.fileAudio
-        self.createVideo(audio1: self.esperienza.fileAudio[1])
+        var fotoInedite = [UIImage]()
+        for item in self.tappaSelezionata.contenutoInedito
+        {
+            fotoInedite.append(UIImage(named:item)!)
+        }
+        
+        var array:[UIImage] = zip(self.esperienza.foto, fotoInedite).flatMap({ [$0, $1] })
+        var count = self.esperienza.foto.count < fotoInedite.count ? self.esperienza.foto.count : fotoInedite.count
+        
+        if(self.esperienza.foto.count > fotoInedite.count)
+        {
+            for i in count..<self.esperienza.foto.count
+            {
+                array.append(self.esperienza.foto[i])
+            }
+        }
+        else if(self.esperienza.foto.count < fotoInedite.count)
+        {
+            for i in count..<fotoInedite.count
+            {
+                array.append(fotoInedite[i])
+            }
+        }
+        self.esperienza.foto = array
+        
+        self.createVideo(audio1:"tomorrow", fileExtension:"mp3")
     }
     
+    
     @IBAction func saltaAction(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func scartaAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -324,6 +352,10 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
             let nextViewController = segue.destination as! EsperienzaDetailsViewController
             nextViewController.esperienza = DataManager.shared().esperienza
         }
+        if(segue.identifier == "goToHeartBit")
+        {
+            //let nextViewController = segue.destination as! EmozioniTableViewController
+        }
     }
     
     // MARK: - Video Generator
@@ -336,6 +368,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
                 print(progress)
             }, success: { (url) in
                 print(url)
+                DataManager.shared().mieiTour[0].tappeVissute[0].ricordo.videoGenerato = url
                 // salvo il file
                 let player = AVPlayer(url: url)
                 let vcPlayer = AVPlayerViewController()
@@ -349,7 +382,7 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
                 
             })
         } else {
-            
+            print("file non trovato")
         }
     }
     

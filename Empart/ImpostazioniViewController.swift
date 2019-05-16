@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImpostazioniViewController: UIViewController {
+class ImpostazioniViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,14 +17,38 @@ class ImpostazioniViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var switchConserva: UISwitch!
+    @IBOutlet weak var switchAudio: UISwitch!
+    @IBOutlet weak var switchBattito: UISwitch!
+    
+    @IBAction func switchConserva(_ sender: UISwitch) {
+        var switchStatus:Bool = true
+        if switchConserva.isOn {
+            switchStatus = true
+        }else{
+            switchStatus = false
+        }
+        print("Conserva \(switchStatus)")
     }
-    */
+    
+    @IBAction func switchAudio(_ sender: UISwitch) {
+        var switchStatus:Bool = true
+        if switchAudio.isOn {
+            switchStatus = true
+        }else{
+            switchStatus = false
+        }
+        print("Audio \(switchStatus)")
+    }
+    
+    @IBAction func switchBattito(_ sender: UISwitch) {
+        var switchStatus:Bool = true
+        if switchBattito.isOn {
+            switchStatus = true
+        }else{
+            switchStatus = false
+        }
+        print("Conserva \(switchStatus)")
+    }
 
 }

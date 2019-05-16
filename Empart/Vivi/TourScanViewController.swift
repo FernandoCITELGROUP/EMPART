@@ -52,6 +52,7 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
     override func viewDidAppear(_ animated: Bool) {
         self.addPulse()
         self.scheduledTimerWithTimeInterval()
+        DataManager.shared().esperienza.foto.removeAll()
     }
     
     override func viewWillAppear(_ animated: Bool) {

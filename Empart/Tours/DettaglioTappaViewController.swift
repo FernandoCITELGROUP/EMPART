@@ -15,6 +15,8 @@ class DettaglioTappaViewController: UIViewController {
     
     // Outlets
     @IBOutlet weak var previewImage: UIImageView!
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var titoloLabel: UILabel!
     
     // Actions
     @IBAction func chiudiButton(_ sender: Any) {
@@ -26,6 +28,8 @@ class DettaglioTappaViewController: UIViewController {
         super.viewDidLoad()
 
         self.previewImage.image = UIImage(named:self.selectedItem.opera.imagine)
+        self.titoloLabel.text = self.selectedItem.opera.titolo
+        self.textView.text = self.selectedItem.opera.descrizione
     }
     
 

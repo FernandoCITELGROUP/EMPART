@@ -27,7 +27,7 @@ class TutorialPageViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        let tutorialGif = UIImage.gifImageWithName(self.imageName)
-        self.backgroundImage.image = tutorialGif
+        //let tutorialGif = UIImage.gifImageWithName(self.imageName)
+        self.backgroundImage.image = UIImage(named:self.imageName)
     }
 }

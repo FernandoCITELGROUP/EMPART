@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		750A3936228C319C007ED02A /* 25723.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A3933228C319B007ED02A /* 25723.png */; };
-		750A3937228C319C007ED02A /* localization-png-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A3934228C319B007ED02A /* localization-png-2.png */; };
-		750A3938228C319C007ED02A /* icon-beacon.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A3935228C319C007ED02A /* icon-beacon.png */; };
 		750A393A228C483C007ED02A /* MusicaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A3939228C483C007ED02A /* MusicaTableViewController.swift */; };
 		750A393C228C4952007ED02A /* MusicaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A393B228C4952007ED02A /* MusicaTableViewCell.swift */; };
 		750A393E228C9626007ED02A /* ImageTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A393D228C9626007ED02A /* ImageTrackingViewController.swift */; };
@@ -25,6 +22,49 @@
 		750A3955228CAE08007ED02A /* tourPozzuoli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3954228CAE07007ED02A /* tourPozzuoli.jpg */; };
 		750A3957228CB630007ED02A /* accademia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3956228CB630007ED02A /* accademia.jpg */; };
 		750A3959228CB638007ED02A /* accademiath.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A3958228CB638007ED02A /* accademiath.png */; };
+		750A395D228D6927007ED02A /* tutorialVivi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A395A228D6927007ED02A /* tutorialVivi.jpg */; };
+		750A395E228D6927007ED02A /* tutorialConserva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A395B228D6927007ED02A /* tutorialConserva.jpg */; };
+		750A3961228D69AA007ED02A /* tutorialRivivi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3960228D69AA007ED02A /* tutorialRivivi.jpg */; };
+		750A397C228D6EA9007ED02A /* flag1Plus7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3975228D6EA8007ED02A /* flag1Plus7.jpeg */; };
+		750A397D228D6EA9007ED02A /* flag1Plus6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3976228D6EA9007ED02A /* flag1Plus6.jpeg */; };
+		750A397E228D6EA9007ED02A /* flag1Plus2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3977228D6EA9007ED02A /* flag1Plus2.jpeg */; };
+		750A397F228D6EA9007ED02A /* flag1Plus3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3978228D6EA9007ED02A /* flag1Plus3.jpeg */; };
+		750A3980228D6EA9007ED02A /* flag1Plus5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3979228D6EA9007ED02A /* flag1Plus5.jpeg */; };
+		750A3981228D6EA9007ED02A /* flag1Plus4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A397A228D6EA9007ED02A /* flag1Plus4.jpeg */; };
+		750A3982228D6EA9007ED02A /* flag1Plus1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A397B228D6EA9007ED02A /* flag1Plus1.jpeg */; };
+		750A3989228D6EB5007ED02A /* flag2Plus4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3983228D6EB4007ED02A /* flag2Plus4.jpeg */; };
+		750A398A228D6EB5007ED02A /* flag2Plus5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3984228D6EB5007ED02A /* flag2Plus5.jpeg */; };
+		750A398B228D6EB5007ED02A /* flag2Plus6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3985228D6EB5007ED02A /* flag2Plus6.jpeg */; };
+		750A398C228D6EB5007ED02A /* flag2Plus3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3986228D6EB5007ED02A /* flag2Plus3.jpeg */; };
+		750A398D228D6EB5007ED02A /* flag2Plus2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3987228D6EB5007ED02A /* flag2Plus2.jpeg */; };
+		750A398E228D6EB5007ED02A /* flag2Plus1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3988228D6EB5007ED02A /* flag2Plus1.jpeg */; };
+		750A3998228D6F4A007ED02A /* salomePlus7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A398F228D6F49007ED02A /* salomePlus7.jpeg */; };
+		750A3999228D6F4A007ED02A /* salomePlus9.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3990228D6F49007ED02A /* salomePlus9.jpeg */; };
+		750A399A228D6F4A007ED02A /* salomePlus2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3991228D6F49007ED02A /* salomePlus2.jpeg */; };
+		750A399B228D6F4A007ED02A /* salomePlus3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3992228D6F4A007ED02A /* salomePlus3.jpeg */; };
+		750A399C228D6F4A007ED02A /* salomePlus8.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3993228D6F4A007ED02A /* salomePlus8.jpeg */; };
+		750A399D228D6F4A007ED02A /* salomePlus6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3994228D6F4A007ED02A /* salomePlus6.jpeg */; };
+		750A399E228D6F4A007ED02A /* salomePlus4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3995228D6F4A007ED02A /* salomePlus4.jpeg */; };
+		750A399F228D6F4A007ED02A /* salomePlus1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3996228D6F4A007ED02A /* salomePlus1.jpeg */; };
+		750A39A0228D6F4A007ED02A /* salomePlus5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A3997228D6F4A007ED02A /* salomePlus5.jpeg */; };
+		750A39A8228D6FDC007ED02A /* martirioPlus6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39A1228D6FDC007ED02A /* martirioPlus6.jpeg */; };
+		750A39A9228D6FDC007ED02A /* martirioPlus4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39A2228D6FDC007ED02A /* martirioPlus4.jpeg */; };
+		750A39AA228D6FDC007ED02A /* martirioPlus2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39A3228D6FDC007ED02A /* martirioPlus2.jpeg */; };
+		750A39AB228D6FDC007ED02A /* martirioPlus1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39A4228D6FDC007ED02A /* martirioPlus1.jpeg */; };
+		750A39AC228D6FDC007ED02A /* martirioPlus3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39A5228D6FDC007ED02A /* martirioPlus3.jpeg */; };
+		750A39AD228D6FDC007ED02A /* martirioPlus5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39A6228D6FDC007ED02A /* martirioPlus5.jpeg */; };
+		750A39AE228D6FDC007ED02A /* martirioPlus7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39A7228D6FDC007ED02A /* martirioPlus7.jpeg */; };
+		750A39B5228D6FEC007ED02A /* sangiovPlus1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39AF228D6FEB007ED02A /* sangiovPlus1.jpeg */; };
+		750A39B6228D6FEC007ED02A /* sangiovPlus2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39B0228D6FEB007ED02A /* sangiovPlus2.jpeg */; };
+		750A39B7228D6FEC007ED02A /* sangiovPlus4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39B1228D6FEB007ED02A /* sangiovPlus4.jpeg */; };
+		750A39B8228D6FEC007ED02A /* sangiovPlus5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39B2228D6FEC007ED02A /* sangiovPlus5.jpeg */; };
+		750A39B9228D6FEC007ED02A /* sangiovPlus6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39B3228D6FEC007ED02A /* sangiovPlus6.jpeg */; };
+		750A39BA228D6FEC007ED02A /* sangiovPlus3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 750A39B4228D6FEC007ED02A /* sangiovPlus3.jpeg */; };
+		750A39BF228DA87B007ED02A /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A39BE228DA87B007ED02A /* splash.png */; };
+		750A39C1228DB0B8007ED02A /* LOGO GRUPPO-04.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A39C0228DB0B8007ED02A /* LOGO GRUPPO-04.png */; };
+		750A39C3228DD6A3007ED02A /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A39C2228DD6A3007ED02A /* CreditsViewController.swift */; };
+		750A39C5228DDC83007ED02A /* tomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 750A39C4228DDC83007ED02A /* tomorrow.mp3 */; };
+		750A39C7228DFD0C007ED02A /* RilevaBattitoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A39C6228DFD0C007ED02A /* RilevaBattitoViewController.swift */; };
 		750CDA9B22873DBA004D0FEB /* EsperienzaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */; };
 		750CDA9D22873DDB004D0FEB /* FotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */; };
 		750CDA9F22873DEC004D0FEB /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */; };
@@ -60,9 +100,6 @@
 		75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */; };
 		758560622280B5E500EDB1AD /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560612280B5E500EDB1AD /* TutorialViewController.swift */; };
 		758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */; };
-		75BFDC85228AF1750060DBFC /* bensound-creativeminds.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 75BFDC84228AF1750060DBFC /* bensound-creativeminds.mp3 */; };
-		75BFDC88228B01CD0060DBFC /* GlobalMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BFDC87228B01CD0060DBFC /* GlobalMethod.swift */; };
-		75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */; };
 		75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */; };
 		75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */; };
 		75FB9ADB2281CECB00A0881E /* museiCapitoliniCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */; };
@@ -84,8 +121,6 @@
 		75FB9AFD228219AA00A0881E /* tourCaravaggio.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AFC228219AA00A0881E /* tourCaravaggio.png */; };
 		75FB9AFF22821F0A00A0881E /* DettaglioMuseoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */; };
 		75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B012282231D00A0881E /* TourTableViewCell.swift */; };
-		75FB9B042282B48800A0881E /* testScan.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B032282B48800A0881E /* testScan.png */; };
-		75FB9B062282B7BF00A0881E /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B052282B7BF00A0881E /* qrcode.png */; };
 		75FB9B0E2282EB0700A0881E /* sal1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B082282EB0700A0881E /* sal1.png */; };
 		75FB9B0F2282EB0700A0881E /* flag2.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B092282EB0700A0881E /* flag2.png */; };
 		75FB9B102282EB0700A0881E /* gio1.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B0A2282EB0700A0881E /* gio1.png */; };
@@ -105,13 +140,9 @@
 		75FB9B2E228465DF00A0881E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2D228465DF00A0881E /* DataManager.swift */; };
 		75FB9B3022848A7700A0881E /* TourScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B2F22848A7700A0881E /* TourScanViewController.swift */; };
 		75FB9B3322858EA000A0881E /* ViviViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B3222858EA000A0881E /* ViviViewController.swift */; };
-		75FB9B352285C3F900A0881E /* Pause-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B342285C3F900A0881E /* Pause-512.png */; };
-		75FB9B372285C47400A0881E /* 16052.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B362285C47400A0881E /* 16052.png */; };
-		75FB9B392285C4B800A0881E /* stop-squared-filled.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B382285C4B800A0881E /* stop-squared-filled.png */; };
 		75FB9B50228618DB00A0881E /* YXWaveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B4F228618DB00A0881E /* YXWaveView.swift */; };
 		75FB9B5222870E4300A0881E /* EmozioniTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B5122870E4300A0881E /* EmozioniTableViewController.swift */; };
 		75FB9B5422870E5D00A0881E /* EmozioneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9B5322870E5D00A0881E /* EmozioneTableViewCell.swift */; };
-		75FB9B56228723E000A0881E /* prove loghi-15.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9B55228723E000A0881E /* prove loghi-15.png */; };
 		FB6ECEDAA9917359331161F0 /* Pods_Empart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7E2074F4F6B82CC2348DB7 /* Pods_Empart.framework */; };
 /* End PBXBuildFile section */
 
@@ -119,9 +150,6 @@
 		0DD416D62EC7E4701537CEC7 /* Pods-Empart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empart.release.xcconfig"; path = "Target Support Files/Pods-Empart/Pods-Empart.release.xcconfig"; sourceTree = "<group>"; };
 		3BE341FD7A770FB09304426B /* Pods-Empart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Empart.debug.xcconfig"; path = "Target Support Files/Pods-Empart/Pods-Empart.debug.xcconfig"; sourceTree = "<group>"; };
 		3D7E2074F4F6B82CC2348DB7 /* Pods_Empart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Empart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		750A3933228C319B007ED02A /* 25723.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25723.png; sourceTree = "<group>"; };
-		750A3934228C319B007ED02A /* localization-png-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "localization-png-2.png"; sourceTree = "<group>"; };
-		750A3935228C319C007ED02A /* icon-beacon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-beacon.png"; sourceTree = "<group>"; };
 		750A3939228C483C007ED02A /* MusicaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaTableViewController.swift; sourceTree = "<group>"; };
 		750A393B228C4952007ED02A /* MusicaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaTableViewCell.swift; sourceTree = "<group>"; };
 		750A393D228C9626007ED02A /* ImageTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTrackingViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +165,49 @@
 		750A3954228CAE07007ED02A /* tourPozzuoli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tourPozzuoli.jpg; sourceTree = "<group>"; };
 		750A3956228CB630007ED02A /* accademia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = accademia.jpg; sourceTree = "<group>"; };
 		750A3958228CB638007ED02A /* accademiath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = accademiath.png; sourceTree = "<group>"; };
+		750A395A228D6927007ED02A /* tutorialVivi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tutorialVivi.jpg; sourceTree = "<group>"; };
+		750A395B228D6927007ED02A /* tutorialConserva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tutorialConserva.jpg; sourceTree = "<group>"; };
+		750A3960228D69AA007ED02A /* tutorialRivivi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tutorialRivivi.jpg; sourceTree = "<group>"; };
+		750A3975228D6EA8007ED02A /* flag1Plus7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag1Plus7.jpeg; sourceTree = "<group>"; };
+		750A3976228D6EA9007ED02A /* flag1Plus6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag1Plus6.jpeg; sourceTree = "<group>"; };
+		750A3977228D6EA9007ED02A /* flag1Plus2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag1Plus2.jpeg; sourceTree = "<group>"; };
+		750A3978228D6EA9007ED02A /* flag1Plus3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag1Plus3.jpeg; sourceTree = "<group>"; };
+		750A3979228D6EA9007ED02A /* flag1Plus5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag1Plus5.jpeg; sourceTree = "<group>"; };
+		750A397A228D6EA9007ED02A /* flag1Plus4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag1Plus4.jpeg; sourceTree = "<group>"; };
+		750A397B228D6EA9007ED02A /* flag1Plus1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag1Plus1.jpeg; sourceTree = "<group>"; };
+		750A3983228D6EB4007ED02A /* flag2Plus4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag2Plus4.jpeg; sourceTree = "<group>"; };
+		750A3984228D6EB5007ED02A /* flag2Plus5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag2Plus5.jpeg; sourceTree = "<group>"; };
+		750A3985228D6EB5007ED02A /* flag2Plus6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag2Plus6.jpeg; sourceTree = "<group>"; };
+		750A3986228D6EB5007ED02A /* flag2Plus3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag2Plus3.jpeg; sourceTree = "<group>"; };
+		750A3987228D6EB5007ED02A /* flag2Plus2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag2Plus2.jpeg; sourceTree = "<group>"; };
+		750A3988228D6EB5007ED02A /* flag2Plus1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flag2Plus1.jpeg; sourceTree = "<group>"; };
+		750A398F228D6F49007ED02A /* salomePlus7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus7.jpeg; sourceTree = "<group>"; };
+		750A3990228D6F49007ED02A /* salomePlus9.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus9.jpeg; sourceTree = "<group>"; };
+		750A3991228D6F49007ED02A /* salomePlus2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus2.jpeg; sourceTree = "<group>"; };
+		750A3992228D6F4A007ED02A /* salomePlus3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus3.jpeg; sourceTree = "<group>"; };
+		750A3993228D6F4A007ED02A /* salomePlus8.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus8.jpeg; sourceTree = "<group>"; };
+		750A3994228D6F4A007ED02A /* salomePlus6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus6.jpeg; sourceTree = "<group>"; };
+		750A3995228D6F4A007ED02A /* salomePlus4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus4.jpeg; sourceTree = "<group>"; };
+		750A3996228D6F4A007ED02A /* salomePlus1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus1.jpeg; sourceTree = "<group>"; };
+		750A3997228D6F4A007ED02A /* salomePlus5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = salomePlus5.jpeg; sourceTree = "<group>"; };
+		750A39A1228D6FDC007ED02A /* martirioPlus6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martirioPlus6.jpeg; sourceTree = "<group>"; };
+		750A39A2228D6FDC007ED02A /* martirioPlus4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martirioPlus4.jpeg; sourceTree = "<group>"; };
+		750A39A3228D6FDC007ED02A /* martirioPlus2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martirioPlus2.jpeg; sourceTree = "<group>"; };
+		750A39A4228D6FDC007ED02A /* martirioPlus1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martirioPlus1.jpeg; sourceTree = "<group>"; };
+		750A39A5228D6FDC007ED02A /* martirioPlus3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martirioPlus3.jpeg; sourceTree = "<group>"; };
+		750A39A6228D6FDC007ED02A /* martirioPlus5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martirioPlus5.jpeg; sourceTree = "<group>"; };
+		750A39A7228D6FDC007ED02A /* martirioPlus7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = martirioPlus7.jpeg; sourceTree = "<group>"; };
+		750A39AF228D6FEB007ED02A /* sangiovPlus1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sangiovPlus1.jpeg; sourceTree = "<group>"; };
+		750A39B0228D6FEB007ED02A /* sangiovPlus2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sangiovPlus2.jpeg; sourceTree = "<group>"; };
+		750A39B1228D6FEB007ED02A /* sangiovPlus4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sangiovPlus4.jpeg; sourceTree = "<group>"; };
+		750A39B2228D6FEC007ED02A /* sangiovPlus5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sangiovPlus5.jpeg; sourceTree = "<group>"; };
+		750A39B3228D6FEC007ED02A /* sangiovPlus6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sangiovPlus6.jpeg; sourceTree = "<group>"; };
+		750A39B4228D6FEC007ED02A /* sangiovPlus3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sangiovPlus3.jpeg; sourceTree = "<group>"; };
+		750A39BE228DA87B007ED02A /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		750A39C0228DB0B8007ED02A /* LOGO GRUPPO-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LOGO GRUPPO-04.png"; sourceTree = "<group>"; };
+		750A39C2228DD6A3007ED02A /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
+		750A39C4228DDC83007ED02A /* tomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tomorrow.mp3; sourceTree = "<group>"; };
+		750A39C6228DFD0C007ED02A /* RilevaBattitoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RilevaBattitoViewController.swift; sourceTree = "<group>"; };
 		750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsperienzaDetailsViewController.swift; sourceTree = "<group>"; };
 		750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoTableViewCell.swift; sourceTree = "<group>"; };
 		750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
@@ -174,9 +245,6 @@
 		7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniViewController.swift; sourceTree = "<group>"; };
 		758560612280B5E500EDB1AD /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
-		75BFDC84228AF1750060DBFC /* bensound-creativeminds.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-creativeminds.mp3"; sourceTree = "<group>"; };
-		75BFDC87228B01CD0060DBFC /* GlobalMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMethod.swift; sourceTree = "<group>"; };
-		75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0462.jpg; sourceTree = "<group>"; };
 		75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capodimonteCopertina.jpg; sourceTree = "<group>"; };
 		75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseoTableViewCell.swift; sourceTree = "<group>"; };
 		75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museiCapitoliniCopertina.jpg; sourceTree = "<group>"; };
@@ -198,8 +266,6 @@
 		75FB9AFC228219AA00A0881E /* tourCaravaggio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tourCaravaggio.png; sourceTree = "<group>"; };
 		75FB9AFE22821F0A00A0881E /* DettaglioMuseoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DettaglioMuseoViewController.swift; sourceTree = "<group>"; };
 		75FB9B012282231D00A0881E /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
-		75FB9B032282B48800A0881E /* testScan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testScan.png; sourceTree = "<group>"; };
-		75FB9B052282B7BF00A0881E /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode.png; sourceTree = "<group>"; };
 		75FB9B082282EB0700A0881E /* sal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sal1.png; sourceTree = "<group>"; };
 		75FB9B092282EB0700A0881E /* flag2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag2.png; sourceTree = "<group>"; };
 		75FB9B0A2282EB0700A0881E /* gio1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gio1.png; sourceTree = "<group>"; };
@@ -219,13 +285,9 @@
 		75FB9B2D228465DF00A0881E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		75FB9B2F22848A7700A0881E /* TourScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourScanViewController.swift; sourceTree = "<group>"; };
 		75FB9B3222858EA000A0881E /* ViviViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViviViewController.swift; sourceTree = "<group>"; };
-		75FB9B342285C3F900A0881E /* Pause-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause-512.png"; sourceTree = "<group>"; };
-		75FB9B362285C47400A0881E /* 16052.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16052.png; sourceTree = "<group>"; };
-		75FB9B382285C4B800A0881E /* stop-squared-filled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stop-squared-filled.png"; sourceTree = "<group>"; };
 		75FB9B4F228618DB00A0881E /* YXWaveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YXWaveView.swift; sourceTree = "<group>"; };
 		75FB9B5122870E4300A0881E /* EmozioniTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmozioniTableViewController.swift; sourceTree = "<group>"; };
 		75FB9B5322870E5D00A0881E /* EmozioneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmozioneTableViewCell.swift; sourceTree = "<group>"; };
-		75FB9B55228723E000A0881E /* prove loghi-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prove loghi-15.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +328,76 @@
 			path = luoghi;
 			sourceTree = "<group>";
 		};
+		750A3962228D6D91007ED02A /* CaravaggioFlag1Plus */ = {
+			isa = PBXGroup;
+			children = (
+				750A397B228D6EA9007ED02A /* flag1Plus1.jpeg */,
+				750A3977228D6EA9007ED02A /* flag1Plus2.jpeg */,
+				750A3978228D6EA9007ED02A /* flag1Plus3.jpeg */,
+				750A397A228D6EA9007ED02A /* flag1Plus4.jpeg */,
+				750A3979228D6EA9007ED02A /* flag1Plus5.jpeg */,
+				750A3976228D6EA9007ED02A /* flag1Plus6.jpeg */,
+				750A3975228D6EA8007ED02A /* flag1Plus7.jpeg */,
+			);
+			path = CaravaggioFlag1Plus;
+			sourceTree = "<group>";
+		};
+		750A3971228D6E00007ED02A /* CaravaggioFlag2Plus */ = {
+			isa = PBXGroup;
+			children = (
+				750A3988228D6EB5007ED02A /* flag2Plus1.jpeg */,
+				750A3987228D6EB5007ED02A /* flag2Plus2.jpeg */,
+				750A3986228D6EB5007ED02A /* flag2Plus3.jpeg */,
+				750A3983228D6EB4007ED02A /* flag2Plus4.jpeg */,
+				750A3984228D6EB5007ED02A /* flag2Plus5.jpeg */,
+				750A3985228D6EB5007ED02A /* flag2Plus6.jpeg */,
+			);
+			path = CaravaggioFlag2Plus;
+			sourceTree = "<group>";
+		};
+		750A3972228D6E0E007ED02A /* SalomePlus */ = {
+			isa = PBXGroup;
+			children = (
+				750A3996228D6F4A007ED02A /* salomePlus1.jpeg */,
+				750A3991228D6F49007ED02A /* salomePlus2.jpeg */,
+				750A3992228D6F4A007ED02A /* salomePlus3.jpeg */,
+				750A3995228D6F4A007ED02A /* salomePlus4.jpeg */,
+				750A3997228D6F4A007ED02A /* salomePlus5.jpeg */,
+				750A3994228D6F4A007ED02A /* salomePlus6.jpeg */,
+				750A398F228D6F49007ED02A /* salomePlus7.jpeg */,
+				750A3993228D6F4A007ED02A /* salomePlus8.jpeg */,
+				750A3990228D6F49007ED02A /* salomePlus9.jpeg */,
+			);
+			path = SalomePlus;
+			sourceTree = "<group>";
+		};
+		750A3973228D6E19007ED02A /* MartirioPlus */ = {
+			isa = PBXGroup;
+			children = (
+				750A39A4228D6FDC007ED02A /* martirioPlus1.jpeg */,
+				750A39A3228D6FDC007ED02A /* martirioPlus2.jpeg */,
+				750A39A5228D6FDC007ED02A /* martirioPlus3.jpeg */,
+				750A39A2228D6FDC007ED02A /* martirioPlus4.jpeg */,
+				750A39A6228D6FDC007ED02A /* martirioPlus5.jpeg */,
+				750A39A1228D6FDC007ED02A /* martirioPlus6.jpeg */,
+				750A39A7228D6FDC007ED02A /* martirioPlus7.jpeg */,
+			);
+			path = MartirioPlus;
+			sourceTree = "<group>";
+		};
+		750A3974228D6E27007ED02A /* SanGIovanniPlus */ = {
+			isa = PBXGroup;
+			children = (
+				750A39AF228D6FEB007ED02A /* sangiovPlus1.jpeg */,
+				750A39B0228D6FEB007ED02A /* sangiovPlus2.jpeg */,
+				750A39B4228D6FEC007ED02A /* sangiovPlus3.jpeg */,
+				750A39B1228D6FEB007ED02A /* sangiovPlus4.jpeg */,
+				750A39B2228D6FEC007ED02A /* sangiovPlus5.jpeg */,
+				750A39B3228D6FEC007ED02A /* sangiovPlus6.jpeg */,
+			);
+			path = SanGIovanniPlus;
+			sourceTree = "<group>";
+		};
 		750CDAA022896240004D0FEB /* MieiTours */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +413,11 @@
 		750CDAD5228AA7BD004D0FEB /* Conserva */ = {
 			isa = PBXGroup;
 			children = (
+				750A3974228D6E27007ED02A /* SanGIovanniPlus */,
+				750A3973228D6E19007ED02A /* MartirioPlus */,
+				750A3972228D6E0E007ED02A /* SalomePlus */,
+				750A3971228D6E00007ED02A /* CaravaggioFlag2Plus */,
+				750A3962228D6D91007ED02A /* CaravaggioFlag1Plus */,
 			);
 			path = Conserva;
 			sourceTree = "<group>";
@@ -288,17 +425,20 @@
 		750CDAD8228AC057004D0FEB /* TmpVideos */ = {
 			isa = PBXGroup;
 			children = (
-				75BFDC84228AF1750060DBFC /* bensound-creativeminds.mp3 */,
+				750A39C4228DDC83007ED02A /* tomorrow.mp3 */,
 				750CDAE5228ADF1A004D0FEB /* video.mov */,
 			);
 			path = TmpVideos;
 			sourceTree = "<group>";
 		};
-		750CDADC228AD139004D0FEB /* TutorialGif */ = {
+		750CDADC228AD139004D0FEB /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				750A3960228D69AA007ED02A /* tutorialRivivi.jpg */,
+				750A395B228D6927007ED02A /* tutorialConserva.jpg */,
+				750A395A228D6927007ED02A /* tutorialVivi.jpg */,
 			);
-			path = TutorialGif;
+			path = Tutorial;
 			sourceTree = "<group>";
 		};
 		7585603A2280819300EDB1AD = {
@@ -322,11 +462,10 @@
 		758560452280819300EDB1AD /* Empart */ = {
 			isa = PBXGroup;
 			children = (
-				750A3933228C319B007ED02A /* 25723.png */,
-				750A3935228C319C007ED02A /* icon-beacon.png */,
-				750A3934228C319B007ED02A /* localization-png-2.png */,
+				750A39C0228DB0B8007ED02A /* LOGO GRUPPO-04.png */,
+				750A39BE228DA87B007ED02A /* splash.png */,
 				75BFDC86228B01AF0060DBFC /* Empath */,
-				750CDADC228AD139004D0FEB /* TutorialGif */,
+				750CDADC228AD139004D0FEB /* Tutorial */,
 				750CDAD8228AC057004D0FEB /* TmpVideos */,
 				75FB9AD32281BBD000A0881E /* TmpImages */,
 				750CDAD5228AA7BD004D0FEB /* Conserva */,
@@ -347,6 +486,7 @@
 				75FB9B2B228423E300A0881E /* Pulsing.swift */,
 				750CDAA322896F31004D0FEB /* NavigationExtension.swift */,
 				750CDADD228AD21C004D0FEB /* ExtensionUIImage.swift */,
+				750A39C2228DD6A3007ED02A /* CreditsViewController.swift */,
 			);
 			path = Empart;
 			sourceTree = "<group>";
@@ -382,7 +522,6 @@
 		75BFDC86228B01AF0060DBFC /* Empath */ = {
 			isa = PBXGroup;
 			children = (
-				75BFDC87228B01CD0060DBFC /* GlobalMethod.swift */,
 			);
 			path = Empath;
 			sourceTree = "<group>";
@@ -404,15 +543,8 @@
 				750CDAAE2289A9EA004D0FEB /* cuore1.png */,
 				750CDAB02289A9EA004D0FEB /* foto1.png */,
 				750CDAAF2289A9EA004D0FEB /* musica1.png */,
-				75FB9B382285C4B800A0881E /* stop-squared-filled.png */,
-				75FB9B362285C47400A0881E /* 16052.png */,
-				75FB9B342285C3F900A0881E /* Pause-512.png */,
-				75FB9B052282B7BF00A0881E /* qrcode.png */,
-				75FB9B032282B48800A0881E /* testScan.png */,
 				75FB9AF72282175400A0881E /* Tours */,
 				75FB9AF62282173F00A0881E /* Musei */,
-				75FB9AD42281BBEA00A0881E /* IMG_0462.jpg */,
-				75FB9B55228723E000A0881E /* prove loghi-15.png */,
 			);
 			path = TmpImages;
 			sourceTree = "<group>";
@@ -488,6 +620,7 @@
 				750A3939228C483C007ED02A /* MusicaTableViewController.swift */,
 				750A393B228C4952007ED02A /* MusicaTableViewCell.swift */,
 				750A393D228C9626007ED02A /* ImageTrackingViewController.swift */,
+				750A39C6228DFD0C007ED02A /* RilevaBattitoViewController.swift */,
 			);
 			path = Vivi;
 			sourceTree = "<group>";
@@ -571,64 +704,94 @@
 				75FB9AF5228212C700A0881E /* palazzoRealeCopertina.jpg in Resources */,
 				75FB9B1C2282EC9B00A0881E /* gio1th.png in Resources */,
 				750A3959228CB638007ED02A /* accademiath.png in Resources */,
-				75FB9B372285C47400A0881E /* 16052.png in Resources */,
+				750A397D228D6EA9007ED02A /* flag1Plus6.jpeg in Resources */,
+				750A395E228D6927007ED02A /* tutorialConserva.jpg in Resources */,
 				75FB9B132282EB0700A0881E /* sal2.png in Resources */,
-				75FB9B352285C3F900A0881E /* Pause-512.png in Resources */,
+				750A39C5228DDC83007ED02A /* tomorrow.mp3 in Resources */,
 				75FB9B122282EB0700A0881E /* mart1.png in Resources */,
+				750A399C228D6F4A007ED02A /* salomePlus8.jpeg in Resources */,
+				750A398B228D6EB5007ED02A /* flag2Plus6.jpeg in Resources */,
 				75FB9B1E2282EC9B00A0881E /* sal1th.png in Resources */,
+				750A39BA228D6FEC007ED02A /* sangiovPlus3.jpeg in Resources */,
+				750A39AB228D6FDC007ED02A /* martirioPlus1.jpeg in Resources */,
+				750A39B6228D6FEC007ED02A /* sangiovPlus2.jpeg in Resources */,
 				75FB9B1B2282EC9B00A0881E /* mart1th.png in Resources */,
-				75FB9B042282B48800A0881E /* testScan.png in Resources */,
+				750A39A9228D6FDC007ED02A /* martirioPlus4.jpeg in Resources */,
+				750A399F228D6F4A007ED02A /* salomePlus1.jpeg in Resources */,
+				750A399E228D6F4A007ED02A /* salomePlus4.jpeg in Resources */,
 				750A3949228CAB30007ED02A /* anfiteatroFlavio.jpg in Resources */,
+				750A39AC228D6FDC007ED02A /* martirioPlus3.jpeg in Resources */,
+				750A3982228D6EA9007ED02A /* flag1Plus1.jpeg in Resources */,
+				750A39A0228D6F4A007ED02A /* salomePlus5.jpeg in Resources */,
 				75FB9AFB228218D900A0881E /* tourOroRosso.jpg in Resources */,
 				750CDAB12289A9EA004D0FEB /* audio1.png in Resources */,
 				75FB9B112282EB0700A0881E /* flag1.png in Resources */,
 				750CDAB22289A9EA004D0FEB /* cuore1.png in Resources */,
-				75BFDC85228AF1750060DBFC /* bensound-creativeminds.mp3 in Resources */,
+				750A397F228D6EA9007ED02A /* flag1Plus3.jpeg in Resources */,
 				750A3948228CAB30007ED02A /* sibilla.jpg in Resources */,
+				750A3981228D6EA9007ED02A /* flag1Plus4.jpeg in Resources */,
 				750CDAE6228ADF1A004D0FEB /* video.mov in Resources */,
 				750CDAC6228A08CA004D0FEB /* riviviCamera.png in Resources */,
-				75FB9B392285C4B800A0881E /* stop-squared-filled.png in Resources */,
 				750A3951228CAC5E007ED02A /* serapideth.png in Resources */,
+				750A3999228D6F4A007ED02A /* salomePlus9.jpeg in Resources */,
 				75FB9B102282EB0700A0881E /* gio1.png in Resources */,
-				75FB9B56228723E000A0881E /* prove loghi-15.png in Resources */,
 				750A394B228CAB30007ED02A /* rioneterra.jpg in Resources */,
+				750A39A8228D6FDC007ED02A /* martirioPlus6.jpeg in Resources */,
 				750A3940228CA9A5007ED02A /* pozzuoli.jpg in Resources */,
 				750CDAB62289B445004D0FEB /* logoVivi.png in Resources */,
-				750A3938228C319C007ED02A /* icon-beacon.png in Resources */,
+				750A39B8228D6FEC007ED02A /* sangiovPlus5.jpeg in Resources */,
+				750A398C228D6EB5007ED02A /* flag2Plus3.jpeg in Resources */,
+				750A39AD228D6FDC007ED02A /* martirioPlus5.jpeg in Resources */,
 				75FB9AF9228218D000A0881E /* tourStorie.jpg in Resources */,
+				750A399D228D6F4A007ED02A /* salomePlus6.jpeg in Resources */,
+				750A398E228D6EB5007ED02A /* flag2Plus1.jpeg in Resources */,
 				750CDAB42289A9EA004D0FEB /* foto1.png in Resources */,
+				750A39BF228DA87B007ED02A /* splash.png in Resources */,
 				75FB9B1A2282EC9B00A0881E /* flag2th.png in Resources */,
 				750CDAC8228A0A15004D0FEB /* riviviPlayVideo.png in Resources */,
 				750A3952228CAC5E007ED02A /* sibillath.png in Resources */,
 				750CDAC3228A08CA004D0FEB /* riviviMusica.png in Resources */,
 				758560512280819400EDB1AD /* LaunchScreen.storyboard in Resources */,
+				750A399A228D6F4A007ED02A /* salomePlus2.jpeg in Resources */,
+				750A397E228D6EA9007ED02A /* flag1Plus2.jpeg in Resources */,
 				750CDAD2228A128F004D0FEB /* viviPause.png in Resources */,
+				750A398A228D6EB5007ED02A /* flag2Plus5.jpeg in Resources */,
 				75FB9B1F2282EC9B00A0881E /* sal2th.png in Resources */,
+				750A39C1228DB0B8007ED02A /* LOGO GRUPPO-04.png in Resources */,
+				750A3980228D6EA9007ED02A /* flag1Plus5.jpeg in Resources */,
 				75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */,
+				750A39AE228D6FDC007ED02A /* martirioPlus7.jpeg in Resources */,
 				75FB9AF3228212AA00A0881E /* museoArcheologicoCopertina.jpg in Resources */,
 				750CDAB82289F3F1004D0FEB /* riviviPlay.png in Resources */,
 				750A3955228CAE08007ED02A /* tourPozzuoli.jpg in Resources */,
+				750A3989228D6EB5007ED02A /* flag2Plus4.jpeg in Resources */,
 				750CDAD3228A128F004D0FEB /* viviPlayRec.png in Resources */,
 				750A394A228CAB30007ED02A /* serapide.jpg in Resources */,
-				75FB9B062282B7BF00A0881E /* qrcode.png in Resources */,
 				750CDAC4228A08CA004D0FEB /* riviviCuore.png in Resources */,
 				750CDAB32289A9EA004D0FEB /* musica1.png in Resources */,
-				750A3937228C319C007ED02A /* localization-png-2.png in Resources */,
+				750A3961228D69AA007ED02A /* tutorialRivivi.jpg in Resources */,
+				750A3998228D6F4A007ED02A /* salomePlus7.jpeg in Resources */,
 				75FB9B0F2282EB0700A0881E /* flag2.png in Resources */,
-				75FB9AD52281BBEA00A0881E /* IMG_0462.jpg in Resources */,
 				7585604E2280819400EDB1AD /* Assets.xcassets in Resources */,
+				750A398D228D6EB5007ED02A /* flag2Plus2.jpeg in Resources */,
 				750A3957228CB630007ED02A /* accademia.jpg in Resources */,
 				750A3953228CAC5E007ED02A /* rioneterrath.png in Resources */,
 				75FB9ADB2281CECB00A0881E /* museiCapitoliniCopertina.jpg in Resources */,
 				75FB9B0E2282EB0700A0881E /* sal1.png in Resources */,
 				750CDAC5228A08CA004D0FEB /* riviviAudio.png in Resources */,
 				7585605A228081DE00EDB1AD /* Tutorial.storyboard in Resources */,
+				750A39B7228D6FEC007ED02A /* sangiovPlus4.jpeg in Resources */,
 				75FB9B1D2282EC9B00A0881E /* flag1th.png in Resources */,
 				750A3950228CAC5E007ED02A /* anfiteatroFlavioth.png in Resources */,
+				750A39B5228D6FEC007ED02A /* sangiovPlus1.jpeg in Resources */,
 				7585604C2280819300EDB1AD /* Main.storyboard in Resources */,
-				750A3936228C319C007ED02A /* 25723.png in Resources */,
+				750A399B228D6F4A007ED02A /* salomePlus3.jpeg in Resources */,
 				75FB9AFD228219AA00A0881E /* tourCaravaggio.png in Resources */,
 				750CDAD4228A128F004D0FEB /* viviStop.png in Resources */,
+				750A395D228D6927007ED02A /* tutorialVivi.jpg in Resources */,
+				750A39AA228D6FDC007ED02A /* martirioPlus2.jpeg in Resources */,
+				750A39B9228D6FEC007ED02A /* sangiovPlus6.jpeg in Resources */,
+				750A397C228D6EA9007ED02A /* flag1Plus7.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +855,8 @@
 				75FB9ADF2281EC6700A0881E /* TourEmpart.swift in Sources */,
 				758560492280819300EDB1AD /* ViewController.swift in Sources */,
 				750CDAA22289650E004D0FEB /* MioTourTableViewCell.swift in Sources */,
+				750A39C3228DD6A3007ED02A /* CreditsViewController.swift in Sources */,
+				750A39C7228DFD0C007ED02A /* RilevaBattitoViewController.swift in Sources */,
 				750CDABA2289F462004D0FEB /* MiaTappaTableViewCell.swift in Sources */,
 				75FB9B2C228423E300A0881E /* Pulsing.swift in Sources */,
 				7585605E2280829400EDB1AD /* CercaViewController.swift in Sources */,
@@ -731,7 +896,6 @@
 				75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */,
 				7585605C2280827E00EDB1AD /* MieiPercorsiViewController.swift in Sources */,
 				75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */,
-				75BFDC88228B01CD0060DBFC /* GlobalMethod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

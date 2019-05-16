@@ -20,19 +20,18 @@ class TutorialViewController: UIPageViewController, UIPageViewControllerDelegate
         var array:[TutorialPageViewController] = [TutorialPageViewController]()
         
         let viviViewController = storyboard?.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
-//        let viviViewController:TutorialPageViewController = TutorialPageViewController()
         viviViewController.titleOfButton = "SKIP"
-        viviViewController.imageName = "VIVI"
+        viviViewController.imageName = "tutorialVivi.jpg"
         array.append(viviViewController)
         
         let conservaViewController:TutorialPageViewController = storyboard?.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
         conservaViewController.titleOfButton = "SKIP"
-        viviViewController.imageName = "CONSERVA"
+        conservaViewController.imageName = "tutorialConserva.jpg"
         array.append(conservaViewController)
         
         let riviviViewController:TutorialPageViewController = storyboard?.instantiateViewController(withIdentifier: "TutorialPageViewController") as! TutorialPageViewController
         riviviViewController.titleOfButton = "SKIP"
-        viviViewController.imageName = "animazioni_2"
+        riviviViewController.imageName = "tutorialRivivi.jpg"
         array.append(riviviViewController)
         
         return array

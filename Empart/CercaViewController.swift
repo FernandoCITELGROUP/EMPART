@@ -39,7 +39,7 @@ class SearchResult {
 class CercaViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UITextFieldDelegate {
     
     
-    
+    var museoDaVisualizzare:Museo!
     var searching = false
     var searchInfo = [SearchResult]()
     
@@ -123,48 +123,8 @@ class CercaViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 result.listaTours.removeLast()
                 self.searchInfo.append(result)
             }
-            
-            //cerco i MUSEI nei quali esiste un'OPERA il cui .autore.nome contiene il text che sto digitando
-            /*for tour in museo.toursDisponibili {
-             
-             let tappa = tour.tappe.filter{$0.opera.autore.nomeDarte.lowercased().contains(searchText.lowercased())}
-             if tappa.count > 0
-             {
-             museiTrovati.append(museo)
-             
-             }
-             
-             }*/
-            
         }
         
-        
-        /*        //        cerco i MUSEI nei quali esiste un TOUR il cui .titolo contiene il text che sto digitando
-         var museiTrovati:[Museo] = [Museo]()
-         for museo in DataManager.shared().musei{
-         
-         let tours = museo.toursDisponibili.filter{$0.titolo.lowercased().contains(searchText.lowercased())}
-         if tours.count > 0
-         {
-         museiTrovati.append(museo)
-         }
-         
-         //        cerco i MUSEI nei quali esiste un'OPERA il cui .autore.nome contiene il text che sto digitando
-         for tour in museo.toursDisponibili {
-         
-         let tappa = tour.tappe.filter{$0.opera.autore.nomeDarte.lowercased().contains(searchText.lowercased())}
-         if tappa.count > 0
-         {
-         museiTrovati.append(museo)
-         }
-         
-         }
-         
-         }
-         
-         searchInfo += museiTrovati
-         
-         searching = true*/
         searching = true
         tableViewOne.reloadData()
     }
@@ -177,9 +137,16 @@ class CercaViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let destinationViewController = DettaglioMuseoViewController()
-        destinationViewController.selectedItem = searchInfo[indexPath.row].museoTrovato
-        self.present(destinationViewController, animated: true, completion: nil)
+        
+        self.museoDaVisualizzare = self.searchInfo[indexPath.row].museoTrovato
+        performSegue(withIdentifier: "goToDettagliMuseo", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goToDettagliMuseo")
+        {
+            let nextViewController = segue.destination as! DettaglioMuseoViewController
+            nextViewController.selectedItem = self.museoDaVisualizzare
+        }
+    }
 }

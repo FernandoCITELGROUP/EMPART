@@ -25,6 +25,8 @@ class Tappa{
     var posizione:Dictionary<String,Double>
     var copertina:String
     var imageToTrack:String
+    var contenutoInedito:[String]
+    
     
     init() {
         self.opera = Opera()
@@ -35,6 +37,7 @@ class Tappa{
         self.posizione = Dictionary<String,Double>()
         self.copertina = ""
         self.imageToTrack = ""
+        self.contenutoInedito = [String]()
     }
     
     init(opera:Opera,status:StatoTappa,ordine:Int,tipoLocalizzazione:TipoLocalizzazione,beacon:Beacon,posizione:Dictionary<String,Double>, copertina:String, imageToTrack:String) {
@@ -46,5 +49,6 @@ class Tappa{
         self.posizione = posizione
         self.copertina = copertina
         self.imageToTrack = imageToTrack
+        self.contenutoInedito = [String]()
     }
 }
