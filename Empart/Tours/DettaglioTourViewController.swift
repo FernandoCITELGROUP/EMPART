@@ -17,6 +17,14 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
     //Outlets
     @IBOutlet weak var tappeTableView: UITableView!
     @IBOutlet weak var copertinaTourImageView: UIImageView!
+    @IBOutlet weak var textView: UITextView!
+    // Info popover
+    @IBOutlet var infoPop: UIView!
+    @IBAction func chiudiPop(_ sender: Any) {
+        self.infoPop.removeFromSuperview()
+    }
+    @IBOutlet weak var infoLabel: UILabel!
+    @IBOutlet weak var infoImage: UIImageView!
     
     @IBAction func iniziaTourAction(_ sender: Any) {
        self.performSegue(withIdentifier: "goToTourScan", sender: self)
@@ -38,15 +46,49 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
             cell.geolocal.isHidden = true
             cell.imageTrack.isHidden = false
             cell.ibeacon.isHidden = false
+            
+            let tapBeaconInfo:UITapGestureRecognizer  = UITapGestureRecognizer(target: self, action: #selector(DettaglioTourViewController.showInfoBeacon(_:)))
+            cell.ibeacon.addGestureRecognizer(tapBeaconInfo)
+            cell.ibeacon.isUserInteractionEnabled = true
+            
+            let tapTrackInfo:UITapGestureRecognizer  = UITapGestureRecognizer(target: self, action: #selector(DettaglioTourViewController.showInfoTrak(_:)))
+            cell.imageTrack.addGestureRecognizer(tapTrackInfo)
+            cell.imageTrack.isUserInteractionEnabled = true
         }
         if(item.tipoLocalizzazione == TipoLocalizzazione.Posizione)
         {
             cell.geolocal.isHidden = false
+            let tapGeoInfo:UITapGestureRecognizer  = UITapGestureRecognizer(target: self, action: #selector(DettaglioTourViewController.showInfoPos(_:)))
+            cell.geolocal.addGestureRecognizer(tapGeoInfo)
+            cell.geolocal.isUserInteractionEnabled = true
+            
             cell.imageTrack.isHidden = true
             cell.ibeacon.isHidden = true
+            
         }
         
         return cell
+    }
+    
+    @objc func showInfoBeacon( _ sender: UITapGestureRecognizer){
+        self.view.addSubview(infoPop)
+        self.infoImage.image = UIImage(named: "beacon")
+        self.infoLabel.text = "L'icona indica che la tappa dispone di un sistema di riconoscimento beacon."
+        infoPop.center = CGPoint(x: self.view.center.x, y: self.view.center.y - infoPop.frame.height)
+    }
+    
+    @objc func showInfoTrak( _ sender: UITapGestureRecognizer){
+        self.view.addSubview(infoPop)
+        self.infoImage.image = UIImage(named: "imagetrack")
+        self.infoLabel.text = "L'icona indica che la tappa dispone di un sistema di riconoscimento basato sull'immagine."
+        infoPop.center = CGPoint(x: self.view.center.x, y: self.view.center.y - infoPop.frame.height)
+    }
+    
+    @objc func showInfoPos( _ sender: UITapGestureRecognizer){
+        self.view.addSubview(infoPop)
+        self.infoImage.image = UIImage(named: "geoloc")
+        self.infoLabel.text = "L'icona indica che la tappa dispone di un sistema di riconoscimento basato sulla geolocalizzazione."
+        infoPop.center = CGPoint(x: self.view.center.x, y: self.view.center.y - infoPop.frame.height)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -61,6 +103,8 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
         self.tappeTableView.dataSource = self
         self.navigationItem.title = self.selectedItem.titolo
         self.copertinaTourImageView.image = UIImage(named: self.selectedItem.copertina)
+        self.textView.text = self.selectedItem.descrizione
+        
     }
     
 
@@ -78,6 +122,10 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
             let nextViewController = segue.destination as! TourScanViewController
             nextViewController.liveTour = self.selectedItem
         }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        self.infoPop.removeFromSuperview()
     }
     
 

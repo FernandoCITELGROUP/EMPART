@@ -65,6 +65,7 @@ class DettaglioMuseoViewController: UIViewController, UITableViewDelegate, UITab
         self.toursTableView.dataSource = self
         self.cittàMuseoLabel.text = "\(self.selectedItem.città) - \(self.selectedItem.indirizzo)"
         self.museoImageView.image = UIImage(named: self.selectedItem.copertina)
+        self.descrizioneTextView.text = self.selectedItem.info
         self.navigationItem.title = self.selectedItem.nome
     }
     

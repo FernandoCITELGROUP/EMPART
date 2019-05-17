@@ -29,10 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var posizione:Dictionary<String,Double> = Dictionary<String,Double>()
         posizione["latitudine"] = 40.867011
         posizione["longitudine"] = 14.250205
-        let museo1:Museo = Museo(nome: "Capodimonte", info: "", copertina: "capodimonteCopertina.jpg", toursDisponibili: [TourEmpart](), città: "Napoli", indirizzo: "Via Miano, 2", posizione: posizione)
+        let museo1:Museo = Museo(nome: "Capodimonte", info: "Il Museo nazionale di Capodimonte è un museo di Napoli, ubicato all'interno della reggia omonima, nella località di Capodimonte: ospita gallerie di arte antica, una di arte contemporanea e un appartamento storico.", copertina: "capodimonteCopertina.jpg", toursDisponibili: [TourEmpart](), città: "Napoli", indirizzo: "Via Miano, 2", posizione: posizione)
         
         // test data: aggiungo tour caravaggio
-        museo1.toursDisponibili.append(TourEmpart(titolo: "Caravaggio", descrizione: "", copertina: "tourCaravaggio.png", tappe: [Tappa](), dataInizio:"11/03/2019", dataFine:"20/09/2019"))
+        museo1.toursDisponibili.append(TourEmpart(titolo: "Caravaggio", descrizione: "Caravaggio visse a Napoli complessivamente 18 mesi, durante i suoi due soggiorni: tra ottobre del 1606 e giugno del 1607 e, successivamente, nell’autunno del 1609 per circa un anno fino alla morte avvenuta a Porto Ercole nel viaggio di ritorno verso Roma, nel luglio del 1610. Mesi intensi e fondamentali per la sua vita e la sua produzione artistica, che tuttavia risultano meno noti del periodo trascorso a Roma. A Napoli il Merisi arrivò in fuga da Roma, dove era stato coinvolto nell’omicidio di Ranuccio Tomassoni: ricercato e condannato a morte dalla giustizia romana, tormentato dal senso di colpa.", copertina: "tourCaravaggio.png", tappe: [Tappa](), dataInizio:"11/03/2019", dataFine:"20/09/2019"))
         
         // test data: aggiungo tappe del tour caravaggio
         museo1.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Flagellazione", descrizione: "La Flagellazione di Cristo è un dipinto a olio su tela (286x213 cm) di Caravaggio, realizzato tra il 1607 ed il 1608 e conservato nella sala 78 del Museo nazionale di Capodimonte di Napoli. Secondo il resoconto di Giovanni Pietro Bellori, questo dipinto fu commissionato per adornare la cappella della famiglia de Franchis nella Chiesa di San Domenico Maggiore a Napoli. La Flagellazione di Cristo è la tela di formato più grande e più monumentale delle cinque o sei opere eseguite dal pittore alla fine del suo soggiorno napoletano.", imagine: "flag1.png", autore: Autore(nome: "Michelangelo", cognome: "Merisi", nomeDarte: "CARAVAGGIO", immagine: ""), anno: 1607, tecnica: "Olio su tela"), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Beacon, beacon: Beacon(id: "5A4BCFCE-174E-4BAC-A814-092E77F6B7E5", major: 123, minor: 456), posizione: Dictionary<String,Double>(), copertina: "flag1th.png", imageToTrack: "laflag"))
@@ -104,8 +104,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var posizione4:Dictionary<String,Double> = Dictionary<String,Double>()
         posizione4["latitudine"] = 40.8229316
         posizione4["longitudine"] = 14.1175454
-        let museo4:Museo = Museo(nome: "Comune di Pozzuoli", info: "", copertina: "pozzuoli.jpg", toursDisponibili: [TourEmpart](), città: "Pozzuoli", indirizzo: "Comune", posizione: posizione4)
-        museo4.toursDisponibili.append(TourEmpart(titolo: "I love Pozzuoli", descrizione: "", copertina: "tourPozzuoli.jpg", tappe: [Tappa](), dataInizio:"01/01/2019", dataFine:"31/12/2019"))
+        let museo4:Museo = Museo(nome: "Comune di Pozzuoli", info: "Pozzuoli (Puteoli in latino) è un comune italiano di 81 115 abitanti della città metropolitana di Napoli in Campania. Fa parte dell'area urbana di Napoli, risultando strettamente conurbato con la città capoluogo. È il sesto comune non capoluogo di provincia più popoloso d'Italia.", copertina: "pozzuoli.jpg", toursDisponibili: [TourEmpart](), città: "Pozzuoli", indirizzo: "Comune", posizione: posizione4)
+        museo4.toursDisponibili.append(TourEmpart(titolo: "I love Pozzuoli", descrizione: "Un tour a piedi alla scoperta delle perle di Pozzuolli tra incantevoli panorami, monumenti storici", copertina: "tourPozzuoli.jpg", tappe: [Tappa](), dataInizio:"01/01/2019", dataFine:"31/12/2019"))
         
         museo4.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Anfiteatro Flavio", descrizione: "L'Anfiteatro Flavio è uno dei due anfiteatri romani esistenti a Pozzuoli e risale alla seconda metà del I secolo d.C. Venne realizzato per far fronte all'incremento demografico di Puteoli, che aveva reso inadatto il vecchio edificio adibito per spettacoli pubblici in età repubblicana", imagine: "anfiteatroFlavio.jpg", autore: Autore(), anno: 305, tecnica: ""), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Posizione, beacon: Beacon(), posizione: Dictionary<String,Double>(), copertina: "anfiteatroFlavioth.png", imageToTrack: ""))
         
@@ -116,8 +116,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         museo4.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Rione Terra", descrizione: "Il Rione Terra è un agglomerato urbano che costituisce il primo nucleo abitativo di Pozzuoli, nella città metropolitana di Napoli, abitato fin dal II secolo a.C. Si trova su una piccola altura che permetteva di controllare bene gli arrivi dei nemici provenienti sia dal mare sia dalla terra.", imagine: "rioneterra.jpg", autore: Autore(), anno: 305, tecnica: ""), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Posizione, beacon: Beacon(), posizione: Dictionary<String,Double>(), copertina: "rioneterrath.png", imageToTrack: ""))
         
         museo4.toursDisponibili[0].tappe.append(Tappa(opera: Opera(titolo: "Accademia Aeronautica", descrizione: "L'Accademia Aeronautica è un istituto militare per la formazione degli ufficiali dell'Aeronautica Militare. La sede è posta nel comune di Pozzuoli al confine con il comune di Napoli", imagine: "accademia.jpg", autore: Autore(), anno: 305, tecnica: ""), status: StatoTappa.Disponibile, ordine: 1, tipoLocalizzazione: TipoLocalizzazione.Posizione, beacon: Beacon(), posizione: Dictionary<String,Double>(), copertina: "accademiath.png", imageToTrack: ""))
-        
-      
         
         musei.append(museo1)
         musei.append(museo2)
@@ -143,7 +141,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let mioTour: MioTour = MioTour()
-        mioTour.data = "13 Maggio 2019"
+        mioTour.data = "17 Maggio 2019"
         mioTour.nomeMuseo = "Capodimonte"
         mioTour.citta = "Napoli"
         mioTour.titolo = "Tour Caravaggio"
