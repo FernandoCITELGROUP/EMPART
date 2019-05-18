@@ -26,13 +26,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I7w-N3-heM">
-                                <rect key="frame" x="-10" y="0.0" width="424" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I7w-N3-heM">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KN-iZ-vwF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3KN-iZ-vwF">
                                 <rect key="frame" x="349" y="67" width="52" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="ATu-8a-Saf"/>
+                                    <constraint firstAttribute="height" constant="32" id="rQL-Ll-s6Z"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -43,6 +45,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="I7w-N3-heM" secondAttribute="bottom" id="0RT-6y-siB"/>
+                            <constraint firstItem="T5t-7E-2TC" firstAttribute="trailing" secondItem="3KN-iZ-vwF" secondAttribute="trailing" constant="13" id="IJ2-ml-fd7"/>
+                            <constraint firstItem="I7w-N3-heM" firstAttribute="leading" secondItem="1ag-SW-T4K" secondAttribute="leading" id="NME-WD-v9N"/>
+                            <constraint firstItem="I7w-N3-heM" firstAttribute="trailing" secondItem="T5t-7E-2TC" secondAttribute="trailing" id="jhe-U5-MTB"/>
+                            <constraint firstItem="3KN-iZ-vwF" firstAttribute="top" secondItem="T5t-7E-2TC" secondAttribute="top" constant="23" id="piP-Ip-nWW"/>
+                            <constraint firstItem="I7w-N3-heM" firstAttribute="top" secondItem="1ag-SW-T4K" secondAttribute="top" id="qRJ-bC-9fg"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="T5t-7E-2TC"/>
                     </view>
                     <connections>
