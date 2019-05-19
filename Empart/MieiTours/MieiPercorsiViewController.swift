@@ -37,6 +37,7 @@ class MieiPercorsiViewController: UIViewController, UITableViewDelegate, UITable
         self.customizeNavAndTab()
         self.mieiTourTableView.delegate = self
         self.mieiTourTableView.dataSource = self
+        self.mieiTourTableView.isHidden = DataManager.shared().mieiTour.count > 0 ? false : true
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

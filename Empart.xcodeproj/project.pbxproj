@@ -65,6 +65,8 @@
 		750A39C3228DD6A3007ED02A /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A39C2228DD6A3007ED02A /* CreditsViewController.swift */; };
 		750A39C5228DDC83007ED02A /* tomorrow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 750A39C4228DDC83007ED02A /* tomorrow.mp3 */; };
 		750A39C7228DFD0C007ED02A /* RilevaBattitoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A39C6228DFD0C007ED02A /* RilevaBattitoViewController.swift */; };
+		750A39C922919CFE007ED02A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750A39C822919CFE007ED02A /* ProfileViewController.swift */; };
+		750A39CB22919D75007ED02A /* generic-user-purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 750A39CA22919D75007ED02A /* generic-user-purple.png */; };
 		750CDA9B22873DBA004D0FEB /* EsperienzaDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */; };
 		750CDA9D22873DDB004D0FEB /* FotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */; };
 		750CDA9F22873DEC004D0FEB /* AudioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */; };
@@ -208,6 +210,8 @@
 		750A39C2228DD6A3007ED02A /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		750A39C4228DDC83007ED02A /* tomorrow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tomorrow.mp3; sourceTree = "<group>"; };
 		750A39C6228DFD0C007ED02A /* RilevaBattitoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RilevaBattitoViewController.swift; sourceTree = "<group>"; };
+		750A39C822919CFE007ED02A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		750A39CA22919D75007ED02A /* generic-user-purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "generic-user-purple.png"; sourceTree = "<group>"; };
 		750CDA9A22873DBA004D0FEB /* EsperienzaDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EsperienzaDetailsViewController.swift; sourceTree = "<group>"; };
 		750CDA9C22873DDB004D0FEB /* FotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FotoTableViewCell.swift; sourceTree = "<group>"; };
 		750CDA9E22873DEC004D0FEB /* AudioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTableViewCell.swift; sourceTree = "<group>"; };
@@ -462,6 +466,7 @@
 		758560452280819300EDB1AD /* Empart */ = {
 			isa = PBXGroup;
 			children = (
+				750A39CA22919D75007ED02A /* generic-user-purple.png */,
 				750A39C0228DB0B8007ED02A /* LOGO GRUPPO-04.png */,
 				750A39BE228DA87B007ED02A /* splash.png */,
 				75BFDC86228B01AF0060DBFC /* Empath */,
@@ -487,6 +492,7 @@
 				750CDAA322896F31004D0FEB /* NavigationExtension.swift */,
 				750CDADD228AD21C004D0FEB /* ExtensionUIImage.swift */,
 				750A39C2228DD6A3007ED02A /* CreditsViewController.swift */,
+				750A39C822919CFE007ED02A /* ProfileViewController.swift */,
 			);
 			path = Empart;
 			sourceTree = "<group>";
@@ -717,6 +723,7 @@
 				750A39B6228D6FEC007ED02A /* sangiovPlus2.jpeg in Resources */,
 				75FB9B1B2282EC9B00A0881E /* mart1th.png in Resources */,
 				750A39A9228D6FDC007ED02A /* martirioPlus4.jpeg in Resources */,
+				750A39CB22919D75007ED02A /* generic-user-purple.png in Resources */,
 				750A399F228D6F4A007ED02A /* salomePlus1.jpeg in Resources */,
 				750A399E228D6F4A007ED02A /* salomePlus4.jpeg in Resources */,
 				750A3949228CAB30007ED02A /* anfiteatroFlavio.jpg in Resources */,
@@ -889,6 +896,7 @@
 				75FB9AF12281F72400A0881E /* EsperienzaEmpart.swift in Sources */,
 				75FB9B3022848A7700A0881E /* TourScanViewController.swift in Sources */,
 				75FB9AE32281EF3E00A0881E /* Opera.swift in Sources */,
+				750A39C922919CFE007ED02A /* ProfileViewController.swift in Sources */,
 				750CDA9B22873DBA004D0FEB /* EsperienzaDetailsViewController.swift in Sources */,
 				750CDABE2289FFB1004D0FEB /* RiviviViewController.swift in Sources */,
 				750CDADE228AD21C004D0FEB /* ExtensionUIImage.swift in Sources */,

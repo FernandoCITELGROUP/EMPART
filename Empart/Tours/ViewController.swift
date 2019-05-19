@@ -51,7 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.musei = DataManager.shared().musei
         self.museiTableView.delegate = self
         self.museiTableView.dataSource = self
-        
+        self.museiTableView.isHidden = self.musei.count > 0 ? false : true
         self.customizeNavAndTab()
     }
     
