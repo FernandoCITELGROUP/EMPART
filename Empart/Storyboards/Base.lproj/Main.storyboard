@@ -400,9 +400,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" estimatedRowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0e5-yo-ivn">
                                 <rect key="frame" x="0.0" y="308" width="414" height="339"/>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="339" id="Bsf-d7-IFI"/>
-                                </constraints>
                                 <inset key="separatorInset" minX="50" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="tappaCell" rowHeight="70" id="XWB-l1-pPP" customClass="TappaTableViewCell" customModule="Empart" customModuleProvider="target">
@@ -524,10 +521,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZ0-wa-hBF">
                                 <rect key="frame" x="0.0" y="647" width="414" height="70"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kth-5w-uss">
-                                        <rect key="frame" x="142" y="15" width="131" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kth-5w-uss">
+                                        <rect key="frame" x="141.5" y="15" width="131" height="40"/>
                                         <color key="backgroundColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="131" id="10y-Ur-CaL"/>
+                                            <constraint firstAttribute="height" constant="40" id="b69-yS-1wW"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                         <state key="normal" title="inizia">
                                             <color key="titleColor" red="0.27450980390000002" green="0.2784313725" blue="0.58431372550000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -546,7 +546,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="1P3-4t-r7Y"/>
+                                    <constraint firstItem="Kth-5w-uss" firstAttribute="centerX" secondItem="eZ0-wa-hBF" secondAttribute="centerX" id="6ru-k8-TKp"/>
+                                    <constraint firstAttribute="height" constant="70" id="Wrg-rY-WDl"/>
+                                    <constraint firstItem="Kth-5w-uss" firstAttribute="centerY" secondItem="eZ0-wa-hBF" secondAttribute="centerY" id="y38-uD-9fL"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -554,16 +556,21 @@
                         <constraints>
                             <constraint firstItem="2oe-Yg-KHI" firstAttribute="trailing" secondItem="uVq-5v-icH" secondAttribute="trailing" id="0Na-0g-bT0"/>
                             <constraint firstItem="2oe-Yg-KHI" firstAttribute="leading" secondItem="uVq-5v-icH" secondAttribute="leading" id="57W-hZ-ZcJ"/>
-                            <constraint firstItem="0e5-yo-ivn" firstAttribute="trailing" secondItem="uVq-5v-icH" secondAttribute="trailing" id="8uk-xh-2tj"/>
-                            <constraint firstItem="eZ0-wa-hBF" firstAttribute="trailing" secondItem="uVq-5v-icH" secondAttribute="trailing" id="9iu-7m-ZE9"/>
-                            <constraint firstItem="0e5-yo-ivn" firstAttribute="leading" secondItem="uVq-5v-icH" secondAttribute="leading" id="BKm-0d-Cqg"/>
-                            <constraint firstItem="0e5-yo-ivn" firstAttribute="top" secondItem="2oe-Yg-KHI" secondAttribute="bottom" id="Efm-ZK-b6X"/>
-                            <constraint firstItem="eZ0-wa-hBF" firstAttribute="top" secondItem="0e5-yo-ivn" secondAttribute="bottom" id="W1H-tT-jqR"/>
+                            <constraint firstItem="eZ0-wa-hBF" firstAttribute="top" secondItem="0e5-yo-ivn" secondAttribute="bottom" id="9Hc-DB-6NH"/>
+                            <constraint firstItem="eZ0-wa-hBF" firstAttribute="top" secondItem="0e5-yo-ivn" secondAttribute="bottom" id="CJ8-2b-yeT"/>
+                            <constraint firstItem="0e5-yo-ivn" firstAttribute="top" secondItem="2oe-Yg-KHI" secondAttribute="bottom" id="DM9-gc-BY6"/>
+                            <constraint firstItem="0e5-yo-ivn" firstAttribute="trailing" secondItem="uVq-5v-icH" secondAttribute="trailing" id="Mib-kw-2Cr"/>
+                            <constraint firstItem="eZ0-wa-hBF" firstAttribute="leading" secondItem="uVq-5v-icH" secondAttribute="leading" id="NeT-Oq-aX2"/>
+                            <constraint firstItem="0e5-yo-ivn" firstAttribute="leading" secondItem="uVq-5v-icH" secondAttribute="leading" id="VJc-Or-m0E"/>
+                            <constraint firstItem="0e5-yo-ivn" firstAttribute="leading" secondItem="uVq-5v-icH" secondAttribute="leading" id="XXO-iw-ux5"/>
                             <constraint firstItem="2oe-Yg-KHI" firstAttribute="trailing" secondItem="uVq-5v-icH" secondAttribute="trailing" id="YbF-Oh-cMe"/>
+                            <constraint firstItem="0e5-yo-ivn" firstAttribute="top" secondItem="2oe-Yg-KHI" secondAttribute="bottom" id="dkm-yB-hRF"/>
+                            <constraint firstItem="uVq-5v-icH" firstAttribute="bottom" secondItem="eZ0-wa-hBF" secondAttribute="bottom" constant="8" id="hPy-zY-dyD"/>
+                            <constraint firstItem="eZ0-wa-hBF" firstAttribute="trailing" secondItem="uVq-5v-icH" secondAttribute="trailing" id="hpw-2B-jd0"/>
                             <constraint firstItem="2oe-Yg-KHI" firstAttribute="top" secondItem="uVq-5v-icH" secondAttribute="top" id="m7R-Cq-l8l"/>
                             <constraint firstItem="2oe-Yg-KHI" firstAttribute="top" secondItem="uVq-5v-icH" secondAttribute="top" id="n1D-Au-7ly"/>
-                            <constraint firstItem="eZ0-wa-hBF" firstAttribute="leading" secondItem="uVq-5v-icH" secondAttribute="leading" id="per-Vp-NoQ"/>
                             <constraint firstItem="2oe-Yg-KHI" firstAttribute="leading" secondItem="uVq-5v-icH" secondAttribute="leading" id="rCt-Uc-sJv"/>
+                            <constraint firstItem="0e5-yo-ivn" firstAttribute="trailing" secondItem="uVq-5v-icH" secondAttribute="trailing" id="tkS-RH-mok"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uVq-5v-icH"/>
                     </view>

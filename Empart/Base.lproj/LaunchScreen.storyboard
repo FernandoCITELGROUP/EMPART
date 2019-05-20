@@ -18,12 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="APh-NZ-5QC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="APh-NZ-5QC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="APh-NZ-5QC" firstAttribute="trailing" secondItem="2AG-6m-Clk" secondAttribute="trailing" id="Fsh-a1-dtT"/>
+                            <constraint firstItem="APh-NZ-5QC" firstAttribute="top" secondItem="2sb-uF-OKE" secondAttribute="top" id="dcv-6Z-5h9"/>
+                            <constraint firstAttribute="bottom" secondItem="APh-NZ-5QC" secondAttribute="bottom" id="ib0-fB-zYa"/>
+                            <constraint firstItem="APh-NZ-5QC" firstAttribute="leading" secondItem="2AG-6m-Clk" secondAttribute="leading" id="xJq-W3-3Eb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="2AG-6m-Clk"/>
                     </view>
                 </viewController>
