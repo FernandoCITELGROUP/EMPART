@@ -102,6 +102,11 @@
 		75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */; };
 		758560622280B5E500EDB1AD /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560612280B5E500EDB1AD /* TutorialViewController.swift */; };
 		758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */; };
+		759F875A22981E4800071B75 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759F875922981E4800071B75 /* CounterView.swift */; };
+		759F875C2298244B00071B75 /* MappaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759F875B2298244B00071B75 /* MappaTableViewController.swift */; };
+		759F875E22982AC100071B75 /* MappaHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759F875D22982AC100071B75 /* MappaHeaderTableViewCell.swift */; };
+		759F876022982ADF00071B75 /* MappaTappaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759F875F22982ADF00071B75 /* MappaTappaTableViewCell.swift */; };
+		759F876222982AF600071B75 /* MappaFooterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759F876122982AF600071B75 /* MappaFooterTableViewCell.swift */; };
 		75FB9AD72281C29D00A0881E /* capodimonteCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */; };
 		75FB9AD92281CD3200A0881E /* MuseoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */; };
 		75FB9ADB2281CECB00A0881E /* museiCapitoliniCopertina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */; };
@@ -249,6 +254,12 @@
 		7585605F228082C200EDB1AD /* ImpostazioniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImpostazioniViewController.swift; sourceTree = "<group>"; };
 		758560612280B5E500EDB1AD /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		758560632280CE8A00EDB1AD /* TutorialPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageViewController.swift; sourceTree = "<group>"; };
+		759F875922981E4800071B75 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		759F875B2298244B00071B75 /* MappaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappaTableViewController.swift; sourceTree = "<group>"; };
+		759F875D22982AC100071B75 /* MappaHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappaHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		759F875F22982ADF00071B75 /* MappaTappaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappaTappaTableViewCell.swift; sourceTree = "<group>"; };
+		759F876122982AF600071B75 /* MappaFooterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappaFooterTableViewCell.swift; sourceTree = "<group>"; };
+		75A9DD2F2291E4FC00E59610 /* Empart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Empart.entitlements; sourceTree = "<group>"; };
 		75FB9AD62281C29C00A0881E /* capodimonteCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = capodimonteCopertina.jpg; sourceTree = "<group>"; };
 		75FB9AD82281CD3200A0881E /* MuseoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseoTableViewCell.swift; sourceTree = "<group>"; };
 		75FB9ADA2281CECB00A0881E /* museiCapitoliniCopertina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = museiCapitoliniCopertina.jpg; sourceTree = "<group>"; };
@@ -466,6 +477,7 @@
 		758560452280819300EDB1AD /* Empart */ = {
 			isa = PBXGroup;
 			children = (
+				75A9DD2F2291E4FC00E59610 /* Empart.entitlements */,
 				750A39CA22919D75007ED02A /* generic-user-purple.png */,
 				750A39C0228DB0B8007ED02A /* LOGO GRUPPO-04.png */,
 				750A39BE228DA87B007ED02A /* splash.png */,
@@ -627,6 +639,11 @@
 				750A393B228C4952007ED02A /* MusicaTableViewCell.swift */,
 				750A393D228C9626007ED02A /* ImageTrackingViewController.swift */,
 				750A39C6228DFD0C007ED02A /* RilevaBattitoViewController.swift */,
+				759F875922981E4800071B75 /* CounterView.swift */,
+				759F875B2298244B00071B75 /* MappaTableViewController.swift */,
+				759F875D22982AC100071B75 /* MappaHeaderTableViewCell.swift */,
+				759F875F22982ADF00071B75 /* MappaTappaTableViewCell.swift */,
+				759F876122982AF600071B75 /* MappaFooterTableViewCell.swift */,
 			);
 			path = Vivi;
 			sourceTree = "<group>";
@@ -681,6 +698,17 @@
 				TargetAttributes = {
 					758560422280819300EDB1AD = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -873,12 +901,15 @@
 				758560642280CE8A00EDB1AD /* TutorialPageViewController.swift in Sources */,
 				75FB9B212283099B00A0881E /* DettaglioTourViewController.swift in Sources */,
 				75FB9AED2281F6A500A0881E /* MiaTappa.swift in Sources */,
+				759F875C2298244B00071B75 /* MappaTableViewController.swift in Sources */,
+				759F876222982AF600071B75 /* MappaFooterTableViewCell.swift in Sources */,
 				750A393A228C483C007ED02A /* MusicaTableViewController.swift in Sources */,
 				75FB9B3322858EA000A0881E /* ViviViewController.swift in Sources */,
 				75FB9B2322830AC500A0881E /* TappaTableViewCell.swift in Sources */,
 				758560472280819300EDB1AD /* AppDelegate.swift in Sources */,
 				750CDA9F22873DEC004D0FEB /* AudioTableViewCell.swift in Sources */,
 				75FB9AFF22821F0A00A0881E /* DettaglioMuseoViewController.swift in Sources */,
+				759F876022982ADF00071B75 /* MappaTappaTableViewCell.swift in Sources */,
 				750A393E228C9626007ED02A /* ImageTrackingViewController.swift in Sources */,
 				750CDAA422896F31004D0FEB /* NavigationExtension.swift in Sources */,
 				75FB9B2E228465DF00A0881E /* DataManager.swift in Sources */,
@@ -886,6 +917,7 @@
 				75856060228082C200EDB1AD /* ImpostazioniViewController.swift in Sources */,
 				750A393C228C4952007ED02A /* MusicaTableViewCell.swift in Sources */,
 				75FB9AEB2281F5A400A0881E /* MioTour.swift in Sources */,
+				759F875A22981E4800071B75 /* CounterView.swift in Sources */,
 				75FB9ADD2281EB8F00A0881E /* Museo.swift in Sources */,
 				750CDA9D22873DDB004D0FEB /* FotoTableViewCell.swift in Sources */,
 				75FB9AE12281EE3000A0881E /* Tappa.swift in Sources */,
@@ -899,6 +931,7 @@
 				750A39C922919CFE007ED02A /* ProfileViewController.swift in Sources */,
 				750CDA9B22873DBA004D0FEB /* EsperienzaDetailsViewController.swift in Sources */,
 				750CDABE2289FFB1004D0FEB /* RiviviViewController.swift in Sources */,
+				759F875E22982AC100071B75 /* MappaHeaderTableViewCell.swift in Sources */,
 				750CDADE228AD21C004D0FEB /* ExtensionUIImage.swift in Sources */,
 				75FB9AE72281EFE200A0881E /* Beacon.swift in Sources */,
 				75FB9B022282231D00A0881E /* TourTableViewCell.swift in Sources */,

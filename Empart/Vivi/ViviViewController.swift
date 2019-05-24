@@ -9,7 +9,8 @@
 import UIKit
 import AVFoundation
 import SwiftVideoGenerator
-import Alamofire
+import StoreKit
+import MediaPlayer
 
 
 // solo per test
@@ -38,6 +39,9 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     var esperienza:EsperienzaEmpart = EsperienzaEmpart()
     var viewStatus:ViewStatus = ViewStatus.Start
     var videoCreato: Bool = false
+    
+    //Music Player
+    let applicationMusicPlayer = MPMusicPlayerController.applicationMusicPlayer
     
     // Outlets
     @IBOutlet weak var autoreLabel: UILabel!
@@ -121,6 +125,12 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
     @IBAction func playAction(_ sender: Any) {
         self.buttonStatus(status: ViewStatus.Registrazione)
         self.waterView!.start()
+        
+        // Just the one track?
+        appleMusicPlayTrackId(ids: ["201234458"])
+        
+        // ...or why stop there? Let's put on LOADS of My Chemical Romance.
+        appleMusicPlayTrackId(ids: ["201234458", "201234473", "79990046"])
     }
     
     @IBAction func stopAction(_ sender: Any) {
@@ -415,5 +425,121 @@ class ViviViewController: UIViewController, UINavigationControllerDelegate, UIIm
             print(error)
             
         })
+    }
+    
+    // MARK: Music
+    // Check if the device is capable of playback
+    
+    func appleMusicCheckIfDeviceCanPlayback() {
+        let serviceController = SKCloudServiceController()
+        serviceController.requestCapabilities { (capability, err) in
+            switch capability {
+                
+            case SKCloudServiceCapability.musicCatalogSubscriptionEligible:
+                
+                print("The user doesn't have an Apple Music subscription available. Now would be a good time to prompt them to buy one?")
+                
+            case SKCloudServiceCapability.musicCatalogPlayback:
+                
+                print("The user has an Apple Music subscription and can playback music!")
+                
+            case SKCloudServiceCapability.addToCloudMusicLibrary:
+                
+                print("The user has an Apple Music subscription, can playback music AND can add to the Cloud Music Library")
+                
+            default: break
+                
+            }
+        }
+    }
+    
+    // Request permission from the user to access the Apple Music library
+    func appleMusicRequestPermission() {
+        
+        switch SKCloudServiceController.authorizationStatus() {
+            
+        case .authorized:
+            
+            print("The user's already authorized - we don't need to do anything more here, so we'll exit early.")
+            return
+            
+        case .denied:
+            
+            print("The user has selected 'Don't Allow' in the past - so we're going to show them a different dialog to push them through to their Settings page and change their mind, and exit the function early.")
+            
+            // Show an alert to guide users into the Settings
+            
+            return
+            
+        case .notDetermined:
+            
+            print("The user hasn't decided yet - so we'll break out of the switch and ask them.")
+            break
+            
+        case .restricted:
+            
+            print("User may be restricted; for example, if the device is in Education mode, it limits external Apple Music usage. This is similar behaviour to Denied.")
+            return
+            
+        }
+        
+        SKCloudServiceController.requestAuthorization { (status:SKCloudServiceAuthorizationStatus) in
+            
+            switch status {
+                
+            case .authorized:
+                
+                print("All good - the user tapped 'OK', so you're clear to move forward and start playing.")
+                
+            case .denied:
+                
+                print("The user tapped 'Don't allow'. Read on about that below...")
+                
+            case .notDetermined:
+                
+                print("The user hasn't decided or it's not clear whether they've confirmed or denied.")
+                
+            default: break
+                
+            }
+            
+        }
+        
+    }
+    
+    func appleMusicPlayTrackId(ids:[String]) {
+        
+        applicationMusicPlayer.setQueue(with: ids)
+        applicationMusicPlayer.play()
+        
+    }
+    
+    // Fetch the user's storefront ID
+    func appleMusicFetchStorefrontRegion() {
+        
+        let serviceController = SKCloudServiceController()
+        serviceController.requestStorefrontIdentifier { (storefrontId, err) in
+            
+            guard err == nil else {
+                
+                print("An error occured. Handle it here.")
+                return
+                
+            }
+            
+            guard let storefrontId = storefrontId, storefrontId.count >= 6 else {
+                
+                print("Handle the error - the callback didn't contain a valid storefrontID.")
+                return
+                
+            }
+            
+            //let indexRange = storefrontId.startIndex...storefrontId.index(storefrontId.startIndex, offsetBy: 5)
+            //let trimmedId = storefrontId.substringWith(indexRange)
+            
+            //print("Success! The user's storefront ID is: \(trimmedId)")
+            
+        }
+        
     }
 }

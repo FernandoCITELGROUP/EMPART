@@ -18,7 +18,7 @@ enum TipoLocalizzazione:Int{
 
 class Tappa{
     var opera:Opera
-    var status:StatoTappa
+    var status:StatoTappa // da portara a miatappa
     var ordine:Int
     var tipoLocalizzazione:TipoLocalizzazione
     var beacon:Beacon

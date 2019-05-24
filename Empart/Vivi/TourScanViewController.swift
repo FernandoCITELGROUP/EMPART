@@ -176,6 +176,14 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goToMappaTour")
+        {
+            let nextViewController = segue.destination as! MappaTableViewController
+            nextViewController.tappe = self.liveTour.tappe
+        }
+    }
+    
     // Actions
     @IBAction func backButtonAction(_ sender: Any) {
         
@@ -183,4 +191,6 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
         self.pulse2.removeFromSuperlayer()
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
 }
