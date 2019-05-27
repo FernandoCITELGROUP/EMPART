@@ -1321,11 +1321,11 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFS-B4-efX">
-                                            <rect key="frame" x="122" y="30" width="170" height="40"/>
+                                            <rect key="frame" x="122" y="20" width="170" height="60"/>
                                             <color key="backgroundColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="40" id="Eur-Bq-JIS"/>
-                                                <constraint firstAttribute="width" constant="170" id="gHy-PJ-6Yg"/>
+                                                <constraint firstAttribute="height" constant="60" id="Dci-R1-pH7"/>
+                                                <constraint firstAttribute="width" constant="170" id="T6v-47-tyd"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                             <state key="normal" title="concludi tour">
@@ -1340,8 +1340,8 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="sFS-B4-efX" firstAttribute="centerY" secondItem="tsg-rW-cnf" secondAttribute="centerY" id="2RK-BG-rM9"/>
-                                        <constraint firstItem="sFS-B4-efX" firstAttribute="centerX" secondItem="tsg-rW-cnf" secondAttribute="centerX" id="LGs-FU-COc"/>
+                                        <constraint firstItem="sFS-B4-efX" firstAttribute="centerY" secondItem="tsg-rW-cnf" secondAttribute="centerY" id="aS3-fX-GEo"/>
+                                        <constraint firstItem="sFS-B4-efX" firstAttribute="centerX" secondItem="tsg-rW-cnf" secondAttribute="centerX" id="oWI-mP-dSW"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.38611072301864624" green="0.24823760986328125" blue="0.78435593843460083" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

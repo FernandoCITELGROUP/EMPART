@@ -13,6 +13,10 @@ class DataManager{
     var emozioni:[Emozione]
     var esperienza:EsperienzaEmpart
     var mieiTour:[MioTour]
+    
+    // collezione utilizzata per memorizza le tappe vissute per il tour in corso
+    var tappeVisitate:[MiaTappa]
+    
     var opzioneMusicaScelta:Int
     var opzioneHeartScelta:Int
     var trackedImage:String
@@ -30,9 +34,19 @@ class DataManager{
         self.opzioneMusicaScelta = 2
         self.trackedImage = ""
         self.opzioneHeartScelta = 2
+        self.tappeVisitate = [MiaTappa]()
     }
     
     class func shared() -> DataManager {
         return sharedDataManager
+    }
+    
+    func aggiungiTappaVisitata(tappa:Tappa, ricordo:RicordoEmpart){
+        let tappe = self.tappeVisitate.filter{$0.tappa.equals(tappa: tappa)}
+        if(tappe.count == 0)
+        {
+            self.tappeVisitate.append(MiaTappa(tappa: tappa, ricordo: ricordo))
+        }
+        
     }
 }

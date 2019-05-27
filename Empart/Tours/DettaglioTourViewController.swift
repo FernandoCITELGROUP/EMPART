@@ -119,6 +119,7 @@ class DettaglioTourViewController: UIViewController, UITableViewDelegate, UITabl
         }
         if(segue.identifier == "goToTourScan")
         {
+            DataManager.shared().tappeVisitate.removeAll()
             let nextViewController = segue.destination as! TourScanViewController
             nextViewController.liveTour = self.selectedItem
         }

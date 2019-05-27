@@ -10,14 +10,19 @@ import UIKit
 
 @IBDesignable class CounterView: UIView {
     
+    private var numberOfGlasses = 8
+    
     private struct Constants {
-        static let numberOfGlasses = 8
         static let lineWidth: CGFloat = 5.0
         static let arcWidth: CGFloat = 76
         
         static var halfOfLineWidth: CGFloat {
             return lineWidth / 2
         }
+    }
+    
+    func setNumberOfGlasses(numbers:Int){
+        self.numberOfGlasses = numbers
     }
     
     @IBInspectable var counter: Int = 5
@@ -53,7 +58,7 @@ import UIKit
         //ensuring it is positive
         let angleDifference: CGFloat = 2 * .pi - startAngle + endAngle
         //then calculate the arc for each single glass
-        let arcLengthPerGlass = angleDifference / CGFloat(Constants.numberOfGlasses)
+        let arcLengthPerGlass = angleDifference / CGFloat(self.numberOfGlasses)
         //then multiply out by the actual glasses drunk
         let outlineEndAngle = arcLengthPerGlass * CGFloat(counter) + startAngle
         

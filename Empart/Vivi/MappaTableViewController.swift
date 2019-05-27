@@ -57,6 +57,10 @@ class MappaTableViewController: UITableViewController {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell", for: indexPath) as! MappaHeaderTableViewCell
             
+            cell.counterView.setNumberOfGlasses(numbers: self.tappe.count)
+            cell.counterView.counter = DataManager.shared().tappeVisitate.count
+            cell.percentLabel.text = DataManager.shared().tappeVisitate.count == 0 ? "0%" : "\(Int(DataManager.shared().tappeVisitate.count * 100 / self.tappe.count))"
+            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "tappaCell", for: indexPath) as! MappaTappaTableViewCell

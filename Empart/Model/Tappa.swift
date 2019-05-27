@@ -51,4 +51,15 @@ class Tappa{
         self.imageToTrack = imageToTrack
         self.contenutoInedito = [String]()
     }
+    
+    func equals(tappa:Tappa) -> Bool{
+        if(self.opera.titolo == tappa.opera.titolo && self.opera.autore.nomeDarte == tappa.opera.autore.nomeDarte)
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+    }
 }

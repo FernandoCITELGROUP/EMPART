@@ -126,13 +126,23 @@ class TourScanViewController: UIViewController, CLLocationManagerDelegate {
         
         // test data - Carico i dati del beacon per il quale mettermi in ascolto
         let tappa = self.liveTour.tappe[0]
-        let beaconToFind = tappa.beacon
         
-        let uuid = UUID(uuidString: beaconToFind.id)!
-        self.beaconRegion = CLBeaconRegion(proximityUUID: uuid, major: CLBeaconMajorValue(beaconToFind.major), minor: CLBeaconMinorValue(beaconToFind.minor), identifier: "MyBeacon")
+        if(tappa.tipoLocalizzazione == TipoLocalizzazione.Beacon)
+        {
+            let beaconToFind = tappa.beacon
+            
+            let uuid = UUID(uuidString: beaconToFind.id)!
+            self.beaconRegion = CLBeaconRegion(proximityUUID: uuid, major: CLBeaconMajorValue(beaconToFind.major), minor: CLBeaconMinorValue(beaconToFind.minor), identifier: "MyBeacon")
+            
+            myLocationManager.startMonitoring(for: self.beaconRegion)
+            myLocationManager.startRangingBeacons(in: self.beaconRegion)
+        }
+        else
+        {
+            // todo
+        }
         
-        myLocationManager.startMonitoring(for: self.beaconRegion)
-        myLocationManager.startRangingBeacons(in: self.beaconRegion)
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], in region: CLBeaconRegion) {
